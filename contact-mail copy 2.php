@@ -75,10 +75,10 @@ try {
     );
 
     // RECEIVER EMAIL (change if needed)
+    $mail->addAddress('harshvishwakarma2711@gmail.com');
+    $mail->addAddress('harsh@pivotmkg.com');
+    $mail->addAddress('aakash@pivotmkg.com');
     $mail->addAddress('tcpl.marketing@truboardpartners.com', 'TCPL Marketing');
-    // $mail->addAddress('harshvishwakarma2711@gmail.com');
-    // $mail->addAddress('harsh@pivotmkg.com');
-    // $mail->addAddress('aakash@pivotmkg.com');
 
 
     // Reply goes to user

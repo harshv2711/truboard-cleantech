@@ -2,31 +2,26 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Show all errors for testing
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// Load Composer autoload
 require __DIR__ . '/vendor/autoload.php';
 
 $mail = new PHPMailer(true);
 
 try {
-    // Enable SMTP debug output (VERY IMPORTANT for testing)
-    $mail->SMTPDebug = 2; // 0 = off, 2 = full debug
+    $mail->SMTPDebug = 2;
     $mail->Debugoutput = 'html';
 
-    // SMTP SETTINGS (Office365)
     $mail->isSMTP();
     $mail->Host       = 'smtp.office365.com';
     $mail->SMTPAuth   = true;
     $mail->Username   = 'website-enquiry@truboardpartners.com';
-    $mail->Password   = 'hzhkdwmqskxjhysc'; // App Password
+    $mail->Password   = 'hzhkdwmqskxjhysc'; // Use App Password if needed
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
-    // Azure TLS compatibility
     $mail->SMTPOptions = [
         'ssl' => [
             'verify_peer'       => false,
@@ -35,22 +30,21 @@ try {
         ],
     ];
 
-    // Email headers
+    // FROM must match Gmail account
     $mail->setFrom(
         'website-enquiry@truboardpartners.com',
         'SMTP Test'
     );
 
-    // Send test email to yourself
+    $mail->addAddress('website-enquiry@truboardpartners.com');
     $mail->addAddress('harshvishwakarma2711@gmail.com');
+    $mail->addAddress('harsh@pivotmkg.com');    
 
-    // Content
     $mail->isHTML(true);
-    $mail->Subject = 'SMTP Test Email';
-    $mail->Body    = '<h3>SMTP Test Successful</h3><p>If you received this, SMTP works.</p>';
-    $mail->AltBody = 'SMTP Test Successful';
+    $mail->Subject = 'office365 SMTP Test Email';
+    $mail->Body    = '<h3>office365 SMTP Test Successful</h3>';
+    $mail->AltBody = 'office365 SMTP Test Successful';
 
-    // Send
     $mail->send();
 
     echo '<h2 style="color:green;">SMTP TEST SUCCESSFUL ✅</h2>';
