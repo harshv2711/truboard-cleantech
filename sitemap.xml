@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- TruBoard CleanTech Sitemap - Optimized for SEO -->
+
+<!-- Homepage -->
+<url>
+  <loc>https://truboardcleantech.com/</loc>
+  <lastmod>2025-08-04T00:00:00+00:00</lastmod>
+  <priority>1.00</priority>
+  <changefreq>weekly</changefreq>
+</url>
+
+<!-- Main Service Pages -->
+<url>
+  <loc>https://truboardcleantech.com/Asset-Lifecycle-Management.html</loc>
+  <lastmod>2025-08-04T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://truboardcleantech.com/Trugreen.html</loc>
+  <lastmod>2025-08-04T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://truboardcleantech.com/TruEleqtric.html</loc>
+  <lastmod>2025-08-04T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+  <changefreq>monthly</changefreq>
+</url>
+
+<!-- Important Company Pages -->
+<url>
+  <loc>https://truboardcleantech.com/About-us.html</loc>
+  <lastmod>2025-08-04T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://truboardcleantech.com/resources.html</loc>
+  <lastmod>2025-08-04T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://truboardcleantech.com/Career.html</loc>
+  <lastmod>2025-08-04T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://truboardcleantech.com/Contact-us.html</loc>
+  <lastmod>2025-08-04T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://truboardcleantech.com/Terms-of-Service.html</loc>
+  <lastmod>2025-08-04T00:00:00+00:00</lastmod>
+  <priority>0.30</priority>
+  <changefreq>yearly</changefreq>
+</url>
+
+<!-- High-Value Article Content -->
+<url>
+  <loc>https://truboardcleantech.com/why_india_power_prices_dropped_to_zero_the_story_behind_the_iex_shock.html</loc>
+  <lastmod>2025-06-30T10:33:51+00:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>https://truboardcleantech.com/truboard-to-increase-renewable-assets-under-management-to-5-billion-by-2025.html</loc>
+  <lastmod>2025-08-04T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>https://truboardcleantech.com/indias-truboard-partners-enters-strategic-partnership-with-norways-bazefield-to-enhance-renewable-asset-management.html</loc>
+  <lastmod>2025-08-04T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>https://truboardcleantech.com/TruBoard_Partners_Launches_TruGreen,_a_Cloud-Based_Platform_for_End-to-End_Renewable_Energy_Asset_Management,_at_REI_Expo_2024.html</loc>
+  <lastmod>2025-08-04T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>https://truboardcleantech.com/driving-sustainable-development-truboard-partners-contribution-to-india-south-asias-infrastructure-growth-rakesh-kalsi-managing-director-infrastructure-practice-truboard-partners.html</loc>
+  <lastmod>2025-08-04T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>yearly</changefreq>
+</url>
+
+</urlset>

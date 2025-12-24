@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <meta http-equiv="Content-Security-Policy"
+        content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ajax.googleapis.com https://code.jquery.com https://unpkg.com https://cdn.jsdelivr.net;">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5TTGKQP9');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js)Start -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVRGSNLJ4G"></script>
+    <script>   window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-CVRGSNLJ4G'); </script>
+    <!-- Google tag (gtag.js)End -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/truGreen.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/article.css">
+    <title>Driving Sustainable Development in India & South Asia | Rakesh Kalsi Q&A</title>
+    <meta name="keywords"
+        content="TruBoard Cleantech, sustainable development, South Asia infrastructure, Rakesh Kalsi, industry insights, renewable impact, infrastructure practice, asset management services, cloud-based platform, 1GW solar assets, 600km road assets">
+
+    <meta name="description"
+        content="Rakesh Kalsi discusses TruBoard Cleantech’s contributions to sustainable infrastructure growth in India and South Asia.">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- <style>
+
+        .card-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            transition: transform 0.5s ease;
+            margin: 100px auto;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .card {
+            /* width: 200px; */
+            /* height: 300px; */
+            /* background: #ddd; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* font-size: 24px; */
+            border-radius: 10px;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+            cursor: pointer;
+            /* opacity: 0.7; */
+            transform: scale(0.9);
+            z-index: 1;
+            position: relative;
+        }
+
+        .card.active {
+            transform: scale(1.1);
+            opacity: 1;
+            z-index: 10;
+        }
+    </style> -->
+    <style>
+        .card-slider {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            transition: transform 0.1s ease;
+        }
+
+        .card-slider.slide-from-left {
+            transform: translateX(-20px);
+            opacity: 0.5;
+        }
+
+        .card-slider.slide-from-right {
+            transform: translateX(20px);
+            opacity: 0.5;
+        }
+
+        .card-slider:not(.slide-from-left):not(.slide-from-right) {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .card {
+            /* padding: 20px; */
+            /* background: #f0f0f0; */
+            /* border: 2px solid #ccc; */
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .card.active,
+        .card.price-and-plan-card-active {
+            /* background-color: #007bff; */
+            /* color: white; */
+            transform: scale(1.1);
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+
+            $(".product-lineup-tab").find(".tab-image").first().show()
+
+            // Hide all tab content initially
+            $('.tab').hide();
+            $('.tab').first().show();
+
+            $(".accordion-panel").first().show()
+        });
+
+        $(document).ready(function () {
+            $(".product-lineup-tab").hide()
+            $(".product-lineup-tab").first().show()
+            $('.accordion').on('click', function () {
+                const panel = $(this).next('.accordion-panel');
+                var imageId = $(this).attr("for")
+                $(".tab-image").hide()
+                $(`#${imageId}`).fadeIn(1000)
+
+                // Close all other panels
+                $('.accordion-panel').not(panel).slideUp(200);
+                $('.accordion').not(this).removeClass('accordion-panel-toggle-btn-active');
+
+                // Toggle the clicked panel
+                panel.slideToggle(200);
+                $(this).toggleClass('accordion-panel-toggle-btn-active');
+            });
+
+            $(".product-lineup-toggle-tab-btn").click(function () {
+                var tabId = $(this).attr("toggle-tab-id")
+                console.log(tabId)
+                $(".product-lineup-tab").hide()
+                $(`#${tabId}`).fadeIn()
+                $(`#${tabId}`).find(".tab-image").first().show()
+                $(".product-lineup-toggle-tab-btn").removeClass("product-lineup-toggle-tab-btn-active")
+                $(this).addClass("product-lineup-toggle-tab-btn-active")
+
+
+            })
+
+            $("#TruGreenCoreApp").find("img").first().show()
+            $("#Nexus").find("img").first().show()
+            $("#Flow").find("img").first().show()
+            $("#Assure").find("img").first().show()
+            $("#Horizon").find("img").first().show()
+            $("#Pulse").find("img").first().show()
+            $("#SolarVisionAI").find("img").first().show()
+
+        });
+
+    </script>
+
+    <script>
+        $(window).on('load scroll', function () {
+            const $logo = $('.brand-logo-1');
+            const $navbar = $('.navbar');
+
+            let newSrc = $navbar.hasClass('sticky') && $navbar.hasClass('visible')
+                ? './img/brand-logo/trugreen-logo-3.png'
+                : './img/brand-logo/truGreenLogo.png';
+
+            if ($logo.attr('src') !== newSrc) {
+                $logo.fadeOut(200, function () {
+                    $logo.attr('src', newSrc).fadeIn(200);
+                });
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TTGKQP9" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand">
+                <img src="./img/brand-logo/Truboard-Cleantech-logo-white-08.png" alt="" srcset="">
+            </a>
+            <nav class="desktop-nav">
+                <ul class="primary-nav">
+                    <li class="nav-item">
+                        <a href="Asset-Lifecycle-Management.html" class="nav-link"> Asset Lifecycle Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Trugreen.html" class="nav-link">TruGreen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="TruEleqtric.html" class="nav-link">TruEleqtric</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resources.html" class="nav-link">Resource</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="resources.html" class="nav-link">Resource</a>
+                    </li> -->
+                </ul>
+            </nav>
+            <span class="desktop-nav">
+                <span class="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                    <div class="option-dropdown-wrapper">
+                        <div class="option-dropdown">
+                            <ul class="option-dropdown-list">
+                                <li class="option-dropdown-item"><a href="./About-us.html"
+                                        class="option-dropdown-link">About Us</a>
+                                </li>
+                                <li class="option-dropdown-item"><a href="./Career.html"
+                                        class="option-dropdown-link">Career</a></li>
+                                <li class="option-dropdown-item"><a href="./Contact-us.html"
+                                        class="option-dropdown-link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+            </span>
+
+
+            <span class="mobile-menu-btn mobile-nav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+                <div class="option-dropdown-wrapper">
+                    <div class="option-dropdown">
+                        <ul class="option-dropdown-list">
+                            <li class="option-dropdown-item"><a href="./Asset-Lifecycle-Management.html"
+                                    class="option-dropdown-link">Asset Lifecycle Management</a>
+                            </li>
+                            <li class="option-dropdown-item"><a href="./Trugreen.html"
+                                    class="option-dropdown-link">TruGreen</a>
+                            </li>
+
+                            <li class="option-dropdown-item"><a href="./TruEleqtric.html"
+                                    class="option-dropdown-link">TruEleqtric</a>
+                            </li>
+                            <li class="option-dropdown-item"><a href="./resources.html" class="option-dropdown-link">
+                                    Resource
+                                </a>
+                            </li>
+                            <!-- starts normal pages  -->
+                            <li class="option-dropdown-item"><a href="./About-us.html"
+                                    class="option-dropdown-link">About Us</a>
+                            </li>
+                            <li class="option-dropdown-item"><a href="./Career.html"
+                                    class="option-dropdown-link">Career</a></li>
+                            <li class="option-dropdown-item"><a href="./Contact-us.html"
+                                    class="option-dropdown-link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </span>
+
+        </div>
+    </div>
+
+    <section class="hero-section">
+        <!-- <video autoplay muted loop id="hero-video" class="hero-section-img">
+            <source src="./videos/hero-section-video-blue.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+        <img src="./img/resources/main-banner.jpg" alt="" class="hero-section-img desktop-nav">
+        <img src="./img/banners/sample-banner-all-pages-phone.jpg" alt="" class="hero-section-img mobile-nav">
+
+        <!-- <img src="./img/banners/trugreen-banner.png" alt="" class="hero-section-img"> -->
+        <div class="container">
+            <div class="content-info-wrapper">
+                <div class="content-info desktop-nav">
+                    <h1 class="content-info-item content-info-item-title hero-heading-other-pages hero-section-title ">
+                        Insights, Trends, and Tools for the Cleantech Future
+                    </h1>
+                    <p
+                        class="content-info-item content-info-item-caption hero-sub-heading-all-pages hero-section-description">
+                        Stay informed with our latest articles, guides, reports, and industry updates.
+                    </p>
+
+                </div>
+                <div class="content-info mobile-nav">
+                    <h1 class="content-info-item content-info-item-title hero-heading-other-pages hero-section-title ">
+                        Shaping Tomorrow's Energy: Trends, Tools, and Insights That Matter
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="article-section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-header-title desktop-nav">
+                    Driving Sustainable Development: TruBoard Partners’ Contribution to India/South Asia’s
+                    Infrastructure Growth – Rakesh Kalsi, Managing Director, Infrastructure Practice, TruBoard Partners
+                </h1>
+            </div>
+            <div class="article-wrapper">
+                <div class="article-img-wrapper desktop-nav">
+                    <!-- <img src="./img/article-img/20241007125244.avif" alt="" class="article-img"> -->
+                </div>
+                <p class="article-date">
+                    Published | 8th August 2023
+                </p>
+                <p>
+                    Can you please provide an overview of TruBoard Partners’ infrastructure practice in India/South
+                    Asia? How does the company contribute to the development of the region’s infrastructure?
+                </p>
+                <p>
+                    TruBoard Partners specializes in developing comprehensive monitoring solutions for investors in
+                    Infrastructure space. Our cloud-based technology platform combines sector and product expertise to
+                    support smarter post-investment decision-making. We provide Asset Management (AM) services in India
+                    with a focus on renewables, aiming to improve the asset and benefit the local area. To date, our
+                    portfolio covers 1GW of solar assets and 600km of Road assets. Our goal is to expand our Asset
+                    Management services into other infrastructure sectors like T&D, airports, Highways, Ports, etc.
+                    worldwide.
+                </p>
+                <p>
+                    As the Managing Director, what key projects or initiatives have TruBoard Partners undertaken in
+                    recent years that you consider significant accomplishments? How have these projects impacted the
+                    local communities and the region as a whole?
+                </p>
+                <p>
+                    TruBoard Partners has successfully completed several initiatives and projects in recent years that
+                    have had a positive impact on stakeholders. Some of our most important projects include:
+                </p>
+                <ul>
+                    <li>
+                        Partnering with a local staffing and training agency to provide job training and employment
+                        opportunities for individuals.
+                    </li>
+                    <li>
+                        Ensured cross-regional workshops and site visits for employees and active participation in
+                        product development to meet the expectations of clients and stakeholders. This will result in
+                        shortening the learning curve and faster delivery of the Product that we are developing
+                        in-house. Hosting and participating in events for networking and potential collaborations.
+                    </li>
+                </ul>
+                <p>
+                    Could you share some of the latest technology trends that are shaping the infrastructure landscape
+                    in India/South Asia? How are TruBoard Partners embracing and leveraging these trends to drive
+                    success?
+                </p>
+
+                <p>
+                    Some of the latest technology trends that are shaping the infrastructure landscape in India/South
+                    Asia include:
+                </p>
+                <ol style="display: grid; gap: 1em;">
+                    <li>
+                        Cloud Technology, Artificial Intelligence (AI) & Machine Learning(ML): Companies are continuing
+                        to adopt cloud technologies, such as Infrastructure-as-a-Service (IaaS), Platform-as-a-Service
+                        (PaaS), and Software-as-a-Service (SaaS), to reduce their capital and operational costs.AI and
+                        Machine Learning (ML) technologies are also becoming widely adopted in India/South Asia.
+                        <br>
+                        These technologies are enabling smarter decision-making, predictive analytics, and
+                        personalization of services for customers.
+                    </li>
+                    <li>
+                        New Technologies in Energy Sector like Hydrogen, large scale Biomass and grid enhancing Battery
+                        Storage.
+                    </li>
+                    <li>
+                        Electrification of public transportation: the electrification of public transportation can
+                        contribute to India’s goal of achieving greater energy independence by reducing its dependency
+                        on oil imports. It reduces emissions of greenhouse gasses which are largely responsible for
+                        climate change, as well as air and noise pollution. Additionally, electrification of public
+                        transportation can significantly reduce operational and maintenance costs and result in better
+                        cost-efficiency for transit authorities.
+                        <br>
+                        TruBoard Partners embraces and leverages these technologies in order to leverage the advantages
+                        offered by these technologies. They are providing products and services that can be integrated
+                        with existing infrastructure to make them more efficient. Through this, TruBoard Partners are
+                        helping businesses to reduce their operational costs and increase their capabilities. They are
+                        also helping businesses to enhance their customer experience with the help of these
+                        technologies.
+                    </li>
+                </ol>
+                <p>
+                    In a competitive market, differentiation is key. How does TruBoard Partners differentiate itself
+                    from other infrastructure firms operating in India/South Asia? What unique value does the company
+                    bring to its clients and partners?
+                </p>
+                <p>
+                    Asset Management as a Service is our niche offering to capital providers. Our Phygital approach is
+                    our USP and differentiates us from others and delivers a plug and play to investors. We are the only
+                    platform that combines finance, operations and engineering to provide a holistic approach. Our
+                    pillars of revenue enhancement, cost optimization and asset integrity help asset owners/investors to
+                    use the TruBoard Platform as a “One Source of Truth”.
+                </p>
+                <p>
+                    How does TruBoard Partners approach risk management in its projects? Can you share a scenario where
+                    proactive risk management played a critical role in the success of a project?
+                </p>
+                <p>
+                    We believe risk management is one of the key pillars of asset management. TruBoard approach is
+                    focused on building a “predictive approach” to risk that combines various aspects of the projects
+                    into a data-based predictive model. Our data-driven approach has reduced soiling losses, reduced
+                    payment days and ensured faster uptimes for our projects.
+                </p>
+                <p>
+                    What are the key priorities and strategic goals for TruBoard Partners’ infrastructure practice in
+                    India/South Asia? How do you envision the company’s growth and impact on the region’s infrastructure
+                    development in the coming years?
+                </p>
+                <p>
+                    As a specialized asset management solutions provider TruBoard will continue to focus on improving
+                    investor IRR. With Asia being increasingly reliant on renewables, we believe our focus on
+                    engineering and performance analytics will help investors manage their portfolios better.
+                </p>
+                <p>
+                    Our areas would broadly include:
+                </p>
+                <p>
+                    (i) Focus on Energy Transition and related opportunities. (ii) Leveraging new and latest
+                    technologies. (iii) Reach Beyond Boundaries and Geographies
+                </p>
+
+                <a href="resources.html?Id=articles" class="read-more-article-cta">
+                    CLICK HERE FOR MORE ARTICLES
+                    <span class="cta-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30" fill="none">
+                            <path
+                                d="M14 1C21.4395 1 27.5 7.25133 27.5 15C27.5 22.7487 21.4395 29 14 29C6.56055 29 0.5 22.7487 0.5 15C0.5 7.25133 6.56055 1 14 1Z"
+                                fill="white" stroke="#063E63" />
+                            <path
+                                d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                fill="#063E63" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-brand">
+                <div class="footer-logo-wrapper">
+                    <img src="./img/brand-logo/Truboard-Cleantech-logo-white-08.png" alt="" srcset="">
+                </div>
+
+                <div class="social-icons">
+                    <a href="mailto:contact@truboardpartners.com" class="social-link">
+                        <img src="./icons/message-icon-2.png" alt="" srcset="">
+                    </a>
+                    <!-- <a href="#" class="social-link">
+                        <img src="./icons/x-icon-2.png" alt="" srcset="">
+                    </a> -->
+                    <a href="https://www.linkedin.com/company/truboard-partners/posts/?feedView=all"
+                        class="social-link">
+                        <img src="./icons/linkedIn-icon-2.png" alt="" srcset="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <div class="footer-menu">
+                    <h4 class="footer-menu-title">Useful links</h4>
+                    <ul class="footer-menu footer-flex">
+                        <li class="footer-menu-item">
+                            <a href="./index.html" class="footer-menu-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./Trugreen.html" class="footer-menu-link">
+                                TruGreen
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./Asset-Lifecycle-Management.html" class="footer-menu-link">
+                                Assets Lifecycle Management
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./TruEleqtric.html" class="footer-menu-link">
+                                TruEleqtric
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-menu-link">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-contact-wrpaper">
+                <div class="footer-content-title footer-menu-title">
+                    Get in Touch
+                </div>
+                <p class="footer-content-address">
+                    Unit 502-506, 5th Floor, UNITECH COMMERCIAL TOWER 2, Arya Samaj Road, Block B, Greenwood City,
+                    Sector 45, Gurugram, Haryana 122003
+                </p>
+                <a href="Contact-us.html#letsConnect" class="footer-contact-cta">
+                    Contact Now
+                </a>
+            </div>
+        </div>
+
+            <div class="footer-copyright">
+            <div class="col-left">
+                 <a href="privacy-policy.html" class="footer-cta">
+                    Privacy policy
+                </a>
+            </div>
+            <div class="col-right">
+                <a href="#" class="footer-cta" style="display: none;">
+                    Privacy policy
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="col-left">
+                <p class="footer-primary-text">
+                    &copy; All Rights Reserved by TruBoard Cleantech Private Limited
+                </p>
+                <p class="footer-secondary-text">
+                    Subsidiary of TruBoard Private Limited
+                </p>
+            </div>
+            <div class="col-right">
+                <a href="#" class="footer-cta" style="display: none;">
+                    Privacy policy
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 4,
+                    spaceBetween: 10
+                }
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.product-lineup-swiper-next',
+                prevEl: '.product-lineup-swiper-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+
+    </script>
+
+    <script>
+
+        // for the cto headings 
+        const productHeadings = {
+            trugreenCoreApp: "Ready to revolutionize renewable asset management & monitoring?",
+            nexus: "Ready to revolutionize renewable procurement?",
+            flow: "Ready to transform your renewable site operations?",
+            assure: "Ensure compliance and mitigate risk in your renewable projects.",
+            horizon: "Optimize your renewable energy forecasts and reduce penalties today.",
+            pulse: "Unlock comprehensive insights for your renewable energy portfolio.",
+            solarvisionai: "Transform your solar plant diagnostics today."
+        };
+
+        // Single function to handle product headings
+        function handleProductHeading(productId) {
+            const headingContainer = document.getElementById("product-cto-heading");
+            if (!headingContainer) return;
+
+            // Convert productId to lowercase and remove any special characters
+            const normalizedId = productId.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+            // Map the normalized ID to the correct key in productHeadings
+            const keyMap = {
+                'trugreencoreapp': 'trugreenCoreApp',
+                'nexus': 'nexus',
+                'flow': 'flow',
+                'assure': 'assure',
+                'horizon': 'horizon',
+                'pulse': 'pulse',
+                'solarvisionai': 'solarvisionai'
+            };
+
+            // Update heading text using the mapped key
+            headingContainer.textContent = productHeadings[keyMap[normalizedId]] || "";
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener("DOMContentLoaded", () => {
+            // Set initial heading
+            handleProductHeading("trugreenCoreApp");
+
+            // Add click handlers for product buttons
+            document
+                .querySelectorAll(".product-lineup-toggle-tab-btn")
+                .forEach((button) => {
+                    button.addEventListener("click", () => {
+                        // Get the product ID from the toggle-tab-id attribute
+                        const productId = button.getAttribute("toggle-tab-id");
+                        if (productId) {
+                            handleProductHeading(productId);
+                        }
+                    });
+                });
+        });
+        AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- <script>
+        $(document).ready(function () {
+            function setCardsCenter($clicked) {
+                const $cards = $('.card-slider .card');
+                const index = $cards.index($clicked);
+
+                let order = [];
+                if (index === 0) {
+                    order = [$cards.eq(1), $cards.eq(0), $cards.eq(2)];
+                } else if (index === 1) {
+                    order = [$cards.eq(0), $cards.eq(1), $cards.eq(2)];
+                } else if (index === 2) {
+                    order = [$cards.eq(1), $cards.eq(2), $cards.eq(0)];
+                }
+
+                $('.card-slider').fadeOut(150, function () {
+                    $(this).html(order).fadeIn(150);
+                    setTimeout(() => {
+                        $('.card-slider .card').removeClass('active price-and-plan-card-active');
+                        $('.card-slider .card').eq(1).addClass('active price-and-plan-card-active');
+                    }, 150);
+                });
+            }
+
+            // Set initial active
+            $('.card-slider .card').eq(1).addClass('active price-and-plan-card-active');
+
+            // Click handler
+            $(document).on('click', '.card-slider .card', function () {
+                setCardsCenter($(this));
+            });
+        });
+    </script> -->
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            function setCardsCenter($clicked, $wrapper) {
+                const $cards = $wrapper.find('.card');
+                const index = $cards.index($clicked);
+
+                let order = [];
+                if (index === 0) {
+                    order = [$cards.eq(1), $cards.eq(0), $cards.eq(2)];
+                } else if (index === 1) {
+                    order = [$cards.eq(0), $cards.eq(1), $cards.eq(2)];
+                } else if (index === 2) {
+                    order = [$cards.eq(1), $cards.eq(2), $cards.eq(0)];
+                }
+
+                $wrapper.fadeOut(150, function () {
+                    $(this).html(order).fadeIn(150);
+                    setTimeout(() => {
+                        const $newCards = $(this).find('.card');
+                        $newCards.removeClass('active price-and-plan-card-active');
+                        $newCards.eq(1).addClass('active price-and-plan-card-active');
+                    }, 150);
+                });
+            }
+
+            // Set initial active for all sliders
+            $('.card-slider').each(function () {
+                $(this).find('.card').eq(1).addClass('active price-and-plan-card-active');
+            });
+
+            // Click handler for all sliders
+            $(document).on('click', '.card-slider .card', function () {
+                const $clicked = $(this);
+                const $wrapper = $clicked.closest('.card-slider');
+                setCardsCenter($clicked, $wrapper);
+            });
+        });
+    </script> -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Set initial active card (middle one) for each slider
+            $('.card-slider').each(function () {
+                $(this).find('.card').eq(1).addClass('active price-and-plan-card-active product-lineup-toggle-tab-btn-active');
+            });
+
+            // Handle click on any card inside any card-slider
+            $(document).on('click', '.card-slider .card', function () {
+                const $clicked = $(this);
+                const $slider = $clicked.closest('.card-slider');
+
+                // Remove classes from all cards in this slider
+                $slider.find('.card').removeClass('active price-and-plan-card-active product-lineup-toggle-tab-btn-active');
+
+                // Add classes to the clicked card
+                $clicked.addClass('active price-and-plan-card-active product-lineup-toggle-tab-btn-active');
+            });
+        });
+    </script>
+
+    <script src="js/common-script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>

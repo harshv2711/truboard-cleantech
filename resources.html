@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ajax.googleapis.com https://code.jquery.com https://unpkg.com https://cdn.jsdelivr.net;">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5TTGKQP9');</script>
+<!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js)Start --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVRGSNLJ4G"></script> 
+    <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-CVRGSNLJ4G'); </script>
+    <!-- Google tag (gtag.js)End -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <!-- <link rel="stylesheet" href="./css/truGreen.css"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Resources & Insights | TruBoard Cleantech</title>
+    <meta name="keywords" content="TruBoard Cleantech, cleantech resources, renewable energy case studies, industry whitepapers, project management guides, expert insights">
+     
+     <meta name="description" content="Resources & Insights: access whitepapers, case studies, and expert guides from TruBoard Cleantech to drive better decisions in renewable energy project management.">
+    <link rel="stylesheet" href="./css/resource.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".case-study-thumbnail-img").first().show()
+            $('.case-study').click(function () {
+                // Get the id from the 'for' attribute of the clicked label
+                const targetId = $(this).attr('for');
+
+                // Hide all images first
+                $('.case-study-thumbnail-img').hide();
+
+                // Show the one matching the target id
+                $('#' + targetId).fadeToggle();
+            });
+        });
+
+        $(document).ready(function () {
+            $('.toggle-tab-btn').on('click', function () {
+                const targetId = $(this).attr('for');
+                $(".toggle-tab-btn").removeClass("toggle-tab-btn-active")
+                $(this).addClass("toggle-tab-btn-active")
+
+                // Hide all tab contents
+                $('.tab-content').hide();
+
+                // Show the selected tab content
+                $('#' + targetId).fadeToggle();
+
+
+            });
+
+            // Optionally trigger the first tab by default
+            $('.toggle-tab-btn').first().click();
+        });
+
+        $(document).ready(function () {
+            let animated = false;
+
+            function animateCounters() {
+                $('.number').each(function () {
+                    const $this = $(this);
+                    const countTo = parseFloat($this.attr('data-count'));
+                    const isMoney = $this.text().includes('$');
+                    const decimalPlaces = countTo % 1 !== 0 ? 1 : 0;
+                    let suffix = '';
+
+                    // Get the class name to determine the suffix
+                    const className = $this.attr('class').split(' ')[1]; // Get the second class (gw, bn, mw)
+                    if (className) {
+                        suffix = className.toUpperCase() + '+';
+                        // if(suffix)
+                    }
+
+                    $({ val: 0 }).animate(
+                        { val: countTo },
+                        {
+                            duration: 2000,
+                            easing: 'swing',
+                            step: function (now) {
+                                const formatted = now.toFixed(decimalPlaces);
+                                if (isMoney) {
+                                    $this.text(formatted + '$');
+                                } else {
+                                    if (suffix == 'BN+') {
+                                        $this.text('USD ' + formatted + ' ' + suffix);
+                                    } else {
+                                        $this.text(formatted + ' ' + suffix);
+                                    }
+                                }
+                            },
+                            complete: function () {
+                                const formatted = countTo.toFixed(decimalPlaces);
+                                if (isMoney) {
+                                    $this.text(formatted + '$');
+                                } else {
+                                    if (suffix == 'BN+') {
+                                        $this.text('USD ' + formatted + ' ' + suffix);
+                                    } else {
+                                        $this.text(formatted + ' ' + suffix);
+                                    }
+                                }
+                            }
+                        }
+                    );
+                });
+            }
+
+            function isElementInViewport(el) {
+                if (!el) return false;
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top < window.innerHeight &&
+                    rect.bottom > 0
+                );
+            }
+
+            $(window).on('scroll', function () {
+                const $recordGrid = document.querySelector('.record-grid');
+                if (isElementInViewport($recordGrid)) {
+                    if (!animated) {
+                        animateCounters();
+                        animated = true;
+                    }
+                } else {
+                    animated = false;
+                }
+            });
+
+            // Optional: check if already in view on load
+            $(window).trigger('scroll');
+
+        }); 
+    </script>
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TTGKQP9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand">
+                <img src="./img/brand-logo/Truboard-Cleantech-logo-white-08.png" alt="" srcset="">
+            </a>
+            <nav class="desktop-nav">
+                <ul class="primary-nav">
+                    <li class="nav-item">
+                        <a href="Asset-Lifecycle-Management.html" class="nav-link"> Asset Lifecycle Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Trugreen.html" class="nav-link">TruGreen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="TruEleqtric.html" class="nav-link">TruEleqtric</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resources.html" class="nav-link active">Resource</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="resources.html" class="nav-link">Resource</a>
+                    </li> -->
+                </ul>
+            </nav>
+            <span class="desktop-nav">
+                <span class="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                    <div class="option-dropdown-wrapper">
+                        <div class="option-dropdown">
+                            <ul class="option-dropdown-list">
+                                <li class="option-dropdown-item"><a href="./About-us.html"
+                                        class="option-dropdown-link"><span>About Us</span></a>
+                                </li>
+                                <li class="option-dropdown-item"><a href="./Career.html"
+                                        class="option-dropdown-link"><span>Career</span></a></li>
+                                <li class="option-dropdown-item"><a href="./Contact-us.html"
+                                        class="option-dropdown-link"><span>Contact Us</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+            </span>
+
+
+            <span class="mobile-menu-btn mobile-nav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+                <div class="option-dropdown-wrapper">
+                    <div class="option-dropdown">
+                        <ul class="option-dropdown-list">
+                             <li class="option-dropdown-item"><a href="./Asset-Lifecycle-Management.html"
+                                    class="option-dropdown-link"><span>Asset Lifecycle Management</span>
+                                </a>
+                            </li>
+                            <li class="option-dropdown-item"><a href="./Trugreen.html"
+                                    class="option-dropdown-link"><span>TruGreen</span>
+                                </a>
+                            </li>
+                           
+                            <li class="option-dropdown-item"><a href="./TruEleqtric.html"
+                                    class="option-dropdown-link"><span>TruEleqtric</span>
+                                </a>
+                            </li>
+                            <li class="option-dropdown-item"><a href="./resources.html" class="option-dropdown-link">
+                                    <span class="active">Resource</span>
+                                </a>
+                            </li>
+                            <!-- starts normal pages  -->
+                            <li class="option-dropdown-item"><a href="./About-us.html"
+                                    class="option-dropdown-link"><span>About Us</span></a>
+                            </li>
+                            <li class="option-dropdown-item"><a href="./Career.html"
+                                    class="option-dropdown-link"><span>Career</span></a></li>
+                            <li class="option-dropdown-item"><a href="./Contact-us.html"
+                                    class="option-dropdown-link"><span>Contact Us</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </span>
+
+        </div>
+    </div>
+
+    <section class="hero-section">
+        <!-- <video autoplay muted loop id="hero-video" class="hero-section-img">
+            <source src="./videos/hero-section-video-blue.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+        <img src="./img/resources/main-banner.jpg" alt="" class="hero-section-img desktop-nav">
+        <img src="./img/Mobile-banners/Resource-Page.png" alt="" class="hero-section-img mobile-nav">
+
+        <!-- <img src="./img/banners/trugreen-banner.png" alt="" class="hero-section-img"> -->
+        <div class="container">
+            <div class="content-info-wrapper">
+                <div class="content-info">
+                    <h1 class="content-info-item content-info-item-title hero-heading-other-pages hero-section-title ">
+                        Insights, Trends, and Tools for the Cleantech Future
+                    </h1>
+                    <p
+                        class="content-info-item content-info-item-caption hero-sub-heading-all-pages hero-section-description">
+                        Stay informed with our latest articles, guides, reports,
+                        and industry updates.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="tabs">
+                <button class="tab blogs active" onclick="showTab('blogs', event)">Blogs</button>
+                <button class="tab articles" onclick="showTab('articles', event)">Articles</button>
+                <!-- <button class="tab case-study-main" onclick="showTab('case-studies', event)">Case Studies</button> -->
+            </div>
+
+
+            <!-- Cards -->
+            <div class="normal-container blogs-container">
+                <div class="cards-container active" id="blogs">
+                    <!-- <span class="desktop-nav"> -->
+                        <!-- <div class="cards-wrapper artical-cards-scroll-funtion desktop-nav"> -->
+                            <!-- Blog cards will be dynamically inserted here -->
+                        <!-- </div> -->
+                    <!-- </span> -->
+                     <div class="blogs-grid">
+                        <div class="card">
+                                    <img src="./img/resources/Group.svg" alt="The Future Of Solar Energy Management">
+                                    <div class="card-content">
+                                        <h4>Why India’s Power Prices Dropped to Zero: The Story Behind the IEX Shock</h4>
+                                        <div class="date">May 28, 2025</div>
+                                        <p>
+                                            A sharp drop in electricity demand, combined with a flood of last-minute... </p>
+                                        <a href="./why_india_power_prices_dropped_to_zero_the_story_behind_the_iex_shock.html">
+                                            <button>Read More</button>
+                                        </a>
+                                    </div>
+                                </div>
+                     </div>
+
+                    <!-- <span class="mobile-nav">
+                        <div class="artical-cards-scroll-funtion cards-wrapper">
+                            <div class="card-row">
+                                <div class="card">
+                                    <img src="./img/resources/Group.svg" alt="The Future Of Solar Energy Management">
+                                    <div class="card-content">
+                                        <h4>Why India’s Power Prices Dropped to Zero: The Story Behind the IEX Shock</h4>
+                                        <div class="date">May 28, 2025</div>
+                                        <p>
+                                            A sharp drop in electricity demand, combined with a flood of last-minute... </p>
+                                        <a href="/why_india’s_power_prices_dropped_to_zero:_the_story_behind_the_iex_shock.html">
+                                            <button>Read More</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span> -->
+                </div>
+                <!-- <div class="scroll-indicator" onclick="loadMoreCards()">
+                    SCROLL FOR MORE
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                            <path
+                                d="M28.5 14C28.5 21.4395 22.2487 27.5 14.5 27.5C6.75133 27.5 0.499999 21.4395 0.499999 14C0.5 6.56055 6.75133 0.499999 14.5 0.499999C22.2487 0.5 28.5 6.56055 28.5 14Z"
+                                fill="white" stroke="#063E63" />
+                            <path
+                                d="M13.4697 19.5303C13.7626 19.8232 14.2374 19.8232 14.5303 19.5303L19.3033 14.7574C19.5962 14.4645 19.5962 13.9896 19.3033 13.6967C19.0104 13.4038 18.5355 13.4038 18.2426 13.6967L14 17.9393L9.75736 13.6967C9.46447 13.4038 8.98959 13.4038 8.6967 13.6967C8.40381 13.9896 8.40381 14.4645 8.6967 14.7574L13.4697 19.5303ZM13.25 9.5L13.25 19L14.75 19L14.75 9.5L13.25 9.5Z"
+                                fill="#063E63" />
+                        </svg>
+                    </span>
+                </div> -->
+            </div>
+
+
+            <div class="cards-container" id="articles">
+                <div class="artical-cards-scroll-funtion article-container">
+                        <div class="article-card">
+                            <img src="./img/resources/article-1-thumbnail-img.png" alt="" class="article-thumbnail-img">
+                            <div class="article-info-wrapper">
+                                <div class="article-info">
+                                    <h1 class="article-info-item article-info-title">
+                                    TruBoard Partners Launches TruGreen, a Cloud-Based Platform for...
+                                    <a href="https://www.business-standard.com/content/press-releases-ani/truboard-partners-launches-trugreen-a-cloud-based-platform-for-end-to-end-renewable-energy-asset-management-at-rei-expo-2024-124100700410_1.html" class="article-cta" target="_blank">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-card">
+                            <img src="./img/resources/blogs/thumbnail-3.jpg" alt="" class="article-thumbnail-img">
+                            <div class="article-info-wrapper">
+                                <div class="article-info">
+                                    <h1 class="article-info-item article-info-title">
+                                    Truboard to increase renewable assets under management...
+                                    <a href="https://www.ndtvprofit.com/markets/truboard-to-increase-renewable-assets-under-management-to-5-billion-by-2025" class="article-cta" target="_blank">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-card">
+                            <img src="./img/article-img/article-2-thumbnail-img.png" alt="" class="article-thumbnail-img">
+                            <div class="article-info-wrapper">
+                                <div class="article-info">
+                                    <h1 class="article-info-item article-info-title">
+                                    India’s ‘TruBoard Partners’ Enters Strategic Partnership...
+                                    <a href="https://solarquarter.com/2023/08/11/indias-truboard-partners-enters-strategic-partnership-with-norways-bazefield-to-enhance-renewable-asset-management/" class="article-cta" target="_blank">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-card">
+                            <img src="./img/article-img/thumbnail-1.jpg" alt="" class="article-thumbnail-img">
+                            <div class="article-info-wrapper">
+                                <div class="article-info">
+                                    <h1 class="article-info-item article-info-title">
+                                    Driving Sustainable Development: TruBoard Partners...
+                                    <a href="https://solarquarter.com/2023/08/08/driving-sustainable-development-truboard-partners-contribution-to-india-south-asias-infrastructure-growth-rakesh-kalsi-managing-director-infrastructure-practice-truboard-partners/" class="article-cta" target="_blank">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="scroll-indicator" onclick="loadMoreCards_artical()">
+                    SCROLL FOR MORE
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                            <path
+                                d="M28.5 14C28.5 21.4395 22.2487 27.5 14.5 27.5C6.75133 27.5 0.499999 21.4395 0.499999 14C0.5 6.56055 6.75133 0.499999 14.5 0.499999C22.2487 0.5 28.5 6.56055 28.5 14Z"
+                                fill="white" stroke="#063E63" />
+                            <path
+                                d="M13.4697 19.5303C13.7626 19.8232 14.2374 19.8232 14.5303 19.5303L19.3033 14.7574C19.5962 14.4645 19.5962 13.9896 19.3033 13.6967C19.0104 13.4038 18.5355 13.4038 18.2426 13.6967L14 17.9393L9.75736 13.6967C9.46447 13.4038 8.98959 13.4038 8.6967 13.6967C8.40381 13.9896 8.40381 14.4645 8.6967 14.7574L13.4697 19.5303ZM13.25 9.5L13.25 19L14.75 19L14.75 9.5L13.25 9.5Z"
+                                fill="#063E63" />
+                        </svg>
+                    </span>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="cards-container" id="case-studies">
+                <div class="case-study-row">
+                    <div class="col-left">
+                        <div class="case-studies-container">
+                            <div class="case-studies">
+                                <label for="case-study-1" class="case-study">
+                                    <div class="col-left">
+                                        <h1 class="case-study-title">
+                                            Case Study 1: TruBuyer - Transforming Renewable Procurement
+                                        </h1>
+                                    </div>
+                                    <div class="col-right">
+                                        <h5 class="date">08 April, 2025</h5>
+                                        <a href="#" class="read-more-cta">
+                                            READ MORE
+                                        </a>
+                                    </div>
+                                </label>
+                                <label for="case-study-2" class="case-study">
+                                    <div class="col-left">
+                                        <h1 class="case-study-title">
+                                            Case Study 2: TruOps - Centralizing Renewable Site Operations
+                                        </h1>
+                                    </div>
+                                    <div class="col-right">
+                                        <h5 class="date">08 April, 2025</h5>
+                                        <a href="#" class="read-more-cta">
+                                            READ MORE
+                                        </a>
+                                    </div>
+                                </label>
+                                <label for="case-study-3" class="case-study">
+                                    <div class="col-left">
+                                        <h1 class="case-study-title">
+                                            Case Study 3: TruCovenant - Streamlining Renewable Compliance
+                                        </h1>
+                                    </div>
+                                    <div class="col-right">
+                                        <h5 class="date">08 April, 2025</h5>
+                                        <a href="#" class="read-more-cta">
+                                            READ MORE
+                                        </a>
+                                    </div>
+                                </label>
+                                <label for="case-study-1" class="case-study">
+                                    <div class="col-left">
+                                        <h1 class="case-study-title">
+                                            Case Study 1: TruBuyer - Transforming Renewable Procurement
+                                        </h1>
+                                    </div>
+                                    <div class="col-right">
+                                        <h5 class="date">08 April, 2025</h5>
+                                        <a href="#" class="read-more-cta">
+                                            READ MORE
+                                        </a>
+                                    </div>
+                                </label>
+                                <label for="case-study-2" class="case-study">
+                                    <div class="col-left">
+                                        <h1 class="case-study-title">
+                                            Case Study 2: TruOps - Centralizing Renewable Site Operations
+                                        </h1>
+                                    </div>
+                                    <div class="col-right">
+                                        <h5 class="date">08 April, 2025</h5>
+                                        <a href="#" class="read-more-cta">
+                                            READ MORE
+                                        </a>
+                                    </div>
+                                </label>
+                                <label for="case-study-3" class="case-study">
+                                    <div class="col-left">
+                                        <h1 class="case-study-title">
+                                            Case Study 3: TruCovenant - Streamlining Renewable Compliance
+                                        </h1>
+                                    </div>
+                                    <div class="col-right">
+                                        <h5 class="date">08 April, 2025</h5>
+                                        <a href="#" class="read-more-cta">
+                                            READ MORE
+                                        </a>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="scroll-indicator" onclick="loadMoreCaseStudies()">
+                            SCROLL FOR MORE
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
+                                    fill="none">
+                                    <path
+                                        d="M28.5 14C28.5 21.4395 22.2487 27.5 14.5 27.5C6.75133 27.5 0.499999 21.4395 0.499999 14C0.5 6.56055 6.75133 0.499999 14.5 0.499999C22.2487 0.5 28.5 6.56055 28.5 14Z"
+                                        fill="white" stroke="#063E63" />
+                                    <path
+                                        d="M13.4697 19.5303C13.7626 19.8232 14.2374 19.8232 14.5303 19.5303L19.3033 14.7574C19.5962 14.4645 19.5962 13.9896 19.3033 13.6967C19.0104 13.4038 18.5355 13.4038 18.2426 13.6967L14 17.9393L9.75736 13.6967C9.46447 13.4038 8.98959 13.4038 8.6967 13.6967C8.40381 13.9896 8.40381 14.4645 8.6967 14.7574L13.4697 19.5303ZM13.25 9.5L13.25 19L14.75 19L14.75 9.5L13.25 9.5Z"
+                                        fill="#063E63" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <img id="case-study-1" class="case-study-thumbnail-img" src="./img/case-study/case-study-1.png"
+                            alt="" srcset="">
+                        <img id="case-study-2" class="case-study-thumbnail-img" src="./case-study/case-study-2.jpg"
+                            alt="" srcset="">
+                        <img id="case-study-3" class="case-study-thumbnail-img" src="./case-study/case-study-3.jpg"
+                            alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-brand">
+                <div class="footer-logo-wrapper">
+                    <img src="./img/brand-logo/Truboard-Cleantech-logo-white-08.png" alt="" srcset="">
+                </div>
+
+                <div class="social-icons">
+                    <a href="mailto:contact@truboardpartners.com" class="social-link">
+                        <img src="./icons/message-icon-2.png" alt="" srcset="">
+                    </a>
+                    <!-- <a href="#" class="social-link">
+                        <img src="./icons/x-icon-2.png" alt="" srcset="">
+                    </a> -->
+                    <a href="https://www.linkedin.com/company/truboard-partners/posts/?feedView=all"
+                        class="social-link">
+                        <img src="./icons/linkedIn-icon-2.png" alt="" srcset="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <div class="footer-menu">
+                    <h4 class="footer-menu-title">Useful links</h4>
+                    <ul class="footer-menu footer-flex">
+                        <li class="footer-menu-item">
+                            <a href="./index.html" class="footer-menu-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./Trugreen.html" class="footer-menu-link">
+                                TruGreen
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./Asset-Lifecycle-Management.html" class="footer-menu-link">
+                                Assets Lifecycle Management
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./TruEleqtric.html" class="footer-menu-link">
+                                TruEleqtric
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-menu-link">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-contact-wrpaper">
+                <div class="footer-content-title footer-menu-title">
+                    Get in Touch
+                </div>
+                <p class="footer-content-address">
+                    Unit 502-506, 5th Floor, UNITECH COMMERCIAL TOWER 2, Arya Samaj Road, Block B, Greenwood City, Sector 45, Gurugram, Haryana 122003
+                </p>
+                <a href="Contact-us.html#letsConnect" class="footer-contact-cta">
+                    Contact Now
+                </a>
+            </div>
+        </div>
+
+            <div class="footer-copyright">
+            <div class="col-left">
+                 <a href="privacy-policy.html" class="footer-cta">
+                    Privacy policy
+                </a>
+            </div>
+            <div class="col-right">
+                <a href="#" class="footer-cta" style="display: none;">
+                    Privacy policy
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="col-left">
+                <p class="footer-primary-text">
+                    &copy; All Rights Reserved by TruBoard Cleantech Private Limited
+                </p>
+                <p class="footer-secondary-text">
+                    Subsidiary of TruBoard Private Limited
+                </p>
+            </div>
+            <div class="col-right">
+                <a href="#" class="footer-cta" style="display: none;">
+                    Privacy policy
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+    </script>
+    <script>
+        const cardTemplates = {
+            blogs: [
+                {
+                    title: "Why India’s Power Prices Dropped to Zero: The Story Behind the IEX Shock",
+                    date: "May 28, 2025",
+                    text: "A sharp drop in electricity demand, combined with a flood of ...",
+                    img: "img/resources/Group.svg",
+                    link:"./why_india’s_power_prices_dropped_to_zero:_the_story_behind_the_iex_shock.html"
+                },
+            ]
+        };
+
+        // Get 'Id' from URL or default to 'blogs'
+        let urlParams = new URLSearchParams(window.location.search);
+
+        let currentTab = urlParams.get("Id") || "blogs";
+        console.log(currentTab);
+        let cardCounters = {
+            blogs: 0,
+            articles: 0,
+            "case-study-main": 0
+        };
+
+        function showTab(tabId, event) {
+            currentTab = tabId;
+
+            // Update tab button active state
+            document.querySelectorAll(".tab").forEach((btn) => btn.classList.remove("active"));
+            if (event && event.target) {
+                event.target.classList.add("active");
+            } else {
+                // Find the matching tab button by class name
+                const matchingBtn = document.querySelector(`.tab.${tabId === 'case-studies' ? 'case-study-main' : tabId}`);
+                if (matchingBtn) {
+                    matchingBtn.classList.add("active");
+                }
+            }
+
+            // Update content container
+            document.querySelectorAll(".cards-container").forEach((container) => container.classList.remove("active"));
+            const activeContainer = document.getElementById(tabId);
+            if (activeContainer) {
+                activeContainer.classList.add("active");
+
+                // Scroll indicator
+                const scrollIndicator = document.querySelector('.scroll-indicator');
+                scrollIndicator.style.display = (tabId === 'blogs') ? 'flex' : 'none';
+
+                if (activeContainer.childElementCount === 0) {
+                    cardCounters[tabId] = 0;
+                    loadMoreCards();
+                }
+            }
+        }
+
+        // On page load, activate tab based on URL
+        window.addEventListener("DOMContentLoaded", () => {
+            const tabButton = document.querySelector(`.tab.${currentTab}`);
+            showTab(currentTab, { target: tabButton });
+        });
+
+
+        function loadMoreCards() {
+            const isMobile = window.innerWidth <= 768;
+            const cardsContainer = isMobile
+                ? document.querySelector('.mobile-nav .cards-wrapper')
+                : document.querySelector('.desktop-nav .cards-wrapper');
+
+            if (isMobile && cardsContainer) {
+                const currentScroll = cardsContainer.scrollTop;
+                const maxScroll = cardsContainer.scrollHeight - cardsContainer.clientHeight;
+
+                if (currentScroll < maxScroll) {
+                    cardsContainer.scrollTo({
+                        top: currentScroll + 430,
+                        behavior: 'smooth'
+                    });
+                }
+            } else {
+                // Desktop behavior - load more cards
+                const container = document.getElementById(currentTab);
+                const cards = cardTemplates[currentTab];
+                const startIndex = cardCounters[currentTab];
+                const row = document.createElement("div");
+                row.className = "card-row";
+                for (let i = startIndex; i < startIndex + 3; i++) {
+                    const cardData = cards[i % cards.length];
+                    const card = document.createElement("div");
+                    card.className = "card";
+                    card.innerHTML = `
+                    <img src="${cardData.img}" alt="${cardData.title}">
+                    <div class="card-content">
+                        <h4>${cardData.title}</h4>
+                        <div class="date">${cardData.date}</div>
+                        <p>${cardData.text}</p>
+                        <a href="${cardData.link}">
+                            <button>Read More</button>
+                        </a>
+                    </div>
+                    `;
+                    row.appendChild(card);
+                }
+                container.querySelector('.cards-wrapper').appendChild(row);
+                cardCounters[currentTab] += 3;
+            }
+        }
+        // Initial load
+        window.onload = () => {
+            if (window.innerWidth > 600) {
+                loadMoreCards();
+            }
+        };
+
+        function loadMoreCaseStudies() {
+            const caseStudiesContainer = document.querySelector('.case-studies');
+            const currentScroll = caseStudiesContainer.scrollTop;
+            const maxScroll = caseStudiesContainer.scrollHeight - caseStudiesContainer.clientHeight;
+
+            // If we're not at the bottom, scroll down by 300px
+            if (currentScroll < maxScroll) {
+                caseStudiesContainer.scrollTo({
+                    top: currentScroll + 150,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        function loadMoreCards_artical() {
+            const caseStudiesContainer = document.querySelector('.article-container');
+            const currentScroll = caseStudiesContainer.scrollTop;
+            const maxScroll = caseStudiesContainer.scrollHeight - caseStudiesContainer.clientHeight;
+            // If we're not at the bottom, scroll down by 300px
+            if (currentScroll < maxScroll) {
+                caseStudiesContainer.scrollTo({
+                    top: currentScroll + 280,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+
+    <script src="js/common-script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>

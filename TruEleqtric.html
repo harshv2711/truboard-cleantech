@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5TTGKQP9');</script>
+<!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js)Start --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVRGSNLJ4G"></script> 
+    <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-CVRGSNLJ4G'); </script>
+    <!-- Google tag (gtag.js)End -->
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/truEleqtric.css">
+    <title>TruEleqtric – India’s First Cleantech Procurement Marketplace | TruBoard Cleantech</title>
+     <meta name="keywords" content="cleantech procurement India, renewable energy marketplace, B2B solar equipment platform, cleantech tenders India, energy procurement software, cleantech vendors, cleantech marketplace, solar EPC tools, clean energy sourcing">
+     
+     <meta name="description" content="Launching soon: TruEleqtric is India’s first B2B marketplace for cleantech procurement. Connect buyers, vendors, and service providers with built-in workflows, tenders, quotations, and future-ready services like financing and insurance.">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        .tab-image {
+            display: none;
+            border-radius: 12px;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next svg {
+            transform: scale(1.2);
+        }
+
+        /* Add hover effects for navigation buttons */
+        .swiper-button-prev svg path,
+        .swiper-button-next svg path {
+            transition: all 0.3s ease;
+        }
+
+        .swiper-button-prev:hover svg path:first-child,
+        .swiper-button-next:hover svg path:first-child {
+            fill: #063E63;
+            stroke: white;
+        }
+
+        .swiper-button-prev:hover svg path:last-child,
+        .swiper-button-next:hover svg path:last-child {
+            fill: white;
+        }
+
+        .arrow-placeholder arrow-placeholder-product {
+            position: initial;
+        }
+
+        .secondary-grid {
+            display: grid;
+            gap: 1em;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+
+            $(".product-lineup-tab").find(".tab-image").first().show()
+
+            // Hide all tab content initially
+            $('.tab').hide();
+            $('.tab').first().show();
+
+            $(".accordion-panel").first().show()
+        });
+
+        $(document).ready(function () {
+            $('.accordion').removeClass('accordion-panel-toggle-btn-active');
+            $('.accordion').first().addClass('accordion-panel-toggle-btn-active');
+            $('.accordion-panel').hide()
+            $('.accordion-panel').first().show()
+
+            $(".product-lineup-tab").hide()
+            $(".product-lineup-tab").first().show()
+            $('.accordion').on('click', function () {
+                const panel = $(this).next('.accordion-panel');
+                var imageId = $(this).attr("for")
+                $(".tab-image").hide()
+                $(`#${imageId}`).fadeIn(1000)
+
+                // Close all other panels
+                $('.accordion-panel').not(panel).slideUp(200);
+                $('.accordion').not(this).removeClass('accordion-panel-toggle-btn-active');
+
+                // Toggle the clicked panel
+                panel.slideToggle(200);
+                $(this).toggleClass('accordion-panel-toggle-btn-active');
+            });
+
+            $(".product-lineup-toggle-tab-btn").click(function () {
+                var tabId = $(this).attr("toggle-tab-id")
+                console.log(tabId)
+                $(".product-lineup-tab").hide()
+                $(`#${tabId}`).fadeIn()
+                $(`#${tabId}`).find(".tab-image").first().show()
+                $(".product-lineup-toggle-tab-btn").removeClass("product-lineup-toggle-tab-btn-active")
+                $(this).addClass("product-lineup-toggle-tab-btn-active")
+
+
+            })
+
+
+
+        });
+
+    </script>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TTGKQP9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand">
+                <img src="./img/brand-logo/Truboard-Cleantech-logo-white-08.png" alt="" srcset="">
+            </a>
+            <nav class="desktop-nav">
+                <ul class="primary-nav">
+                    <li class="nav-item">
+                        <a href="Asset-Lifecycle-Management.html" class="nav-link"> Asset Lifecycle Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Trugreen.html" class="nav-link">TruGreen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="TruEleqtric.html" class="nav-link active">TruEleqtric</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resources.html" class="nav-link">Resource</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="resources.html" class="nav-link">Resource</a>
+                    </li> -->
+                </ul>
+            </nav>
+            <span class="desktop-nav">
+                <span class="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                    <div class="option-dropdown-wrapper">
+                        <div class="option-dropdown">
+                            <ul class="option-dropdown-list">
+                                <li class="option-dropdown-item"><a href="./About-us.html"
+                                        class="option-dropdown-link"><span>About Us</span></a>
+                                </li>
+                                <li class="option-dropdown-item"><a href="./Career.html"
+                                        class="option-dropdown-link"><span>Career</span></a></li>
+                                <li class="option-dropdown-item"><a href="./Contact-us.html"
+                                        class="option-dropdown-link"><span>Contact Us</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+            </span>
+
+
+            <span class="mobile-menu-btn mobile-nav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+                <div class="option-dropdown-wrapper">
+                    <div class="option-dropdown">
+                        <ul class="option-dropdown-list">
+                             <li class="option-dropdown-item"><a href="./Asset-Lifecycle-Management.html"
+                                    class="option-dropdown-link"><span>Asset Lifecycle Management</span>
+                                </a>
+                            </li>
+                            <li class="option-dropdown-item"><a href="./Trugreen.html"
+                                    class="option-dropdown-link"><span>TruGreen</span>
+                                </a>
+                            </li>
+                           
+                            <li class="option-dropdown-item"><a href="./TruEleqtric.html"
+                                    class="option-dropdown-link"><span class="active">TruEleqtric</span>
+                                </a>
+                            </li>
+                            <li class="option-dropdown-item"><a href="./resources.html" class="option-dropdown-link">
+                                    <span>Resource</span>
+                                </a>
+                            </li>
+                            <!-- starts normal pages  -->
+                            <li class="option-dropdown-item"><a href="./About-us.html"
+                                    class="option-dropdown-link"><span>About Us</span></a>
+                            </li>
+                            <li class="option-dropdown-item"><a href="./Career.html"
+                                    class="option-dropdown-link"><span>Career</span></a></li>
+                            <li class="option-dropdown-item"><a href="./Contact-us.html"
+                                    class="option-dropdown-link"><span>Contact Us</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </span>
+
+        </div>
+    </div>
+
+
+    <section class="hero-section">
+        <!-- <video autoplay muted loop id="hero-video" class="hero-section-img">
+                <source src="./videos/hero-section-video-blue.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+        <img src="./img/banners/TruEleqtric-hero-section-img.png" alt="" class="hero-section-img desktop-nav">
+        <img src="./img/Mobile-banners/TruEleqtric-Page.png" alt="" class="hero-section-img mobile-nav">
+        <div class="container">
+            <div class="content-info-wrapper">
+                <div class="content-info">
+                    <h1 class="content-info-item content-info-item-title hero-heading-other-pages">
+                        TruEleqtric - A New Era of Cleantech Procurement is Coming
+                    </h1>
+                    <p class="content-info-item content-info-item-caption hero-sub-heading-all-pages">
+                        Connecting buyers, sellers, and service providers with transparency, efficiency, and innovation
+                        -launching soon
+                    </p>
+                    <div class="hero-email-capture-wrapper-2">
+                        <div class="hero-email-capture-wrapper">
+                            LAUNCHING SOON
+                            <!-- <div class="hero-email-capture-container">
+                                <button>Notify me</button>
+                            </div> -->
+                            <!-- <a href="#" class="btn-neon">
+                                Notify me
+                                <svg height="50" width="180">
+                                    <polyline points="0,0 180,0 180,50 0,50 0,0"></polyline>
+                                </svg>
+                            </a> -->
+                            <!-- 
+                            <a href="./Contact-us.html#letsConnect" class="snake-btn">
+                               GET IN TOUCH
+                            </a> -->
+                            <a href="./Contact-us.html#letsConnect"
+                                class="start-conversation-cta secondary-gein-touch-btn" id="Products">
+                                GET IN TOUCH
+                                <div class="underline-wrapper">
+                                    <span class="underline"></span>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="product-line-up-section section-common-margin">
+        <div class="container">
+            <div class="section-header-title desktop-nav">
+                What to Expect
+            </div>
+
+            <div class="tab-container">
+                <!-- TruGreen Core App  -->
+                <div class="product-lineup-tab" id="TruGreenCoreApp">
+                    <div class="tab-row tab-row-grid">
+                        <div class="tab-image-container">
+                            <img src="./img/TruEleqtric/Open and Searchable Marketplace.jpg" alt="" class="tab-image"
+                                id="TruGreenCoreAppFeature1">
+                            <img src="./img/TruEleqtric/Tenders, Quotations, and Negotiationse.jpg" alt=""
+                                class="tab-image" id="TruGreenCoreAppFeature2">
+                            <img src="./img/TruEleqtric/Transparent Pricing & Supplier Discovery.jpg" alt=""
+                                class="tab-image" id="TruGreenCoreAppFeature3">
+                            <img src="./img/TruEleqtric/Built for the Energy Transition.jpg" alt="" class="tab-image"
+                                id="TruGreenCoreAppFeature4">
+                            <img src="./img/TruEleqtric/Future-Ready Services.jpg" alt="" class="tab-image"
+                                id="TruGreenCoreAppFeature5">
+                        </div>
+                        <div class="section-header-title mobile-nav">
+                            What to Expect
+                        </div>
+                        <div class="tab-info-container">
+                            <div class="tab-info">
+                                <div class="accordion-container" data-aos="fade-left" data-aos-duration="1000">
+                                    <div class="accordion-wrapper">
+                                        <label for="TruGreenCoreAppFeature1"
+                                            class="accordion accordion-panel-toggle-btn accordion-panel-toggle-btn-active">
+                                            <span>Open and Searchable Marketplace</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel" style="display: block;">
+                                            <p>A curated platform tailored for the cleantech industry.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-wrapper">
+                                        <label for="TruGreenCoreAppFeature2"
+                                            class="accordion accordion-panel-toggle-btn accordion-panel-toggle-btn-active">
+                                            <span>Tenders, Quotations, and Negotiations</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel" style="display: block;">
+                                            <p>
+                                                Streamline your procurement process with easy access to tenders,
+                                                quotations, and negotiation tools.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Transparent Pricing and Supplier Discovery -->
+                                    <div class="accordion-wrapper">
+                                        <label for="TruGreenCoreAppFeature3"
+                                            class="accordion accordion-panel-toggle-btn accordion-panel-toggle-btn-active">
+                                            <span>Transparent Pricing and Supplier Discovery</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel" style="display: block;">
+                                            <p>
+                                                Discover suppliers and compare transparent pricing to make informed
+                                                decisions.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Built for the Energy Transition -->
+                                    <div class="accordion-wrapper">
+                                        <label for="TruGreenCoreAppFeature4"
+                                            class="accordion accordion-panel-toggle-btn accordion-panel-toggle-btn-active">
+                                            <span>Built for the Energy Transition</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel" style="display: block;">
+                                            <p>Designed to support the shift towards sustainable and renewable energy
+                                                solutions.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Future-Ready Services -->
+                                    <div class="accordion-wrapper">
+                                        <label for="TruGreenCoreAppFeature5"
+                                            class="accordion accordion-panel-toggle-btn accordion-panel-toggle-btn-active">
+                                            <span>Future-Ready Services</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel" style="display: block;">
+                                            <p>Access services that are ready to meet the challenges of tomorrow's
+                                                energy landscape.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- cta section starts here  -->
+    <section class="cta-sec-lst ">
+        <div class="container">
+            <div class="cta-sec-lst-row">
+                <h1 class="heading-tab" id="product-cto-heading">
+
+                </h1>
+                <div class="btn-container">
+                    <a href="./Contact-us.html#letsConnect" class="cta-btn cta-btn-lst primary-cta-btn">
+                        Book a Demo
+                        <span class="primary-cta-btn-active-underline"></span>
+                    </a>
+                    <a href="./Contact-us.html#letsConnect" class="cta-btn-2 primary-cta-btn">
+                        SIGN UP FOR UPDATES
+                        <span class="primary-cta-btn-active-underline"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-brand">
+                <div class="footer-logo-wrapper">
+                    <img src="./img/brand-logo/Truboard-Cleantech-logo-white-08.png" alt="" srcset="">
+                </div>
+
+                <div class="social-icons">
+                    <a href="mailto:contact@truboardpartners.com" class="social-link">
+                        <img src="./icons/message-icon-2.png" alt="" srcset="">
+                    </a>
+                    <!-- <a href="#" class="social-link">
+                        <img src="./icons/x-icon-2.png" alt="" srcset="">
+                    </a> -->
+                    <a href="https://www.linkedin.com/company/truboard-partners/posts/?feedView=all"
+                        class="social-link">
+                        <img src="./icons/linkedIn-icon-2.png" alt="" srcset="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <div class="footer-menu">
+                    <h4 class="footer-menu-title">Useful links</h4>
+                    <ul class="footer-menu footer-flex">
+                        <li class="footer-menu-item">
+                            <a href="./index.html" class="footer-menu-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./Trugreen.html" class="footer-menu-link">
+                                TruGreen
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./Asset-Lifecycle-Management.html" class="footer-menu-link">
+                                Assets Lifecycle Management
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./TruEleqtric.html" class="footer-menu-link">
+                                TruEleqtric
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-menu-link">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-contact-wrpaper">
+                <div class="footer-content-title footer-menu-title">
+                    Get in Touch
+                </div>
+                <p class="footer-content-address">
+                    Unit 502-506, 5th Floor, UNITECH COMMERCIAL TOWER 2, Arya Samaj Road, Block B, Greenwood City, Sector 45, Gurugram, Haryana 122003
+                </p>
+                <a href="Contact-us.html#letsConnect" class="footer-contact-cta">
+                    Contact Now
+                </a>
+            </div>
+        </div>
+
+            <div class="footer-copyright">
+            <div class="col-left">
+                 <a href="privacy-policy.html" class="footer-cta">
+                    Privacy policy
+                </a>
+            </div>
+            <div class="col-right">
+                <a href="#" class="footer-cta" style="display: none;">
+                    Privacy policy
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="col-left">
+                <p class="footer-primary-text">
+                    &copy; All Rights Reserved by TruBoard Cleantech Private Limited
+                </p>
+                <p class="footer-secondary-text">
+                    Subsidiary of TruBoard Private Limited
+                </p>
+            </div>
+            <div class="col-right">
+                <a href="#" class="footer-cta" style="display: none;">
+                    Privacy policy
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 4.5,
+                    spaceBetween: 10
+                }
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.product-lineup-swiper-next',
+                prevEl: '.product-lineup-swiper-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+
+    </script>
+
+    <script>
+
+        // for the cto headings 
+        const productHeadings = {
+            trugreenCoreApp: "Ready to revolutionize renewable asset management & monitoring?",
+            nexus: "Ready to revolutionize renewable procurement?",
+            flow: "Ready to transform your renewable site operations?",
+            assure: "Ensure compliance and mitigate risk in your renewable projects.",
+            horizon: "Optimize your renewable energy forecasts and reduce penalties today.",
+            pulse: "Unlock comprehensive insights for your renewable energy portfolio.",
+            solarvisionai: "Transform your solar plant diagnostics today."
+        };
+
+        // Single function to handle product headings
+        function handleProductHeading(productId) {
+            const headingContainer = document.getElementById("product-cto-heading");
+            if (!headingContainer) return;
+
+            // Convert productId to lowercase and remove any special characters
+            const normalizedId = productId.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+            // Map the normalized ID to the correct key in productHeadings
+            const keyMap = {
+                'trugreencoreapp': 'trugreenCoreApp',
+                'nexus': 'nexus',
+                'flow': 'flow',
+                'assure': 'assure',
+                'horizon': 'horizon',
+                'pulse': 'pulse',
+                'solarvisionai': 'solarvisionai'
+            };
+
+            // Update heading text using the mapped key
+            headingContainer.textContent = productHeadings[keyMap[normalizedId]] || "";
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener("DOMContentLoaded", () => {
+            // Set initial heading
+            handleProductHeading("trugreenCoreApp");
+
+            // Add click handlers for product buttons
+            document
+                .querySelectorAll(".product-lineup-toggle-tab-btn")
+                .forEach((button) => {
+                    button.addEventListener("click", () => {
+                        // Get the product ID from the toggle-tab-id attribute
+                        const productId = button.getAttribute("toggle-tab-id");
+                        if (productId) {
+                            handleProductHeading(productId);
+                        }
+                    });
+                });
+        });
+        AOS.init();
+    </script>
+    <script src="js/common-script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>

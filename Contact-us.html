@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5TTGKQP9");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js)Start -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CVRGSNLJ4G"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-CVRGSNLJ4G");
+    </script>
+    <!-- Google tag (gtag.js)End -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/contact-us.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      .our-track-record-section-career {
+        width: 100%;
+        border-radius: 20px;
+        background: #063e63;
+        box-shadow: 0px 4px 13.7px 0px rgba(49, 82, 227, 0.26);
+        color: #ffff;
+        padding: 40px 50px;
+        margin-top: -100px;
+        position: relative;
+        z-index: 2;
+        transform: none;
+        left: auto;
+        text-align: center;
+      }
+
+      .our-track-record-section-career h1 {
+        margin: 0;
+      }
+
+      .career-form {
+        margin-top: 30px;
+      }
+
+      .career-form .form-group {
+        display: flex;
+        flex-direction: column;
+        /* gap: 20px; */
+      }
+
+      .career-form .form-row {
+        display: flex;
+        gap: 20px;
+      }
+
+      .career-form .form-row > div {
+        flex: 1;
+      }
+
+      .career-form input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+      }
+
+      .career-form textarea {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        background: rgb(100 130 153);
+        color: white;
+        display: block !important;
+        box-sizing: border-box;
+        margin-bottom: 1em;
+      }
+
+      .career-form textarea::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .career-form input::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .career-form .apply {
+        width: fit-content;
+        /* margin-top: 10px; */
+      }
+
+      .toast-wrapper {
+        position: fixed;
+        bottom: 3em;
+        right: 3em;
+      }
+    </style>
+
+    <title>Contact Us | Demo & Support | TruBoard Cleantech</title>
+    <meta
+      name="keywords"
+      content="TruBoard Cleantech, contact us, request demo, cleantech support, partnership inquiries, renewable energy solutions"
+    />
+
+    <meta
+      name="description"
+      content="Contact TruBoard Cleantech for demos, support, or partnerships and accelerate your renewable energy project efficiency."
+    />
+    <style>
+      .toast-message {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #333;
+        color: #fff;
+        padding: 14px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+        opacity: 0.95;
+        z-index: 9999;
+        display: none;
+      }
+      .toast-message.success {
+        background-color: #28a745;
+      }
+      .toast-message.error {
+        background-color: #dc3545;
+      }
+
+      .message-wrapper {
+          width: fit-content;
+          padding: 12px 28px;
+          background: #00ad6f;
+          color: white;
+          border-radius: 3px;
+          display: none;
+      }
+    .message-wrapper p {
+      padding: 0%;
+      margin: 0%;
+      font-size: 14px;
+    }
+      
+    </style>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5TTGKQP9"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="navbar">
+      <div class="container">
+        <a href="index.html" class="brand">
+          <img
+            src="./img/brand-logo/Truboard-Cleantech-logo-white-08.png"
+            alt=""
+            srcset=""
+          />
+        </a>
+        <nav class="desktop-nav">
+          <ul class="primary-nav">
+            <li class="nav-item">
+              <a href="Asset-Lifecycle-Management.html" class="nav-link">
+                Asset Lifecycle Management</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Trugreen.html" class="nav-link">TruGreen</a>
+            </li>
+            <li class="nav-item">
+              <a href="TruEleqtric.html" class="nav-link">TruEleqtric</a>
+            </li>
+            <li class="nav-item">
+              <a href="resources.html" class="nav-link">Resource</a>
+            </li>
+            <!-- <li class="nav-item">
+                            <a href="resources.html" class="nav-link">Resource</a>
+                        </li> -->
+          </ul>
+        </nav>
+
+        <span class="desktop-nav">
+          <span class="mobile-menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-menu"
+            >
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+            <div class="option-dropdown-wrapper">
+              <div class="option-dropdown">
+                <ul class="option-dropdown-list">
+                  <li class="option-dropdown-item">
+                    <a href="./About-us.html" class="option-dropdown-link"
+                      ><span>About Us</span></a
+                    >
+                  </li>
+                  <li class="option-dropdown-item">
+                    <a href="./Career.html" class="option-dropdown-link"
+                      ><span>Career</span></a
+                    >
+                  </li>
+                  <li class="option-dropdown-item">
+                    <a href="./Contact-us.html" class="option-dropdown-link"
+                      ><span>Contact Us</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </span>
+        </span>
+
+        <span class="mobile-menu-btn mobile-nav">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-menu"
+          >
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+          <div class="option-dropdown-wrapper">
+            <div class="option-dropdown">
+              <ul class="option-dropdown-list">
+                <li class="option-dropdown-item">
+                  <a
+                    href="./Asset-Lifecycle-Management.html"
+                    class="option-dropdown-link"
+                    ><span>Asset Lifecycle Management</span>
+                  </a>
+                </li>
+                <li class="option-dropdown-item">
+                  <a href="./Trugreen.html" class="option-dropdown-link"
+                    ><span>TruGreen</span>
+                  </a>
+                </li>
+                <li class="option-dropdown-item">
+                  <a href="./TruEleqtric.html" class="option-dropdown-link"
+                    ><span>TruEleqtric</span>
+                  </a>
+                </li>
+                <li class="option-dropdown-item">
+                  <a href="./resources.html" class="option-dropdown-link">
+                    <span>Resource</span>
+                  </a>
+                </li>
+                <!-- starts normal pages  -->
+                <li class="option-dropdown-item">
+                  <a href="./About-us.html" class="option-dropdown-link"
+                    ><span>About Us</span></a
+                  >
+                </li>
+                <li class="option-dropdown-item">
+                  <a href="./Career.html" class="option-dropdown-link"
+                    ><span>Career</span></a
+                  >
+                </li>
+                <li class="option-dropdown-item">
+                  <a href="./Contact-us.html" class="option-dropdown-link"
+                    ><span class="active">Contact Us</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+
+    <section class="hero-section">
+      <!-- <video autoplay muted loop id="hero-video" class="hero-section-img">
+                <source src="./videos/hero-section-video-blue.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+      <img
+        src="./img/banners/contact-us-hero-section-img-3.jpeg"
+        alt=""
+        class="hero-section-img desktop-nav"
+      />
+      <img
+        src="./img/Mobile-banners/Contact-us-Page.png"
+        alt=""
+        class="hero-section-img mobile-nav"
+      />
+      <div class="container">
+        <div class="content-info-wrapper">
+          <div class="content-info">
+            <h1
+              class="content-info-item content-info-item-title hero-heading-other-pages"
+            >
+              Contact Us
+            </h1>
+            <p
+              class="content-info-item content-info-item-caption hero-sub-heading-all-pages"
+              id="letsConnect"
+            >
+              Explore opportunities to make an impact with a team that's shaping
+              the future of cleantech
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="let-connect-wrapper-container">
+        <div class="let-connect-form-wrapper">
+          <div class="section-header">
+            <h1 class="section-header-title">Let's Connect</h1>
+          </div>
+          <div class="career-form">
+            <form id="emailForm" onsubmit="submitForm(); return false;">
+              <div class="form-group">
+                <div class="form-row">
+                  <div>
+                    <input
+                      type="text"
+                      name="firstName"
+                      id="firstName"
+                      placeholder="Name"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email ID"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+                <textarea
+                  name="Message"
+                  placeholder="Message"
+                  id="Message"
+                  autocomplete="off"
+                ></textarea>
+                <div class="form-now">
+                  <button type="submit" class="apply common-cta-green">
+                    GET in touch
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- numbers section starts here  -->
+    <section style="display: none">
+      <div
+        class="container our-track-record-section-career"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="section-header">
+          <h1 class="section-header-title">Let's Connect</h1>
+        </div>
+        <div class="career-form">
+          <form action="">
+            <div class="form-group">
+              <div class="form-row">
+                <div>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    placeholder="Name"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email ID"
+                  />
+                </div>
+              </div>
+              <input
+                type="text"
+                name="Message"
+                id="Message"
+                placeholder="Message"
+              />
+
+              <div class="form-now">
+                <button class="apply common-cta-green">GET in touch</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="location-section container"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="location-toggles" id="locationToggles"></div>
+      <div class="location-details" id="locationDetails"></div>
+      <div class="location-map" id="locationMap"></div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-brand">
+          <div class="footer-logo-wrapper">
+            <img
+              src="./img/brand-logo/Truboard-Cleantech-logo-white-08.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <div class="social-icons">
+            <a href="mailto:contact@truboardpartners.com" class="social-link">
+              <img src="./icons/message-icon-2.png" alt="" srcset="" />
+            </a>
+            <!-- <a href="#" class="social-link">
+                        <img src="./icons/x-icon-2.png" alt="" srcset="">
+                    </a> -->
+            <a
+              href="https://www.linkedin.com/company/truboard-partners/posts/?feedView=all"
+              class="social-link"
+            >
+              <img src="./icons/linkedIn-icon-2.png" alt="" srcset="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <div class="footer-menu">
+            <h4 class="footer-menu-title">Useful links</h4>
+            <ul class="footer-menu footer-flex">
+              <li class="footer-menu-item">
+                <a href="./index.html" class="footer-menu-link"> Home </a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="./Trugreen.html" class="footer-menu-link">
+                  TruGreen
+                </a>
+              </li>
+              <li class="footer-menu-item">
+                <a
+                  href="./Asset-Lifecycle-Management.html"
+                  class="footer-menu-link"
+                >
+                  Assets Lifecycle Management
+                </a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="./TruEleqtric.html" class="footer-menu-link">
+                  TruEleqtric
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu-link">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-contact-wrpaper">
+          <div class="footer-content-title footer-menu-title">Get in Touch</div>
+          <p class="footer-content-address">
+            Unit 502-506, 5th Floor, UNITECH COMMERCIAL TOWER 2, Arya Samaj
+            Road, Block B, Greenwood City, Sector 45, Gurugram, Haryana 122003
+          </p>
+          <a href="Contact-us.html#letsConnect" class="footer-contact-cta">
+            Contact Now
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="col-left">
+          <a href="privacy-policy.html" class="footer-cta"> Privacy policy </a>
+        </div>
+        <div class="col-right">
+          <a href="#" class="footer-cta" style="display: none">
+            Privacy policy
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="col-left">
+          <p class="footer-primary-text">
+            &copy; All Rights Reserved by TruBoard Cleantech Private Limited
+          </p>
+          <p class="footer-secondary-text">
+            Subsidiary of TruBoard Private Limited
+          </p>
+        </div>
+        <div class="col-right">
+          <a href="#" class="footer-cta" style="display: none">
+            Privacy policy
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast-container" id="toastContainer"></div>
+    <div class="toast-wrapper">
+      <div class="message-wrapper">
+        <p class="message">Thank you! We will get back to you soon</p>
+      </div>
+    </div>
+    <script src="js/common-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+
+      AOS.init();
+      AOS.init();
+    </script>
+    <script>
+      const jobs = [
+        { title: "UI/UX Designer", type: "Full time" },
+        { title: "Social Media Designer", type: "Full time" },
+        { title: "Product Manager", type: "Full time" },
+        { title: "Lead Product Designer", type: "Full time" },
+        { title: "Web Developer", type: "Full time" },
+        { title: "Graphic Designer", type: "Full time" },
+      ];
+
+      const section = document.getElementById("jobCardsSection");
+
+      jobs.forEach((job) => {
+        const card = document.createElement("div");
+        card.className = "job-card";
+
+        card.innerHTML = `
+    <div>
+      <h3>${job.title}</h3>
+      <div class="type">${job.type}</div>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+    </div>
+    <div class="arrow-placeholder">
+      <svg viewBox="0 0 20 20">
+        <path d="M7.293 14.707a1 1 0 0 1 0-1.414L11.586 9 7.293 4.707a1 1 0 1 1 1.414-1.414l5 5a1 1 0 0 1 0 1.414l-5 5a1 1 0 0 1-1.414 0z"/>
+      </svg>
+    </div>
+  `;
+
+        section.appendChild(card);
+      });
+
+      // location starts here
+    </script>
+    <script>
+      const locations = [
+        {
+          name: "Gurugram",
+          address:
+            "  Unit 502-506, 5th Floor, UNITECH COMMERCIAL TOWER 2, Arya Samaj Road, Block B, Greenwood City, Sector 45,Gurugram, Haryana 122003",
+          phone: "+91 885898745",
+          phoneDisplay: "",
+          email: "",
+          mapEmbed: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.180621483754!2d77.0597293!3d28.4439711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d188bb1f3ffff%3A0xfff85fe3cacb3207!2sUnitech%20Commercial%20Tower%202!5e0!3m2!1sen!2sin!4v1754898117767!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`,
+        },
+        {
+          name: "Mumbai",
+          address:
+            "511, Building 5, Solitaire Corporate Park, Andheri Ghatkopar Link Road, Chakala, Andheri East, Mumbai 400093 ",
+          phone: "+91 885898745",
+          phoneDisplay: "",
+          email: "",
+          mapEmbed: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.8957281705466!2d72.85800217462247!3d19.112229782099813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9bd7b80c8f1%3A0x9630af639a542f2b!2sTruBoard%20Partners!5e0!3m2!1sen!2sin!4v1746692518104!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`,
+        },
+        {
+          name: "Bengaluru",
+          address:
+            "91 Springboard Business Hub Pvt Ltd, Gopala Krishna Complex, No. 45/3, Residency Road, MG Road, Bengaluru, Karnataka 560025",
+          phone: "+91 885898745",
+          phoneDisplay: "",
+          email: "",
+          mapEmbed: `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3887.974465094422!2d77.60935500000001!3d12.973485000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16873556c64b%3A0x3f8bc4863b1485e3!2s91Springboard%2C%20MG%20Road!5e0!3m2!1sen!2sin!4v1754903235505!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`,
+        },
+        {
+          name: "New Jersey",
+          address: "111 Town Square Place, Suite #1203, Jersey City, NJ 07310",
+          phone: "+91 885898745",
+          phoneDisplay: "",
+          email: "",
+          mapEmbed: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.6240882369093!2d-74.03346669999999!3d40.72629109999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2575449aedf37%3A0x771d3c17dcc6f4b!2s111%20Town%20Square%20Pl%20Suite%201203%2C%20Jersey%20City%2C%20NJ%2007310%2C%20USA!5e0!3m2!1sen!2sin!4v1746692436840!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`,
+        },
+      ];
+
+      const togglesDiv = document.getElementById("locationToggles");
+      const detailsDiv = document.getElementById("locationDetails");
+      const mapDiv = document.getElementById("locationMap");
+
+      let activeIndex = 0;
+
+      function renderToggles() {
+        togglesDiv.innerHTML = "";
+        locations.forEach((loc, idx) => {
+          const btn = document.createElement("button");
+          btn.className =
+            "location-toggle-btn" + (idx === activeIndex ? " active" : "");
+          btn.textContent = loc.name;
+          btn.onclick = () => {
+            activeIndex = idx;
+            renderToggles();
+            renderDetails();
+            renderMap();
+          };
+          togglesDiv.appendChild(btn);
+        });
+      }
+
+      function renderDetails() {
+        const loc = locations[activeIndex];
+        detailsDiv.innerHTML = `
+        <h2>${loc.name}</h2>
+        <div class="address">${loc.address}</div>
+        <div class="contact">
+          ${
+            loc.phone.replace(/\s/g, "")
+              ? `<a href="tel:${loc.phone}">${loc.phoneDisplay}</a> `
+              : ""
+          }
+          <a href="mailto:${loc.email}">${loc.email}</a>
+        </div>
+      `;
+      }
+
+      function renderMap() {
+        mapDiv.innerHTML = locations[activeIndex].mapEmbed;
+      }
+
+      renderToggles();
+      renderDetails();
+      renderMap();
+    </script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+function submitForm() {
+
+    // Get form fields
+    const nameInput = document.getElementById('firstName');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('Message');
+
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const message = messageInput.value.trim();
+
+    // Basic validation
+    if (!name) {
+        alert('Please enter your name');
+        nameInput.focus();
+        return;
+    }
+
+    if (!email) {
+        alert('Please enter your email');
+        emailInput.focus();
+        return;
+    }
+
+    if (!message) {
+        alert('Please enter your message');
+        messageInput.focus();
+        return;
+    }
+
+    // Create FormData
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('email', email);
+    formData.append('message', message);
+
+    // Button loading state
+    const form = document.getElementById('emailForm');
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalText = submitButton.textContent;
+
+    submitButton.textContent = 'Sending...';
+    submitButton.disabled = true;
+
+    // AJAX request
+    fetch('contact-mail.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // alert('Thank you! We will get back to you soon.');
+            document.getElementsByClassName("message-wrapper")[0].style.display = "block";
+            form.reset();
+            
+            setTimeout(() => {
+              document.getElementsByClassName("message-wrapper")[0].style.display = "none";
+            }, 5000);
+            
+        } else {
+            alert(data.message || 'Failed to send message.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Something went wrong. Please try again later.');
+    })
+    .finally(() => {
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
+    });
+}
+</script>
+
+  </body>
+</html>

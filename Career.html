@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5TTGKQP9');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google tag (gtag.js)Start -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVRGSNLJ4G"></script>
+    <script>   window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-CVRGSNLJ4G'); </script>
+    <!-- Google tag (gtag.js)End -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Careers at TruBoard Cleantech | Join Our Team</title>
+    <meta name="keywords"
+        content="TruBoard Cleantech, cleantech careers, renewable energy jobs, B2B platform jobs, innovative workplace, join our team">
+
+    <meta name="description"
+        content="Explore career opportunities at TruBoard Cleantech and join our team innovating B2B digital solutions for the renewable energy sector.">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/career.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .our-track-record-section-career {
+            width: 100%;
+            border-radius: 20px;
+            background: #063e63;
+            box-shadow: 0px 4px 13.7px 0px rgba(49, 82, 227, 0.26);
+            color: #ffff;
+            padding: 40px 50px;
+            margin-top: -100px;
+            position: relative;
+            z-index: 2;
+            transform: none;
+            left: auto;
+            text-align: center;
+        }
+
+        .our-track-record-section-career h1 {
+            margin: 0;
+        }
+
+        .career-form {
+            margin-top: 30px;
+        }
+
+        .career-form .form-group {
+            display: flex;
+            flex-direction: column;
+            /* gap: 20px; */
+        }
+
+        .career-form .form-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .career-form .form-row>div {
+            flex: 1;
+        }
+
+        .career-form input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .career-form input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .career-form .apply {
+            width: fit-content;
+            /* margin-top: 10px; */
+        }
+
+        /* Add hover effect for the arrow */
+        .arrow-placeholder svg ellipse {
+            transition: fill 0.3s ease, stroke 0.3s ease;
+        }
+
+        .arrow-placeholder svg path {
+            transition: fill 0.3s ease;
+        }
+
+        .arrow-placeholder:hover svg ellipse {
+            fill: white;
+            stroke: #00AD6F;
+        }
+
+        .arrow-placeholder:hover svg path {
+            fill: #00AD6F;
+        }
+
+        /* Add sticky navbar styles */
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: transparent;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .navbar.sticky {
+            position: fixed;
+            background: rgba(6, 62, 99, 0.95);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar.sticky.visible {
+            padding: 17px 0;
+        }
+
+        .navbar.hidden {
+            transform: translateY(-100%);
+        }
+
+        .navbar.visible {
+            transform: translateY(0);
+        }
+
+        /* Add padding to body to prevent content from hiding under fixed navbar */
+        body {
+            padding-top: 0;
+            /* Remove padding since navbar starts as absolute */
+        }
+
+        .btn-con-swip {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .mobile-menu-popup {
+            display: none;
+            position: fixed;
+            top: 60px;
+            /* adjust as needed to sit below navbar */
+            right: 40px;
+            background: #ddd;
+            border-radius: 28px;
+            padding: 28px 36px;
+            min-width: 220px;
+            min-height: 140px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+            z-index: 2000;
+            opacity: 0;
+            transform: translateY(-20px) scale(0.95);
+            transition: all 0.3s cubic-bezier(.4, 1.4, .6, 1);
+        }
+
+        .mobile-menu-popup.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .mobile-menu-options {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            text-align: center;
+            font-size: 16px;
+            color: #222;
+        }
+    </style>
+    <style>
+        .toast-message {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 14px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            opacity: 0.95;
+            z-index: 9999;
+            display: none;
+        }
+
+        .toast-message.success {
+            background-color: #28a745;
+        }
+
+        .toast-message.error {
+            background-color: #dc3545;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TTGKQP9" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand">
+                <img src="./img/brand-logo/Truboard-Cleantech-logo-white-08.png" alt="" srcset="">
+            </a>
+            <nav class="desktop-nav">
+                <ul class="primary-nav">
+                    <li class="nav-item">
+                        <a href="Asset-Lifecycle-Management.html" class="nav-link"> Asset Lifecycle Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Trugreen.html" class="nav-link">TruGreen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="TruEleqtric.html" class="nav-link">TruEleqtric</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resources.html" class="nav-link">Resource</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="resources.html" class="nav-link">Resource</a>
+                    </li> -->
+                </ul>
+            </nav>
+            <span class="desktop-nav">
+                <span class="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                    <div class="option-dropdown-wrapper">
+                        <div class="option-dropdown">
+                            <ul class="option-dropdown-list">
+                                <li class="option-dropdown-item"><a href="./About-us.html"
+                                        class="option-dropdown-link"><span>About Us</span></a>
+                                </li>
+                                <li class="option-dropdown-item"><a href="./Career.html"
+                                        class="option-dropdown-link"><span>Career</span></a></li>
+                                <li class="option-dropdown-item"><a href="./Contact-us.html"
+                                        class="option-dropdown-link"><span>Contact Us</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+            </span>
+
+
+            <span class="mobile-menu-btn mobile-nav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+                <div class="option-dropdown-wrapper">
+                    <div class="option-dropdown">
+                        <ul class="option-dropdown-list">
+                            <li class="option-dropdown-item"><a href="./Asset-Lifecycle-Management.html"
+                                    class="option-dropdown-link"><span>Asset Lifecycle Management</span>
+                                </a>
+                            </li>
+                            <li class="option-dropdown-item"><a href="./Trugreen.html"
+                                    class="option-dropdown-link"><span>TruGreen</span>
+                                </a>
+                            </li>
+                            <li class="option-dropdown-item"><a href="./TruEleqtric.html"
+                                    class="option-dropdown-link"><span>TruEleqtric</span>
+                                </a>
+                            </li>
+                            <li class="option-dropdown-item"><a href="./resources.html" class="option-dropdown-link">
+                                    <span>Resource</span>
+                                </a>
+                            </li>
+                            <!-- starts normal pages  -->
+                            <li class="option-dropdown-item"><a href="./About-us.html"
+                                    class="option-dropdown-link"><span>About Us</span></a>
+                            </li>
+                            <li class="option-dropdown-item"><a href="./Career.html" class="option-dropdown-link"><span
+                                        class="active">Career</span></a></li>
+                            <li class="option-dropdown-item"><a href="./Contact-us.html"
+                                    class="option-dropdown-link"><span>Contact Us</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </span>
+
+        </div>
+    </div>
+
+    <section class="hero-section">
+        <!-- <video autoplay muted loop id="hero-video" class="hero-section-img">
+                <source src="./videos/hero-section-video-blue.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+        <img src="./img/banners/career-hero-section-img-3.jpeg" alt="" class="hero-section-img desktop-nav">
+        <img src="./img/Mobile-banners/Career-Page.png" alt="" class="hero-section-img mobile-nav">
+        <div class="container">
+            <div class="content-info-wrapper">
+                <div class="content-info">
+                    <h1 class="content-info-item content-info-item-title hero-heading-other-pages">
+                        Join us as we digitize, decarbonize, and democratize energy
+                    </h1>
+                    <p class="content-info-item content-info-item-caption hero-sub-heading-all-pages">
+                        Explore opportunities to make an impact with a team that's shaping the future of cleantech
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <div class="contact-form-container">
+                    <div class="section-header">
+                        <h1 class="section-header-title">
+                            Register
+                        </h1>
+                        <p class="section-header-description">
+                            Complete your registration to unlock full access, continue your journey, and take the next
+                            step
+                            toward achieving your
+                            goals today.
+                        </p>
+                    </div>
+                    <div class="career-form">
+                        <form id="careerForm">
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" placeholder="Email address"
+                                    autocomplete="off">
+                                <div class="form-row">
+                                    <div>
+                                        <input type="text" name="firstName" id="firstName" placeholder="First Name"
+                                            autocomplete="off">
+                                    </div>
+                                    <div>
+                                        <input type="text" name="lastName" id="lastName" placeholder="Last Name"
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+                                <input type="text" name="jobTitle" id="jobTitle"
+                                    placeholder="Current/Previous Job Title" autocomplete="off">
+
+                                <div class="form-now">
+                                    <button type="submit" class="apply common-cta-green"
+                                        onclick="submitCareerForm()">Apply Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="slider-section career-slider-section section-common-margin" data-aos="fade-up"
+        data-aos-duration="1000">
+        <div class="container">
+
+            <div class="section-header">
+                <h1 class="section-header-title">
+                    Join Our Team
+                </h1>
+            </div>
+
+            <!-- Slider main container -->
+            <div class="career-slider-wrapper">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides 1-->
+                        <div class="swiper-slide">
+                            <div class="slider-card">
+                                <div class="slider-card-img-wrapper">
+                                    <img src="./img/career/career-slider-1.jpg" alt="" class="slider-card-img">
+                                    <div class="slider-card-caption-wrapper">
+                                        <div class="slider-card-caption" data-aos="fade-up" data-aos-duration="1000">
+                                            <div class="btn-con-swip">
+                                                <p
+                                                    class="slider-card-caption-item slider-card-caption-item-description">
+                                                    Health, Balance, Thriving Together Always
+                                                </p>
+                                                <a onclick="document.querySelector('.hero-sub-heading-all-pages').scrollIntoView({ behavior: 'smooth' })"
+                                                    class="arrow-btn-swip">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <path
+                                                            d="M27.5 15.1914C27.5 22.9401 21.4395 29.1914 14 29.1914C6.56055 29.1914 0.5 22.9401 0.5 15.1914C0.5 7.44274 6.56055 1.19141 14 1.19141C21.4395 1.19141 27.5 7.44274 27.5 15.1914Z"
+                                                            fill="#00AD6F" />
+                                                        <path
+                                                            d="M19.5303 16.2217C19.8232 15.9288 19.8232 15.454 19.5303 15.1611L14.7574 10.3881C14.4645 10.0952 13.9896 10.0952 13.6967 10.3881C13.4038 10.681 13.4038 11.1559 13.6967 11.4488L17.9393 15.6914L13.6967 19.934C13.4038 20.2269 13.4038 20.7018 13.6967 20.9947C13.9896 21.2876 14.4645 21.2876 14.7574 20.9947L19.5303 16.2217ZM9.5 16.4414L19 16.4414L19 14.9414L9.5 14.9414L9.5 16.4414Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+            <div class="swiper-button-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+                    <path
+                        d="M14 28.5C6.56055 28.5 0.500001 22.2487 0.500001 14.5C0.500002 6.75133 6.56055 0.499998 14 0.499999C21.4395 0.499999 27.5 6.75133 27.5 14.5C27.5 22.2487 21.4395 28.5 14 28.5Z"
+                        fill="white" stroke="#063E63" />
+                    <path
+                        d="M8.46967 13.4697C8.17678 13.7626 8.17678 14.2374 8.46967 14.5303L13.2426 19.3033C13.5355 19.5962 14.0104 19.5962 14.3033 19.3033C14.5962 19.0104 14.5962 18.5355 14.3033 18.2426L10.0607 14L14.3033 9.75736C14.5962 9.46447 14.5962 8.98959 14.3033 8.6967C14.0104 8.4038 13.5355 8.4038 13.2426 8.6967L8.46967 13.4697ZM18.5 14L18.5 13.25L9 13.25L9 14L9 14.75L18.5 14.75L18.5 14Z"
+                        fill="#063E63" />
+                </svg>
+            </div>
+            <div class="swiper-button-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+                    <path
+                        d="M14 0.5C21.4395 0.5 27.5 6.75133 27.5 14.5C27.5 22.2487 21.4395 28.5 14 28.5C6.56055 28.5 0.5 22.2487 0.5 14.5C0.5 6.75133 6.56055 0.5 14 0.5Z"
+                        fill="white" stroke="#063E63" />
+                    <path
+                        d="M19.5303 15.5303C19.8232 15.2374 19.8232 14.7626 19.5303 14.4697L14.7574 9.6967C14.4645 9.40381 13.9896 9.40381 13.6967 9.6967C13.4038 9.98959 13.4038 10.4645 13.6967 10.7574L17.9393 15L13.6967 19.2426C13.4038 19.5355 13.4038 20.0104 13.6967 20.3033C13.9896 20.5962 14.4645 20.5962 14.7574 20.3033L19.5303 15.5303ZM9.5 15L9.5 15.75L19 15.75L19 15L19 14.25L9.5 14.25L9.5 15Z"
+                        fill="#063E63" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="btn-container-product-home">
+
+        </div>
+        </div>
+    </section>
+
+    <section class="section-common-margin opening-listing-section">
+        <div class="container">
+            <!-- <div class="job-cards-section" id="jobCardsSection"></div> -->
+            <div class="job-opening-list">
+                <!-- card 1  -->
+                <div class="job-opening-card-secondary">
+                    <div class="job-opening-card-secondary-title-wrapper">
+                        <h6 class="job-opening-card-secondary-item job-opening-card-secondary-item-role">
+                            Manager - Advisory
+                        </h6>
+                        <div class="arrow-icon"
+                            onclick="document.querySelector('.hero-sub-heading-all-pages').scrollIntoView({ behavior: 'smooth' })">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30"
+                                fill="none">
+                                <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F" />
+                                <path
+                                    d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="job-opening-card-secondary-item job-opening-card-secondary-item-description">
+                        Experience: 5-8 years
+                    </p>
+                    <p class="job-opening-card-secondary-item job-opening-card-secondary-item-description">
+                        Qualification: MBA / CA
+                    </p>
+                    <p class="job-opening-card-secondary-item job-opening-card-secondary-item-description">
+                        Location: Gurugram (Full-time)
+                    </p>
+                </div>
+                <!-- card 2  -->
+                <div class="job-opening-card-secondary">
+                    <div class="job-opening-card-secondary-title-wrapper">
+                        <h6 class="job-opening-card-secondary-item job-opening-card-secondary-item-role">
+                            Site Operations Manager - Asset Management
+                        </h6>
+                        <div class="arrow-icon"
+                            onclick="document.querySelector('.hero-sub-heading-all-pages').scrollIntoView({ behavior: 'smooth' })">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30"
+                                fill="none">
+                                <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F" />
+                                <path
+                                    d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="job-opening-card-secondary-item job-opening-card-secondary-item-description">
+                        Experience: 5-8 years
+                    </p>
+                    <p class="job-opening-card-secondary-item job-opening-card-secondary-item-description">
+                        Qualification: B.E.(Electrical)/Diploma in Electrical from a reputed engineering college
+                    </p>
+                    <p class="job-opening-card-secondary-item job-opening-card-secondary-item-description">
+                        Location: At site (Rewa, MP)
+                    </p>
+                </div>
+                <!-- card 3  -->
+                <div class="job-opening-card-secondary">
+                    <div class="job-opening-card-secondary-title-wrapper">
+                        <h6 class="job-opening-card-secondary-item job-opening-card-secondary-item-role">
+                            Assistant Manager - Engineering
+                        </h6>
+                        <div class="arrow-icon"
+                            onclick="document.querySelector('.hero-sub-heading-all-pages').scrollIntoView({ behavior: 'smooth' })">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30"
+                                fill="none">
+                                <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F" />
+                                <path
+                                    d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="job-opening-card-secondary-item job-opening-card-secondary-item-description">
+                        Experience: 2 years
+                    </p>
+                    <p class="job-opening-card-secondary-item job-opening-card-secondary-item-description">
+                        Qualification: Engineering Graduate/3-5 years of experience in Sourcing, Material Management &
+                        SCM
+                    </p>
+                    <p class="job-opening-card-secondary-item job-opening-card-secondary-item-description">
+                        Location: Gurugram (Full-time)
+                    </p>
+                </div>
+                <!-- card 4  -->
+                <div class="job-opening-card-secondary">
+                    <div class="job-opening-card-secondary-title-wrapper">
+                        <h6 class="job-opening-card-secondary-item job-opening-card-secondary-item-role">
+                            Solar Performance Manager - Asset Management
+                        </h6>
+                        <div class="arrow-icon"
+                            onclick="document.querySelector('.hero-sub-heading-all-pages').scrollIntoView({ behavior: 'smooth' })">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30"
+                                fill="none">
+                                <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F" />
+                                <path
+                                    d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="job-opening-card-secondary-item job-opening-card-secondary-item-description">
+                        Experience: 5 years +
+                    </p>
+                    <p class="job-opening-card-secondary-item job-opening-card-secondary-item-description">
+                        Qualification: B.Tech (EE/ EEE)
+                    </p>
+                    <p class="job-opening-card-secondary-item job-opening-card-secondary-item-description">
+                        Location: Gurugram (Full-time)
+                    </p>
+                </div>
+                <!-- card 5 -->
+                <div class="job-opening-card-secondary">
+                    <div class="job-opening-card-secondary-title-wrapper">
+                        <h6 class="job-opening-card-secondary-item job-opening-card-secondary-item-role">
+                            Management Trainee - Asset Management
+                        </h6>
+                        <div class="arrow-icon"
+                            onclick="document.querySelector('.hero-sub-heading-all-pages').scrollIntoView({ behavior: 'smooth' })">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30"
+                                fill="none">
+                                <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F" />
+                                <path
+                                    d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="job-opening-card-secondary-item job-opening-card-secondary-item-description">
+                        Experience: 0-1 years
+                    </p>
+                    <p class="job-opening-card-secondary-item job-opening-card-secondary-item-description">
+                        Qualification: Diploma/Degree in Electrical or Power Engineering
+                    </p>
+                    <p class="job-opening-card-secondary-item job-opening-card-secondary-item-description">
+                        Location: Mumbai
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-brand">
+                <div class="footer-logo-wrapper">
+                    <img src="./img/brand-logo/Truboard-Cleantech-logo-white-08.png" alt="" srcset="">
+                </div>
+
+                <div class="social-icons">
+                    <a href="mailto:contact@truboardpartners.com" class="social-link">
+                        <img src="./icons/message-icon-2.png" alt="" srcset="">
+                    </a>
+                    <!-- <a href="#" class="social-link">
+                        <img src="./icons/x-icon-2.png" alt="" srcset="">
+                    </a> -->
+                    <a href="https://www.linkedin.com/company/truboard-partners/posts/?feedView=all"
+                        class="social-link">
+                        <img src="./icons/linkedIn-icon-2.png" alt="" srcset="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <div class="footer-menu">
+                    <h4 class="footer-menu-title">Useful links</h4>
+                    <ul class="footer-menu footer-flex">
+                        <li class="footer-menu-item">
+                            <a href="./index.html" class="footer-menu-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./Trugreen.html" class="footer-menu-link">
+                                TruGreen
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./Asset-Lifecycle-Management.html" class="footer-menu-link">
+                                Assets Lifecycle Management
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./TruEleqtric.html" class="footer-menu-link">
+                                TruEleqtric
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-menu-link">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-contact-wrpaper">
+                <div class="footer-content-title footer-menu-title">
+                    Get in Touch
+                </div>
+                <p class="footer-content-address">
+                    Unit 502-506, 5th Floor, UNITECH COMMERCIAL TOWER 2, Arya Samaj Road, Block B, Greenwood City,
+                    Sector 45, Gurugram, Haryana 122003
+                </p>
+                <a href="Contact-us.html#letsConnect" class="footer-contact-cta">
+                    Contact Now
+                </a>
+            </div>
+        </div>
+
+            <div class="footer-copyright">
+            <div class="col-left">
+                 <a href="privacy-policy.html" class="footer-cta">
+                    Privacy policy
+                </a>
+            </div>
+            <div class="col-right">
+                <a href="#" class="footer-cta" style="display: none;">
+                    Privacy policy
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="col-left">
+                <p class="footer-primary-text">
+                    &copy; All Rights Reserved by TruBoard Cleantech Private Limited
+                </p>
+                <p class="footer-secondary-text">
+                    Subsidiary of TruBoard Private Limited
+                </p>
+            </div>
+            <div class="col-right">
+                <a href="#" class="footer-cta" style="display: none;">
+                    Privacy policy
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/common-script.js"></script>
+    <script>
+        function showToast(message, type = 'success') {
+            const toastContainer = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+
+            const icon = type === 'success' ?
+                '<svg class="toast-icon success" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>' :
+                '<svg class="toast-icon error" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+            toast.innerHTML = `
+                ${icon}
+                <span class="toast-message">${message}</span>
+                <button class="toast-close" onclick="this.parentElement.remove()">×</button>
+            `;
+
+            toastContainer.appendChild(toast);
+
+            // Trigger animation
+            setTimeout(() => toast.classList.add('show'), 10);
+
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            }, 5000);
+        }
+
+        function validateCareerForm() {
+            const email = document.getElementById('email').value.trim();
+            const firstName = document.getElementById('firstName').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+            const jobTitle = document.getElementById('jobTitle').value.trim();
+
+            if (!email || !email.includes('@')) {
+                showToast('Please enter a valid email address', 'error');
+                return false;
+            }
+
+            if (!firstName) {
+                showToast('Please enter your first name', 'error');
+                return false;
+            }
+
+            if (!lastName) {
+                showToast('Please enter your last name', 'error');
+                return false;
+            }
+
+            if (!jobTitle) {
+                showToast('Please enter your job title', 'error');
+                return false;
+            }
+
+            return true;
+        }
+
+        function submitCareerForm() {
+            if (!validateCareerForm()) {
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('email', document.getElementById('email').value.trim());
+            formData.append('firstName', document.getElementById('firstName').value.trim());
+            formData.append('lastName', document.getElementById('lastName').value.trim());
+            formData.append('jobTitle', document.getElementById('jobTitle').value.trim());
+
+            // Show loading state
+            const submitButton = document.querySelector('#careerForm button[type="submit"]');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
+
+            // Send AJAX request
+            fetch('php/career-submit.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        showToast('Thank you! We will get back to you soon.');
+                        document.getElementById('careerForm').reset();
+                    } else {
+                        showToast(data.message || 'Sorry, there was an error sending your message. Please try again later.', 'error');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    showToast('Sorry, there was an error sending your message. Please try again later.', 'error');
+                })
+                .finally(() => {
+                    // Reset button state
+                    submitButton.textContent = originalText;
+                    submitButton.disabled = false;
+                });
+        }
+    </script>
+    <div class="toast-container" id="toastContainer"></div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+
+    AOS.init();
+    AOS.init();
+</script>
+
+<!-- Add sticky navbar scroll behavior -->
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('.navbar');
+    const scrollThreshold = 50; // Minimum scroll amount before navbar starts hiding
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // At the very top of the page
+        if (scrollTop <= 0) {
+            navbar.classList.remove('sticky', 'hidden', 'visible');
+            return;
+        }
+
+        // Add sticky class when scrolling down
+        if (scrollTop > 0) {
+            navbar.classList.add('sticky');
+        }
+
+        if (scrollTop < lastScrollTop) {
+            // Scrolling up - hide navbar
+            navbar.classList.remove('visible');
+            navbar.classList.add('hidden');
+        } else {
+            // Scrolling down or stopped - show navbar
+            navbar.classList.remove('hidden');
+            navbar.classList.add('visible');
+        }
+
+        lastScrollTop = scrollTop;
+    });
+</script>
+
+<script>
+    const jobs = [
+        { title: "UI/UX Designer", type: "Full time" },
+        { title: "Social Media Designer", type: "Full time" },
+    ];
+
+    const section = document.getElementById('jobCardsSection');
+
+    jobs.forEach(job => {
+        const card = document.createElement('div');
+        card.className = 'job-card';
+        card.style.cursor = 'pointer';
+        card.setAttribute('data-aos', 'fade-left');
+        card.setAttribute('data-aos-duration', '1000');
+        card.onclick = () => {
+            document.querySelector('.our-track-record-section-career').scrollIntoView({ behavior: 'smooth' });
+        };
+
+        card.innerHTML = `
+    <div>
+      <h3>${job.title}</h3>
+      <div class="type">${job.type}</div>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+    </div>
+    <div class="arrow-placeholder" onclick="document.querySelector('.hero-sub-heading-all-pages').scrollIntoView({ behavior: 'smooth' })">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30" fill="none">
+  <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F"/>
+  <path d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z" fill="white"/>
+</svg>
+    </div>
+  `;
+
+        section.appendChild(card);
+    });
+</script>
+
+
+<script>
+    AOS.init();
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    function submitCareerForm() {
+        var formData = {
+            email: $('#email').val().trim(),
+            firstName: $('#firstName').val().trim(),
+            lastName: $('#lastName').val().trim(),
+            jobTitle: $('#jobTitle').val().trim()
+        };
+
+        if (formData.email === '' || formData.firstName === '' || formData.lastName === '') {
+            showToast('Please fill in all required fields.', 'error');
+            return;
+        }
+
+        // Disable button & change text
+        var $button = $('.apply');
+        $button.prop('disabled', true).text('Sending...');
+
+        $.ajax({
+            url: 'send-career.php',
+            type: 'POST',
+            dataType: 'json',
+            data: formData,
+            success: function (response) {
+                if (response.status === 200) {
+                    showToast(response.message, 'success');
+                    $('#careerForm')[0].reset();
+                } else {
+                    showToast(response.message, 'error');
+                }
+            },
+            error: function (jqXHR) {
+                showToast('Request failed: ' + jqXHR.status + ' ' + jqXHR.statusText, 'error');
+            },
+            complete: function () {
+                // Re-enable button & restore text
+                $button.prop('disabled', false).text('Apply Now');
+            }
+        });
+    }
+
+    function showToast(message, type) {
+        var toast = $('<div class="toast-message ' + type + '">' + message + '</div>');
+        $('body').append(toast);
+        toast.fadeIn(400).delay(3000).fadeOut(400, function () {
+            $(this).remove();
+        });
+    }
+</script>
+
+
+</html>

@@ -1,0 +1,2010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5TTGKQP9');</script>
+<!-- End Google Tag Manager -->
+    
+    <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVRGSNLJ4G"></script> 
+    <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-CVRGSNLJ4G'); </script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/service-2.css">
+    <link rel="stylesheet" href="./css/assets-lifecycle-management.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+         <title>Asset Lifecycle Management for Renewables | TruBoard Cleantech</title>
+     <meta name="keywords" content="TruBoard Cleantech, asset lifecycle management, predictive maintenance scheduling, lifecycle cost analysis, performance benchmarking, commissioning tracking, decommissioning tracking, renewable asset monitoring">
+     
+     <meta name="description" content="Optimize renewable energy asset lifecycle management with TruBoard Cleantech’s end-to-end tools: real-time monitoring, predictive maintenance scheduling, lifecycle cost analysis, and performance benchmarking.">
+
+    <script>
+        $(document).ready(function () {
+            $(".tab").hide()
+            $(".tab").first().show()
+            $(".tab-toggle-btn").first().addClass("tab-toggle-btn-active")
+
+            $(".tab-toggle-btn").click(function () {
+                var tabId = $(this).attr("tab")
+                $(".tab").hide()
+                $(`#${tabId}`).fadeIn()
+                $(".tab-toggle-btn").removeClass("tab-toggle-btn-active")
+                $(this).addClass("tab-toggle-btn-active")
+            })
+
+            if (window.innerWidth <= 600) {
+                keyOfferingsSwiper.on('slideChange', function () {
+                    console.log('Current index:', keyOfferingsSwiper.activeIndex);
+                    mobileTabSwiper.slideTo(keyOfferingsSwiper.activeIndex);
+                    $(".tab-toggle-btn-active").removeClass("tab-toggle-btn-active")
+
+                });
+
+                mobileTabSwiper.on('slideChange', function () {
+                    keyOfferingsSwiper.slideTo(mobileTabSwiper.activeIndex);
+                });
+            };
+
+        })
+    </script>
+    <style>
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+            content: none;
+        }
+
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+            content: none;
+        }
+
+        /* 
+        .swiper-button-prev,
+        .swiper-button-next svg {
+            transform: scale(1.2);
+        } */
+
+        /* Add hover effects for navigation buttons */
+        .swiper-button-prev svg path,
+        .swiper-button-next svg path {
+            transition: all 0.3s ease;
+        }
+
+        .swiper-button-prev:hover svg path:first-child,
+        .swiper-button-next:hover svg path:first-child {
+            fill: #063E63;
+            stroke: white;
+        }
+
+        .swiper-button-prev:hover svg path:last-child,
+        .swiper-button-next:hover svg path:last-child {
+            fill: white;
+        }
+
+        .mobile-tab-wrapper {
+            display: none !important;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .mobile-tab-wrapper {
+                display: block !important;
+            }
+
+            .tab-wrapper-desktop {
+                display: none !important;
+            }
+
+            .swiper-slide-active .tab-toggle-btn {
+                background-color: #00AD6F;
+                color: white;
+            }
+
+            .profileSwiper-swiper-pagination {
+                position: static !important;
+                /* background: rebeccapurple; */
+                opacity: 100% !important;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .text-center {
+            text-align: center!important;
+            color: #063E63!important;
+        }
+
+        @media only screen and (min-width: 1440px) {
+            .key-offerings-swiper .swiper-slide {
+                width: auto!important;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            .key-offerings-swiper .swiper-slide {
+                flex-shrink: 0;
+                width: 100%!important;
+                position: relative;
+                transition-property: transform;
+                display: flex;
+                align-items: center;
+            }
+
+            .key-offerings-swiper .swiper-wrapper {
+                align-items: center;
+            }
+        }
+
+        .key-offerings-swiper .swiper-wrapper {
+            align-items: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TTGKQP9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand">
+                <img src="./img/brand-logo/Truboard-Cleantech-logo-white-08.png" alt="" srcset="">
+            </a>
+            <nav class="desktop-nav">
+                <ul class="primary-nav">
+                    <li class="nav-item">
+                        <a href="Asset-Lifecycle-Management.html" class="nav-link active"> Asset Lifecycle
+                            Management</a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="Trugreen.html" class="nav-link">TruGreen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="TruEleqtric.html" class="nav-link">TruEleqtric</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resources.html" class="nav-link">Resource</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="resources.html" class="nav-link">Resource</a>
+                    </li> -->
+                </ul>
+            </nav>
+            <span class="desktop-nav">
+                <span class="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                    <div class="option-dropdown-wrapper">
+                        <div class="option-dropdown">
+                            <ul class="option-dropdown-list">
+                                <li class="option-dropdown-item"><a href="./About-us.html"
+                                        class="option-dropdown-link"><span>About Us</span></a>
+                                </li>
+                                <li class="option-dropdown-item"><a href="./Career.html"
+                                        class="option-dropdown-link"><span>Career</span></a></li>
+                                <li class="option-dropdown-item"><a href="./Contact-us.html"
+                                        class="option-dropdown-link"><span>Contact Us</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+            </span>
+
+
+            <span class="mobile-menu-btn mobile-nav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+                <div class="option-dropdown-wrapper">
+                    <div class="option-dropdown">
+                        <ul class="option-dropdown-list">
+                            <li class="option-dropdown-item"><a href="./Asset-Lifecycle-Management.html"
+                                    class="option-dropdown-link"><span class="active">Asset Lifecycle Management</span>
+                                </a>
+                            </li>
+                            <li class="option-dropdown-item"><a href="./Trugreen.html"
+                                    class="option-dropdown-link"><span>TruGreen</span>
+                                </a>
+                            </li>
+                           
+                            <li class="option-dropdown-item"><a href="./TruEleqtric.html"
+                                    class="option-dropdown-link"><span>TruEleqtric</span>
+                                </a>
+                            </li>
+                            <li class="option-dropdown-item"><a href="./resources.html" class="option-dropdown-link">
+                                    <span>Resource</span>
+                                </a>
+                            </li>
+                            <!-- starts normal pages  -->
+                            <li class="option-dropdown-item"><a href="./About-us.html"
+                                    class="option-dropdown-link"><span>About Us</span></a>
+                            </li>
+                            <li class="option-dropdown-item"><a href="./Career.html"
+                                    class="option-dropdown-link"><span>Career</span></a></li>
+                            <li class="option-dropdown-item"><a href="./Contact-us.html"
+                                    class="option-dropdown-link"><span>Contact Us</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </span>
+
+        </div>
+    </div>
+
+    <section class="hero-section">
+        <!-- <video autoplay muted loop id="hero-video" class="hero-section-img">
+                <source src="./videos/hero-section-video-blue.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+        <!-- <img src="./img/banners/contact-us-banner.png" alt="" class="hero-section-img"> -->
+        <img src="./img/banners/service-hero-section-img.png" alt="" class="hero-section-img desktop-nav">
+        <img src="./img/Mobile-banners/Asset-life-cycle-management.png" alt="" class="hero-section-img mobile-nav">
+        <div class="container">
+            <div class="content-info-wrapper">
+                <div class="content-info">
+                    <h1 class="content-info-item content-info-item-title hero-heading-other-pages">
+                        Asset Lifecycle Management Services
+                    </h1>
+                    <!-- <h1 class="content-info-item content-info-item-title hero-heading-other-pages">
+                        Rakesh Kalsi
+                    </h1> -->
+                    <p class="content-info-item content-info-item-role hero-sub-heading-all-pages ">
+                        Maximizing Value, Minimizing Risk Across the Entire Asset Lifecycle
+                    </p>
+                    <p
+                        class="content-info-item content-info-item-caption content-info-item-word hero-sub-heading-all-pages desktop-nav">
+                        “Our vision is to transform every energy asset into a sustainable, high-yielding investment for
+                        our clients”
+                    </p>
+                    <p class="content-info-item content-info-item-caption hero-sub-heading-all-pages desktop-nav">
+                        — Rakesh Kalsi, CEO
+                    </p>
+                    <div class="social-icons">
+                        <!-- <a href="#" class="social-link">
+                            <img src="./icons/message-icon-2.png" alt="" srcset="">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="./icons/x-icon-2.png" alt="" srcset="">
+                        </a> -->
+                        <a href="https://www.linkedin.com/in/rakesh-kalsi-45b44920" class="social-link">
+                            <img src="./icons/linkedIn-icon-2.png" alt="" srcset="">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <section class="multi-column-section section-common-margin" style="display: none;">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-header-title">
+                    Highlights of Our Service Approach
+                </h1>
+
+            </div>
+
+
+            <div class="our-service-approach-swiper-mobile">
+                <!-- Swiper Container -->
+                <div class="swiper multi-column-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <figure class="multi-column-card">
+                                <div class="img-wrapper"
+                                    style="background-image: url('img/asset-lifecycle-management/End-to-End-Coverage.jpg'); background-size: cover; background-position: center;">
+                                </div>
+                                <figcaption class="multi-column-caption">
+                                    <h1 class="multi-column-caption-item multi-column-caption-item-title">
+                                        End-to-End <br> Coverage
+                                    </h1>
+                                    <p class="multi-column-caption-item multi-column-caption-item-description">
+                                        From technical diligence and project management to ongoing O&M and performance
+                                        optimization.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <figure class="multi-column-card">
+                                <div class="img-wrapper"
+                                    style="background-image: url('img/asset-lifecycle-management/Digital-First-Methodology.jpg'); background-size: cover; background-position: center;">
+                                </div>
+                                <figcaption class="multi-column-caption">
+                                    <h1 class="multi-column-caption-item multi-column-caption-item-title">
+                                        Digital-First <br> Methodology
+                                    </h1>
+                                    <p class="multi-column-caption-item multi-column-caption-item-description">
+                                        Advanced analytics, real-time monitoring, and predictive maintenance tools.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <figure class="multi-column-card">
+                                <div class="img-wrapper"
+                                    style="background-image: url('img/asset-lifecycle-management/Customized-Financial-Commercial-Support.jpg'); background-size: cover; background-position: center;">
+                                </div>
+                                <figcaption class="multi-column-caption">
+                                    <h1 class="multi-column-caption-item multi-column-caption-item-title">
+                                        Customized Financial & <br> Commercial Support
+                                    </h1>
+                                    <p class="multi-column-caption-item multi-column-caption-item-description">
+                                        Helping you secure embedded finance, manage contracts, and navigate regulatory
+                                        requirements.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-button-prev multi-column-swiper-prev"></div> -->
+                    <!-- <div class="swiper-button-next multi-column-swiper-next"></div> -->
+                    <div class="swiper-pagination multi-column-swiper-pagination"></div>
+                </div>
+
+            </div>
+
+            <div class="card-grid our-service-approach-swiper-desktop">
+                <figure class="multi-column-card" data-aos="fade-up" data-aos-duration="900">
+                    <div class="img-wrapper"
+                        style="background-image: url('img/asset-lifecycle-management/End-to-End-Coverage.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <figcaption class="multi-column-caption">
+                        <h1 class="multi-column-caption-item 
+                        multi-column-caption-item-title">
+                            End-to-End <br> Coverage
+                        </h1>
+                        <p class="multi-column-caption-item 
+                        multi-column-caption-item-description">
+                            From technical diligence and project management to ongoing O&M and performance optimization.
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="multi-column-card" data-aos="fade-up" data-aos-duration="1100">
+                    <div class="img-wrapper"
+                        style="background-image: url('img/asset-lifecycle-management/Digital-First-Methodology.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <figcaption class="multi-column-caption">
+                        <h1 class="multi-column-caption-item 
+                        multi-column-caption-item-title">
+                            Digital-First <br> Methodology
+                        </h1>
+                        <p class="multi-column-caption-item 
+                        multi-column-caption-item-description">
+                            Advanced analytics, real-time monitoring, and predictive maintenance tools.
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="multi-column-card" data-aos="fade-up" data-aos-duration="1300">
+                    <div class="img-wrapper"
+                        style="background-image: url('img/asset-lifecycle-management/Customized-Financial-Commercial-Support.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <figcaption class="multi-column-caption">
+                        <h1 class="multi-column-caption-item 
+                        multi-column-caption-item-title">
+                            Customized Financial & <br> Commercial Support
+                        </h1>
+                        <p class="multi-column-caption-item 
+                        multi-column-caption-item-description">
+                            Helping you secure embedded finance, manage contracts, and navigate regulatory requirements.
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="tab-section section-common-margin key-offering-section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-header-title">
+                    Our Key Offerings
+                </h1>
+            </div>
+            <div class="tab-toggle-btn-wrapper">
+                <!-- Slider main container -->
+                <div class="swiper key-offerings-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                         <!-- Slides -->
+                        <div class="swiper-slide">
+                            <button class="tab-toggle-btn" tab="AssetManagement">
+                                Asset Management and O&M
+                            </button>
+                        </div>
+                         <!-- Slides -->
+                        <div class="swiper-slide">
+                            <button class="tab-toggle-btn" tab="EngineeringServices">
+                                Design Engineering & Lender's Independent Engineer (LIE)
+                            </button>
+                        </div>
+                         <!-- Slides -->
+                        <div class="swiper-slide">
+                            <button class="tab-toggle-btn" tab="CapitalStructuringAdvisory">
+                                Capital Structuring & Advisory
+                            </button>
+                        </div>
+                           <!-- Slides -->
+                        <div class="swiper-slide">
+                            <button class="tab-toggle-btn" tab="ProcurementAsAService">
+                                ⁠Procurement as a Service (PaaS)
+                            </button>
+                        </div>
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <button class="tab-toggle-btn" tab="ProjectManagement">
+                                ⁠Project Management & PMC Services
+                            </button>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+
+
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev key-offerings-swiper-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                        <path
+                            d="M14.5 29C7.06055 29 1 22.7487 1 15C1 7.25133 7.06055 0.999998 14.5 0.999999C21.9395 0.999999 28 7.25133 28 15C28 22.7487 21.9395 29 14.5 29Z"
+                            fill="white" stroke="#063E63" />
+                        <path
+                            d="M8.96967 13.9697C8.67678 14.2626 8.67678 14.7374 8.96967 15.0303L13.7426 19.8033C14.0355 20.0962 14.5104 20.0962 14.8033 19.8033C15.0962 19.5104 15.0962 19.0355 14.8033 18.7426L10.5607 14.5L14.8033 10.2574C15.0962 9.96447 15.0962 9.48959 14.8033 9.1967C14.5104 8.9038 14.0355 8.9038 13.7426 9.1967L8.96967 13.9697ZM19 14.5L19 13.75L9.5 13.75L9.5 14.5L9.5 15.25L19 15.25L19 14.5Z"
+                            fill="#063E63" />
+                    </svg>
+                </div>
+                <div class="swiper-button-next key-offerings-swiper-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                        <path
+                            d="M14.5 1C21.9395 1 28 7.25133 28 15C28 22.7487 21.9395 29 14.5 29C7.06055 29 1 22.7487 1 15C1 7.25133 7.06055 1 14.5 1Z"
+                            fill="white" stroke="#063E63" />
+                        <path
+                            d="M20.0303 16.0303C20.3232 15.7374 20.3232 15.2626 20.0303 14.9697L15.2574 10.1967C14.9645 9.90381 14.4896 9.90381 14.1967 10.1967C13.9038 10.4896 13.9038 10.9645 14.1967 11.2574L18.4393 15.5L14.1967 19.7426C13.9038 20.0355 13.9038 20.5104 14.1967 20.8033C14.4896 21.0962 14.9645 21.0962 15.2574 20.8033L20.0303 16.0303ZM10 15.5L10 16.25L19.5 16.25L19.5 15.5L19.5 14.75L10 14.75L10 15.5Z"
+                            fill="#063E63" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="tab-wrapper tab-wrapper-desktop">
+                <div class="tab" id="AssetManagement">
+                    <div class="service-overview" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <h3>Service Overview</h3>
+                        <p class="description">
+                            We combine technical excellence with financial discipline to deliver comprehensive asset
+                            management that enhances uptime, ensures compliance, and drives superior returns
+                        </p>
+
+                        <div class="service-col">
+                            <div class="col-left">
+                                <div class="heading-wrapper  heading-wrapper-secondary">
+                                    <img src="./icons/key-offering-icon.png" srcset="" class="icon">
+                                    <h3>
+                                        Key Achievements
+                                    </h3>
+                                </div>
+
+                                <ul>
+                                    <li>
+                                        5GW+ assets under management
+                                    </li>
+                                    <li>
+                                        +1.5% portfolio-wide performance uplift
+                                    </li>
+                                    <li>
+                                        Performance SLAs to deliver the AOP to operations
+                                    </li>
+                                    <li>Zero-to-minimal cost creep; top-quartile benchmarks</li>
+                                    <li>
+                                        100% regulatory compliance across all assets
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-right">
+                                <div class="heading-wrapper">
+                                    <img src="./icons/key-milestone-icon.png" srcset="" class="icon">
+                                    <h3>
+                                        Capabilities
+                                    </h3>
+                                </div>
+                                <ul>
+                                    <li>
+                                        Technical Management – Proactive monitoring, fault detection, and performance
+                                        optimization
+                                    </li>
+                                    <li>
+                                        Legal & Compliance - Contract management, regulatory oversight, dispute
+                                        avoidance
+                                    </li>
+                                    <li>
+                                        Commercial Management - Receivables control, revenue assurance, and dynamic
+                                        contracting
+                                    </li>
+                                    <li>
+                                        Financial Oversight - Full accounting, audit prep, and lender reporting
+                                    </li>
+                                    <li>
+                                        Forecasting & Scheduling - Predictive planning and optimized maintenance
+                                    </li>
+                                    <li>
+                                        Power Trading - Tactical short/long-term trading for margin improvement
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-center">Our Asset Management Team</h3>
+                    <div class="profile-wrapper-desktop">
+                        <!-- profile section Parijat Deshmukh, Head - Asset Management start -->
+                        <div class="profile-card-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="profile-card">
+                                <div class="profile-img-wrapper">
+                                    <div class="profile-img-placeholder">
+                                        <img src="img/Truboard people/Parijat.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="profile-caption">
+                                    <h1>Parijat Deshmukh, Chief Operating Officer</h1>
+                                    <p>
+                                        16+ years in AM, operations, project management & development; 1.2 GW+ assets
+                                        developed & 2 GW+ managed; previously with Mahindra and Reliance
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="profile-social-media">
+                                <!-- <a href="#" class="profile-social-media-link">
+                                    <div class="profile-social-media-icon">
+                                        <img src="./icons/facebook-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a>
+                                <a href="#" class="profile-social-media-link">
+                                    <div class="profile-social-media-icon">
+                                        <img src="./icons/message-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a> -->
+                                <a href="https://www.linkedin.com/in/parijat-deshmukh-81655913/"
+                                    class="profile-social-media-link">
+                                    <div class="profile-social-media-icon">
+                                        <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- profile section end -->
+                        <!-- profile section Anup Rajput, CFO, F&A  start -->
+                        <div class="profile-card-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="profile-card">
+                                <div class="profile-img-wrapper">
+                                    <div class="profile-img-placeholder">
+                                        <img src="img/Truboard people/Anup.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="profile-caption">
+                                    <h1>Anup Rajput, Chief Financial Officer </h1>
+                                    <p>
+                                        16+ years in financial reporting & analysis, accounting & audit, taxation,
+                                        equity/debt; previous experience with IIFL Finance, Piramal Finance, L&T Mutual
+                                        Fund and Deloitte </p>
+                                </div>
+                            </div>
+                            <div class="profile-social-media">
+                                <!-- <a href="#" class="profile-social-media-link">
+                                    <div class="profile-social-media-icon">
+                                        <img src="./icons/facebook-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a>
+                                <a href="#" class="profile-social-media-link">
+                                    <div class="profile-social-media-icon">
+                                        <img src="./icons/message-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a> -->
+                                <a href="https://www.linkedin.com/in/anup-rajput-ab428935/" class="profile-social-media-link">
+                                    <div class="profile-social-media-icon">
+                                        <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- profile section end -->
+                        <!-- profile section Mohit Seth, Legal & Compliance start -->
+                        <div class="profile-card-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="profile-card">
+                                <div class="profile-img-wrapper">
+                                    <div class="profile-img-placeholder">
+                                        <img src="img/Truboard people/Mohit.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="profile-caption">
+                                    <h1>Mohit Seth, Legal & Compliance </h1>
+                                    <p>
+                                        20+ years in legal & secretarial functions; previously with PTC India Financial
+                                        Services and Power Finance Corporation
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="profile-social-media">
+                                <!-- <a href="#" class="profile-social-media-link">
+                                    <div class="profile-social-media-icon">
+                                        <img src="./icons/facebook-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a>
+                                <a href="#" class="profile-social-media-link">
+                                    <div class="profile-social-media-icon">
+                                        <img src="./icons/message-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a> -->
+                                <a href="https://www.linkedin.com/in/mohit-seth-0190a47/" class="profile-social-media-link">
+                                    <div class="profile-social-media-icon">
+                                        <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- profile section end -->
+                        <!-- profile section Sandeep Sharma, Operational Excellence start -->
+                        <div class="profile-card-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="profile-card">
+                                <div class="profile-img-wrapper">
+                                    <div class="profile-img-placeholder">
+                                        <img src="img/Truboard people/Sandeep.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="profile-caption">
+                                    <h1>Sandeep Sharma, Operational Excellence </h1>
+                                    <p>
+                                        18+ years in operational excellence, innovation & Asset Management; previously
+                                        with Azure and Mahindra
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="profile-social-media">
+                                <!-- <a href="#" class="profile-social-media-link">
+                                <div class="profile-social-media-icon">
+                                    <img src="./icons/facebook-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a>
+                                <a href="#" class="profile-social-media-link">
+                                    <div class="profile-social-media-icon">
+                                        <img src="./icons/message-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a> -->
+                                <a href="https://www.linkedin.com/in/sandeep-sharma-06008921/"
+                                    class="profile-social-media-link">
+                                    <div class="profile-social-media-icon">
+                                        <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- profile section end -->
+                       
+                        <!-- profile section Ajit Ajane, Commercial  start -->
+                        <div class="profile-card-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="profile-card">
+                                <div class="profile-img-wrapper">
+                                    <div class="profile-img-placeholder">
+                                        <img src="img/Truboard people/Ajit.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="profile-caption">
+                                    <h1>Ajit Ajane, Commercial </h1>
+                                    <p>
+                                        11+ years in forecasting & scheduling, commercial & compliance management, asset
+                                        management, performance monitoring & analysis, MIS; previously with leading
+                                        energy firms
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="profile-social-media">
+                                <!-- <a href="#" class="profile-social-media-link">
+                        <div class="profile-social-media-icon">
+                            <img src="./icons/facebook-icon.svg" alt="" srcset="">
+                        </div>
+                    </a>
+                    <a href="#" class="profile-social-media-link">
+                        <div class="profile-social-media-icon">
+                            <img src="./icons/message-icon.svg" alt="" srcset="">
+                        </div>
+                    </a> -->
+                                <a href="https://www.linkedin.com/in/ajit-ajane-3775b7142/"
+                                    class="profile-social-media-link">
+                                    <div class="profile-social-media-icon">
+                                        <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- profile section end -->
+                         
+                    </div>
+
+                </div>
+                  <div class="tab" id="EngineeringServices">
+                    <div class="service-overview">
+                        <h3>Service Overview</h3>
+                        <p class="description">
+                            From feasibility to commissioning, we offer design and evaluation services that accelerate
+                            timelines, reduce costs, and ensure long-term operational excellence
+                        </p>
+
+                        <div class="service-col">
+                            <div class="col-left">
+                                <div class="heading-wrapper  heading-wrapper-secondary">
+                                    <img src="./icons/key-offering-icon.png" srcset="" class="icon">
+                                    <h3>
+                                        Key Achievements
+                                    </h3>
+                                </div>
+                                <ul>
+                                    <li>
+                                        14 GW+ engineered across renewables and thermal
+                                    </li>
+                                    <li>
+                                        20% faster execution via modular design
+                                    </li>
+                                    <li>
+                                        10% average CapEx savings
+                                    </li>
+                                    <li>
+                                        100% uptime across engineered systems
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-right">
+                                <div class="heading-wrapper">
+                                    <img src="./icons/key-milestone-icon.png" srcset="" class="icon">
+                                    <h3>
+                                        Capabilities
+                                    </h3>
+                                </div>
+                                <ul>
+                                    <li>
+                                        Design Engineering - Feasibility, basic/detailed design, and commissioning
+                                        support
+                                    </li>
+                                    <li>
+                                        Owner’s Engineering - Oversight, QA/QC, and technical representation
+                                    </li>
+                                    <li>
+                                        Lender’s IE - Due diligence, risk flagging, and project monitoring
+                                    </li>
+                                    <li>
+                                        Technical Due Diligence for M&A - Comprehensive asset- and portfolio-level
+                                        evaluation to support acquisition strategy, valuation, and integration
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- profile section Sudhakar Sundaray, Engineering  start -->
+                    <h3 class="text-center">Our Engineering Team</h3>
+                    <div class="profile-card-wrapper">
+                        <div class="profile-card">
+                            <div class="profile-img-wrapper">
+                                <div class="profile-img-placeholder">
+                                    <img src="img/Truboard people/Sudhakar.png" alt="">
+                                </div>
+                            </div>
+                            <div class="profile-caption">
+                                <h1>Sudhakar Sundaray, Engineering </h1>
+                                <p>
+                                    15+ years in lender’s engineering, owner’s engineering & technical evaluation; 15
+                                    GW+ assets handled across 13 countries
+                                </p>
+                            </div>
+                        </div>
+                        <div class="profile-social-media">
+                            <!-- <a href="#" class="profile-social-media-link">
+                        <div class="profile-social-media-icon">
+                            <img src="./icons/facebook-icon.svg" alt="" srcset="">
+                        </div>
+                    </a>
+                    <a href="#" class="profile-social-media-link">
+                        <div class="profile-social-media-icon">
+                            <img src="./icons/message-icon.svg" alt="" srcset="">
+                        </div>
+                    </a> -->
+                            <a href="https://www.linkedin.com/in/sudhakar-sundaray-a0438a15/"
+                                class="profile-social-media-link">
+                                <div class="profile-social-media-icon">
+                                    <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- profile section end -->
+
+                </div>
+                
+                <div class="tab" id="CapitalStructuringAdvisory">
+                    <div class="service-overview">
+                        <h3>Service Overview</h3>
+                        <p class="description">
+                            We secure capital with the right structure, terms, and timing—driving project viability and
+                            maximizing investor returns through strategic financial planning
+                        </p>
+
+                        <div class="service-col">
+                            <div class="col-left">
+                                <div class="heading-wrapper  heading-wrapper-secondary">
+                                    <img src="./icons/key-offering-icon.png" srcset="" class="icon">
+                                    <h3>
+                                        Key Achievements
+                                    </h3>
+                                </div>
+                                <ul>
+                                    <li>
+                                        $2.5B+ closed in infra transactions
+                                    </li>
+                                    <li>
+                                        Financing secured for 30+ clean energy projects
+                                    </li>
+                                    <li>
+                                        Optimized terms via bespoke structuring
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-right">
+                                <div class="heading-wrapper">
+                                    <img src="./icons/key-milestone-icon.png" srcset="" class="icon">
+                                    <h3>
+                                        Capabilities
+                                    </h3>
+                                </div>
+                                <ul>
+                                    <li>
+                                        Fundraising - Equity, debt, and structured capital solutions
+                                    </li>
+                                    <li>
+                                        M&A Advisory - Full transaction support, from diligence to integration
+                                    </li>
+                                    <li>
+                                        Capital Structures - Customized frameworks to balance risk and return
+                                    </li>
+                                    <li>
+                                        Bid Advisory - Strategic and financial advisory for competitive bidding
+                                        processes, including tariff modelling, bid positioning, and risk assessment
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- profile section Sakshi Sharma, Advisory start -->
+                    <h3 class="text-center">Our Capital Structuring & Advisory Team</h3>
+
+                    <div class="profile-card-wrapper">
+                        <div class="profile-card">
+                            <div class="profile-img-wrapper">
+                                <div class="profile-img-placeholder">
+                                    <img src="img/Truboard people/Sakshi.png" alt="">
+                                </div>
+                            </div>
+                            <div class="profile-caption">
+                                <h1>Sakshi Sharma, Advisory</h1>
+                                <p>
+                                    18+ years in infrastructure financing with expertise in renewable energy, energy
+                                    efficiency & business strategy; previously with leading investment banks
+                                </p>
+                            </div>
+                        </div>
+                        <div class="profile-social-media">
+                            <!-- <a href="#" class="profile-social-media-link">
+                        <div class="profile-social-media-icon">
+                            <img src="./icons/facebook-icon.svg" alt="" srcset="">
+                        </div>
+                    </a>
+                    <a href="#" class="profile-social-media-link">
+                        <div class="profile-social-media-icon">
+                            <img src="./icons/message-icon.svg" alt="" srcset="">
+                        </div>
+                    </a> -->
+                            <a href="https://www.linkedin.com/in/sakshi-sharma-6969554/"
+                                class="profile-social-media-link">
+                                <div class="profile-social-media-icon">
+                                    <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- profile section end -->
+                </div>
+                <div class="tab" id="ProcurementAsAService">
+                    <div class="service-overview">
+                        <h3>Service Overview</h3>
+                        <p class="description">
+                            We streamline procurement across CapEx and OpEx categories—ensuring cost savings, quality
+                            assurance, and on-time project delivery.
+                        </p>
+
+                        <div class="service-col">
+                            <div class="col-left">
+                                <div class="heading-wrapper  heading-wrapper-secondary">
+                                    <img src="./icons/key-offering-icon.png" srcset="" class="icon">
+                                    <h3>
+                                        Key Achievements
+                                    </h3>
+                                </div>
+                                <ul>
+                                    <li>
+                                        3–5% CapEx savings
+                                    </li>
+                                    <li>
+                                        8–10% opEx reductions
+                                    </li>
+                                    <li>
+                                        10–15% faster engineering timelines
+                                    </li>
+                                    <li>
+                                        100% milestone payments tied to quality approvals
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-right">
+                                <div class="heading-wrapper">
+                                    <img src="./icons/key-milestone-icon.png" srcset="" class="icon">
+                                    <h3>
+                                        Capabilities
+                                    </h3>
+                                </div>
+                                <ul>
+                                    <li>
+                                        Spend Optimization – A/B-class cost controls and budget alignment
+                                    </li>
+                                    <li>
+                                        Procurement Planning – Full-cycle procurement strategy and execution
+                                    </li>
+                                    <li>
+                                        Contract Strategy – Risk-balanced agreements with volume leverage
+                                    </li>
+                                    <li>
+                                        Spend Control – Invoice validation, forecasting, and variance management
+                                    </li>
+                                    <li>
+                                        Risk & QA – Material standards, contractor control, and defect prevention
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- profile section Sakshi Sharma, Advisory start -->
+                    <h3 class="text-center">Our Procurement Team</h3>
+                    <div class="profile-card-wrapper">
+                        <div class="profile-card">
+                            <div class="profile-img-wrapper">
+                                <div class="profile-img-placeholder">
+                                    <img src="./img/Saiyam.png" alt="">
+                                </div>
+                            </div>
+                            <!-- <h3>Our Procurement Team</h3> -->
+                            <div class="profile-caption">
+                                <h1>Saiyam Goyal, Procurement </h1>
+                                <p>
+                                    10+ years in supply chain management, contract closing, new-tech evaluation &
+                                    factory acceptance; previously with Mahindra and PharmEasy
+                                </p>
+                            </div>
+                        </div>
+                        <div class="profile-social-media">
+                            <!-- <a href="#" class="profile-social-media-link">
+                        <div class="profile-social-media-icon">
+                            <img src="./icons/facebook-icon.svg" alt="" srcset="">
+                        </div>
+                    </a>
+                    <a href="#" class="profile-social-media-link">
+                        <div class="profile-social-media-icon">
+                            <img src="./icons/message-icon.svg" alt="" srcset="">
+                        </div>
+                    </a> -->
+                            <a href="https://www.linkedin.com/in/saiyam-goyal-23a079a5/"
+                                class="profile-social-media-link">
+                                <div class="profile-social-media-icon">
+                                    <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- profile section end -->
+                </div>
+                <div class="tab" id="ProjectManagement">
+                    <div class="service-overview">
+                        <h3>Service Overview</h3>
+                        <p class="description">
+                            From planning to handover, we manage projects across Solar, Wind, BESS, and Pumped Storage
+                            to deliver on time, within budget, and to spec.
+                        </p>
+
+                        <div class="service-col">
+                            <div class="col-left">
+                                <div class="heading-wrapper  heading-wrapper-secondary">
+                                    <img src="./icons/key-offering-icon.png" srcset="" class="icon">
+                                    <h3>
+                                        Key Achievements
+                                    </h3>
+                                </div>
+                                <ul>
+                                    <li>
+                                        500 MW Solar & 500 MW Wind under PMC
+                                    </li>
+                                    <li>
+                                        25% savings on claims via risk management
+                                    </li>
+                                    <li>
+                                        SOPs standardized across all project phases
+                                    </li>
+                                    <li>
+                                        100% milestone-tied to quality control
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-right">
+                                <div class="heading-wrapper">
+                                    <img src="./icons/key-milestone-icon.png" srcset="" class="icon">
+                                    <h3>
+                                        Capabilities
+                                    </h3>
+                                </div>
+                                <ul>
+                                    <li>
+                                        PMO & Planning – WBS, budgeting, resource allocation, risk planning
+                                    </li>
+                                    <li>
+                                        Execution & Monitoring – Timeline adherence, stakeholder reporting
+                                    </li>
+                                    <li>
+                                        Quality & Risk Control – Inspections, contractor reviews, defect tracking
+                                    </li>
+                                    <li>
+                                        Budget Adherence – Real-time KPI monitoring and schedule management
+                                    </li>
+                                    <li>
+                                        Commissioning & HOTO – Smooth handovers and performance validation
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- profile section Sakshi Sharma, Advisory start -->
+                    <h3 class="text-center">Our Project Management Team </h3>
+                    <div class="profile-card-wrapper">
+                        <div class="profile-card">
+                            <div class="profile-img-wrapper">
+                                <div class="profile-img-placeholder">
+                                    <img src="img/Truboard people/gaurav-mehra.png" alt="">
+                                </div>
+                            </div>
+                            <div class="profile-caption">
+                                <h1>Gaurav Mehra, Project Management</h1>
+                                <p>
+                                    14+ years in project management, construction management, asset management, risk
+                                    management, technical due diligence & quality assurance & quality control previously
+                                    with soft bank, Acme Solar Holdings, TUV Rheinland & Bansal Infratech
+                                </p>
+                            </div>
+                        </div>
+                        <div class="profile-social-media">
+                            <a href="#" class="profile-social-media-link">
+                                <div class="profile-social-media-icon">
+                                    <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- profile section end -->
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile tab wrapper  -->
+        <!-- Slider main container -->
+        <div class="mobile-tab-wrapper">
+            <div class="swiper mobile-tab-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides AssetManagement -->
+                    <div class="swiper-slide">
+                        <div class="mobileTab">
+                            <div class="service-overview">
+                                <h3>Service Overview</h3>
+                                <p class="description">
+                                    We combine technical excellence with financial discipline to deliver comprehensive asset
+                                    management that enhances uptime, ensures compliance, and drives superior returns 
+                                </p>
+
+                                <div class="service-col">
+                                    <div class="col-left">
+                                        <div class="heading-wrapper  heading-wrapper-secondary">
+                                            <img src="./icons/key-offering-icon.png" srcset="" class="icon">
+                                            <h3>
+                                                Key Achievements
+                                            </h3>
+                                        </div>
+
+                                        <ul>
+                                            <li>
+                                                5GW+ assets under management
+                                            </li>
+                                            <li>
+                                                +1.5% portfolio-wide performance uplift
+                                            </li>
+                                            <li>
+                                                Performance SLAs to deliver the AOP to operations
+                                            </li>
+                                            <li>
+                                                Zero-to-minimal cost creep; top-quartile benchmarks
+                                            </li>
+                                            <li>100% regulatory compliance across all assets</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-right">
+                                        <div class="heading-wrapper">
+                                            <img src="./icons/key-milestone-icon.png" srcset="" class="icon">
+                                            <h3>
+                                                Capabilities
+                                            </h3>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                Technical Asset Management - Proactive monitoring, fault detection, and
+                                                performance optimization
+                                            </li>
+                                            <li>
+                                                Legal & Compliance - Contract management, regulatory oversight, dispute
+                                                avoidance
+                                            </li>
+                                            <li>
+                                                Commercial Management - Receivables control, revenue assurance, and
+                                                dynamic contracting
+                                            </li>
+                                            <li>
+                                                Financial Oversight - Full accounting, audit prep, and lender reporting
+                                            </li>
+                                            <li>
+                                                Forecasting & Scheduling - Predictive planning and optimized maintenance
+                                            </li>
+                                            <li>
+                                                Power Trading - Tactical short/long-term trading for margin improvement
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="text-center">Our Asset Management Team</h3>
+
+                            <div class="profile-wrapper-mobile">
+                                <!-- Swiper -->
+                                <div class="swiper profileSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <!-- profile section Parijat Deshmukh, Head - Asset Management start -->
+                                            <div class="profile-card-wrapper">
+                                                <div class="profile-card">
+                                                    <div class="profile-img-wrapper">
+                                                        <div class="profile-img-placeholder">
+                                                            <img src="img/Truboard people/Parijat.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-caption">
+                                                        <h1>Parijat Deshmukh, Chief Operating Officer</h1>
+                                                        <p>
+                                                            16+ years in AM, operations, project management &
+                                                            development; 1.2 GW+ assets developed & 2 GW+ managed;
+                                                            previously with Mahindra and Reliance
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-social-media">
+                                                    <a href="https://www.linkedin.com/in/parijat-deshmukh-81655913/"
+                                                        class="profile-social-media-link">
+                                                        <div class="profile-social-media-icon">
+                                                            <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                          <div class="swiper-slide">
+                                            <!-- profile section Anup Rajput, CFO, F&A  start -->
+                                            <div class="profile-card-wrapper">
+                                                <div class="profile-card">
+                                                    <div class="profile-img-wrapper">
+                                                        <div class="profile-img-placeholder">
+                                                            <img src="img/Truboard people/Anup.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-caption">
+                                                        <h1>Anup Rajput, Chief Financial Officer </h1>
+                                                        <p>
+                                                            16+ years in financial reporting & analysis, accounting &
+                                                            audit, taxation, equity/debt; previous experience with IIFL
+                                                            Finance, Piramal Finance, L&T Mutual Fund and Deloitte </p>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-social-media">
+                                                    <!-- <a href="#" class="profile-social-media-link">
+                                                <div class="profile-social-media-icon">
+                                                    <img src="./icons/facebook-icon.svg" alt="" srcset="">
+                                                </div>
+                                            </a>
+                                            <a href="#" class="profile-social-media-link">
+                                                <div class="profile-social-media-icon">
+                                                    <img src="./icons/message-icon.svg" alt="" srcset="">
+                                                </div>
+                                            </a> -->
+                                                    <a href="https://www.linkedin.com/in/anup-rajput-ab428935/" class="profile-social-media-link">
+                                                        <div class="profile-social-media-icon">
+                                                            <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <!-- profile section Mohit Seth, Legal & Compliance start -->
+                                            <div class="profile-card-wrapper">
+                                                <div class="profile-card">
+                                                    <div class="profile-img-wrapper">
+                                                        <div class="profile-img-placeholder">
+                                                            <img src="img/Truboard people/Mohit.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-caption">
+                                                        <h1>Mohit Seth, Legal & Compliance </h1>
+                                                        <p>
+                                                            20+ years in legal & secretarial functions; previously with
+                                                            PTC India Financial Services and Power Finance Corporation
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-social-media">
+                                                    <a href="https://www.linkedin.com/in/mohit-seth-0190a47/"
+                                                        class="profile-social-media-link">
+                                                        <div class="profile-social-media-icon">
+                                                            <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <!-- profile section Sandeep Sharma, Operational Excellence start -->
+                                            <div class="profile-card-wrapper">
+                                                <div class="profile-card">
+                                                    <div class="profile-img-wrapper">
+                                                        <div class="profile-img-placeholder">
+                                                            <img src="img/Truboard people/Sandeep.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-caption">
+                                                        <h1>Sandeep Sharma, Operational Excellence </h1>
+                                                        <p>
+                                                            18+ years in operational excellence, innovation & Asset
+                                                            Management; previously with Azure and Mahindra
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-social-media">
+                                                    <!-- <a href="#" class="profile-social-media-link">
+                                                <div class="profile-social-media-icon">
+                                                    <img src="./icons/facebook-icon.svg" alt="" srcset="">
+                                                </div>
+                                            </a>
+                                            <a href="#" class="profile-social-media-link">
+                                                <div class="profile-social-media-icon">
+                                                    <img src="./icons/message-icon.svg" alt="" srcset="">
+                                                </div>
+                                            </a> -->
+                                                    <a href="https://www.linkedin.com/in/sandeep-sharma-06008921/"
+                                                        class="profile-social-media-link">
+                                                        <div class="profile-social-media-icon">
+                                                            <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      
+                                        <div class="swiper-slide">
+                                            <!-- profile section Ajit Ajane, Commercial  start -->
+                                            <div class="profile-card-wrapper" data-aos="fade-left"
+                                                data-aos-duration="1000">
+                                                <div class="profile-card">
+                                                    <div class="profile-img-wrapper">
+                                                        <div class="profile-img-placeholder">
+                                                            <img src="img/Truboard people/Ajit.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-caption">
+                                                        <h1>Ajit Ajane, Commercial </h1>
+                                                        <p>
+                                                            11+ years in forecasting & scheduling, commercial &
+                                                            compliance management, asset management, performance
+                                                            monitoring & analysis, MIS; previously with leading energy
+                                                            firms
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-social-media">
+                                                    <!-- <a href="#" class="profile-social-media-link">
+                                                <div class="profile-social-media-icon">
+                                                    <img src="./icons/facebook-icon.svg" alt="" srcset="">
+                                                </div>
+                                            </a>
+                                            <a href="#" class="profile-social-media-link">
+                                                <div class="profile-social-media-icon">
+                                                    <img src="./icons/message-icon.svg" alt="" srcset="">
+                                                </div>
+                                            </a> -->
+                                                    <a href="https://www.linkedin.com/in/ajit-ajane-3775b7142/"
+                                                        class="profile-social-media-link">
+                                                        <div class="profile-social-media-icon">
+                                                            <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Swiper Navigation & Pagination -->
+                                    <div class="swiper-button-next profileSwiper-swiper-button-next "></div>
+                                    <div class="swiper-button-prev profileSwiper-swiper-button-prev "></div>
+                                </div>
+                                <div class="profileSwiper-swiper-pagination"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Slides EngineeringServices -->
+                    <div class="swiper-slide">
+                        <div class="mobileTab">
+                            <div class="service-overview">
+                                <h3>Service Overview</h3>
+                                <p class="description">
+                                    From feasibility to commissioning, we offer design and evaluation services that
+                                    accelerate timelines, reduce costs, and ensure long-term operational excellence
+                                </p>
+
+                                <div class="service-col">
+                                    <div class="col-left">
+                                        <div class="heading-wrapper  heading-wrapper-secondary">
+                                            <img src="./icons/key-offering-icon.png" srcset="" class="icon">
+                                            <h3>
+                                                Key Achievements
+                                            </h3>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                14 GW+ engineered across renewables and thermal
+                                            </li>
+                                            <li>
+                                                20% faster execution via modular design
+                                            </li>
+                                            <li>
+                                                10% average CapEx savings
+                                            </li>
+                                            <li>
+                                                100% uptime across engineered systems
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-right">
+                                        <div class="heading-wrapper">
+                                            <img src="./icons/key-milestone-icon.png" srcset="" class="icon">
+                                            <h3>
+                                                Capabilities
+                                            </h3>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                Design Engineering – Feasibility, basic/detailed design, and
+                                                commissioning support
+                                            </li>
+                                            <li>
+                                                Owner’s Engineering - Oversight, QA/QC, and technical representation
+                                            </li>
+                                            <li>
+                                                Lender’s IE – Due diligence, risk flagging, and project monitoring
+                                            </li>
+                                            <li>Technical Due Diligence for M&A – Comprehensive asset- and
+                                                portfolio-level evaluation to support acquisition strategy, valuation,
+                                                and integration</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- profile section Sudhakar Sundaray, Engineering  start -->
+                            <h3 class="text-center">Our Engineering Team</h3>
+                            <div class="profile-card-wrapper">
+                                <div class="profile-card">
+                                    <div class="profile-img-wrapper">
+                                        <div class="profile-img-placeholder">
+                                            <img src="img/Truboard people/Sudhakar.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- <h3>Our Engineering Team</h3> -->
+                                    <div class="profile-caption">
+                                        <h1>Sudhakar Sundaray, Engineering </h1>
+                                        <p>
+                                            15+ years in lender’s engineering, owner’s engineering & technical
+                                            evaluation; 15 GW+ assets handled across 13 countries
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="profile-social-media">
+                                    <!-- <a href="#" class="profile-social-media-link">
+                                    <div class="profile-social-media-icon">
+                                        <img src="./icons/facebook-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a>
+                                <a href="#" class="profile-social-media-link">
+                                    <div class="profile-social-media-icon">
+                                        <img src="./icons/message-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a> -->
+                                    <a href="https://www.linkedin.com/in/sudhakar-sundaray-a0438a15/"
+                                        class="profile-social-media-link">
+                                        <div class="profile-social-media-icon">
+                                            <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- profile section end -->
+                        </div>
+                    </div>
+                     <!-- Slides CapitalStructuringAdvisory -->
+                    <div class="swiper-slide">
+                        <div class="mobileTab">
+                            <div class="service-overview">
+                                <h3>Service Overview</h3>
+                                <p class="description">
+                                    We secure capital with the right structure, terms, and timing—driving project
+                                    viability and maximizing investor returns through strategic financial planning
+                                </p>
+                                <div class="service-col">
+                                    <div class="col-left">
+                                        <div class="heading-wrapper  heading-wrapper-secondary">
+                                            <img src="./icons/key-offering-icon.png" srcset="" class="icon">
+                                            <h3>
+                                                Key Achievements
+                                            </h3>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                $2.5B+ closed in infra transactions
+                                            </li>
+                                            <li>
+                                                Financing secured for 30+ clean energy projects
+                                            </li>
+                                            <li>
+                                                Optimized terms via bespoke structuring
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-right">
+                                        <div class="heading-wrapper">
+                                            <img src="./icons/key-milestone-icon.png" srcset="" class="icon">
+                                            <h3>
+                                                Capabilities
+                                            </h3>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                Fundraising - Equity, debt, and structured capital solutions
+                                            </li>
+                                            <li>
+                                                M&A Advisory – Full transaction support, from diligence to integration
+                                            </li>
+                                            <li>
+                                                Capital Structures – Customized frameworks to balance risk and return
+                                            </li>
+                                            <li>Bid Advisory – Strategic and financial advisory for competitive bidding
+                                                processes, including tariff modelling, bid positioning, and risk
+                                                assessment</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- profile section Sakshi Sharma, Advisory start -->
+                            <h3 class="text-center">Our Capital Structuring & Advisory Team</h3>
+
+                            <div class="profile-card-wrapper">
+                                <div class="profile-card">
+                                    <div class="profile-img-wrapper">
+                                        <div class="profile-img-placeholder">
+                                            <img src="img/Truboard people/Sakshi.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="profile-caption">
+                                        <h1>Sakshi Sharma, Advisory</h1>
+                                        <p>
+                                            18+ years in infrastructure financing with expertise in renewable energy,
+                                            energy efficiency & business strategy; previously with leading investment
+                                            banks
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="profile-social-media">
+                                    <!-- <a href="#" class="profile-social-media-link">
+                                    <div class="profile-social-media-icon">
+                                        <img src="./icons/facebook-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a>
+                                <a href="#" class="profile-social-media-link">
+                                    <div class="profile-social-media-icon">
+                                        <img src="./icons/message-icon.svg" alt="" srcset="">
+                                    </div>
+                                </a> -->
+                                    <a href="https://www.linkedin.com/in/sakshi-sharma-6969554/"
+                                        class="profile-social-media-link">
+                                        <div class="profile-social-media-icon">
+                                            <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- profile section end -->
+                        </div>
+                    </div>
+                    
+                    <!-- Slides ProcurementAsAService -->
+                    <div class="swiper-slide">
+                        <div class="mobileTab">
+                            <div class="service-overview">
+                                <h3>Service Overview</h3>
+                                <p class="description">
+                                    We streamline procurement across CapEx and OpEx categories—ensuring cost savings,
+                                    quality assurance, and on-time project delivery.
+                                </p>
+
+                                <div class="service-col">
+                                    <div class="col-left">
+                                        <div class="heading-wrapper  heading-wrapper-secondary">
+                                            <img src="./icons/key-offering-icon.png" srcset="" class="icon">
+                                            <h3>
+                                                Key Achievements
+                                            </h3>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                3-5% CapEx savings
+                                            </li>
+                                            <li>
+                                                8-10% OpEx reductions
+                                            </li>
+                                            <li>
+                                                10-15% faster engineering timelines
+                                            </li>
+                                            <li>
+                                                100% milestone payments tied to quality approvals
+                                            </li>
+                                            
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-right">
+                                        <div class="heading-wrapper">
+                                            <img src="./icons/key-milestone-icon.png" srcset="" class="icon">
+                                            <h3>
+                                                Capabilities
+                                            </h3>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                Spend Optimization – A/B-class cost controls and budget alignment
+                                            </li>
+                                            <li>
+                                                Procurement Planning – Full-cycle procurement strategy and execution
+                                            </li>
+                                            <li>
+                                                Contract Strategy – Risk-balanced agreements with volume leverage
+                                            </li>
+                                            <li>
+                                                Spend Control – Invoice validation, forecasting, and variance management
+                                            </li>
+                                            <li>
+                                                Risk & QA – Material standards, contractor control, and defect
+                                                prevention
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- profile section Sakshi Sharma, Advisory start -->
+                            <h3 class="text-center">Our Procurement Team</h3>
+                            <div class="profile-card-wrapper">
+                                <div class="profile-card">
+                                    <div class="profile-img-wrapper">
+                                        <div class="profile-img-placeholder">
+                                            <img src="./img/Saiyam.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="profile-caption">
+                                        <h1>Saiyam Goyal, Procurement </h1>
+                                        <p>
+                                            10+ years in supply chain management, contract closing, new-tech evaluation
+                                            & factory acceptance; previously with Mahindra and PharmEasy
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="profile-social-media">
+                                    <a href="https://www.linkedin.com/in/saiyam-goyal-23a079a5/" class="profile-social-media-link">
+                                        <div class="profile-social-media-icon">
+                                            <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- profile section end -->
+                        </div>
+                    </div>
+                    <!-- Slides ProjectManagement-->
+                    <div class="swiper-slide">
+                        <div class="mobileTab">
+                            <div class="service-overview">
+                                <h3>Service Overview</h3>
+                                <p class="description">
+                                    From planning to handover, we manage projects across Solar, Wind, BESS, and Pumped
+                                    Storage to deliver on time, within budget, and to spec.
+                                </p>
+
+                                <div class="service-col">
+                                    <div class="col-left">
+                                        <div class="heading-wrapper  heading-wrapper-secondary">
+                                            <img src="./icons/key-offering-icon.png" srcset="" class="icon">
+                                            <h3>
+                                                Key Achievements
+                                            </h3>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                500 MW Solar & 500 MW Wind under PMC
+                                            </li>
+                                            <li>
+                                                25% savings on claims via risk management
+                                            </li>
+                                            <li>
+                                                SOPs standardized across all project phases
+                                            </li>
+                                            <li>
+                                                100% milestone-tied quality control
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-right">
+                                        <div class="heading-wrapper">
+                                            <img src="./icons/key-milestone-icon.png" srcset="" class="icon">
+                                            <h3>
+                                                Capabilities
+                                            </h3>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                PMO & Planning – WBS, budgeting, resource allocation, risk planning
+                                            </li>
+                                            <li>
+                                                Execution & Monitoring – Timeline adherence, stakeholder reporting
+                                            </li>
+                                            <li>
+                                                Quality & Risk Control – Inspections, contractor reviews, defect
+                                                tracking
+                                            </li>
+                                            <li>
+                                                Budget Adherence – Real-time KPI monitoring and schedule management
+                                            </li>
+                                            <li>
+                                                Commissioning & HOTO – Smooth handovers and performance validation
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- profile section Sakshi Sharma, Advisory start -->
+                            <h3 class="text-center">Our Project Management Team</h3>
+                            <div class="profile-card-wrapper">
+                                <div class="profile-card">
+                                    <div class="profile-img-wrapper">
+                                        <div class="profile-img-placeholder">
+                                            <img src="img/Truboard people/gaurav-mehra.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="profile-caption">
+                                        <h1>Gaurav Mehra, Project Management</h1>
+                                        <p>
+                                            14+ years in project management, construction management, asset management,
+                                            risk management, technical due diligence & quality assurance & quality
+                                            control previously with soft bank, Acme Solar Holdings, TUV Rheinland &
+                                            Bansal Infratech
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="profile-social-media">
+                                    <a href="#" class="profile-social-media-link">
+                                        <div class="profile-social-media-icon">
+                                            <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- profile section end -->
+                        </div>
+                    </div>
+                    
+                   
+                    
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <div class="mobile-tab-swiper-button-prev"></div>
+                <div class="mobile-tab-swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section class="profile-section section-common-margin">
+        <div class="container">
+        </div>
+    </section>
+
+    <!-- cta section starts here  -->
+    <section class="cta-sec-lst ">
+        <div class="container">
+            <div class="cta-sec-lst-row">
+                <h1 class="heading-tab">
+                    Ready for Transformation?
+                </h1>
+                <div class="subhead">
+                    Speak to one of our experts and find out how TruBoard can take your energy transition journey to the next level
+                </div>
+                <div class="btn-container">
+                    <a href="./Contact-us.html#letsConnect" class="cta-btn cta-btn-lst primary-cta-btn">
+                        Get in touch
+                        <span class="primary-cta-btn-active-underline"></span>
+                    </a>
+                    <a href="./Contact-us.html#letsConnect" class="cta-btn-2 primary-cta-btn">
+                        SIGN UP FOR UPDATES
+                        <span class="primary-cta-btn-active-underline"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-brand">
+                <div class="footer-logo-wrapper">
+                    <img src="./img/brand-logo/Truboard-Cleantech-logo-white-08.png" alt="" srcset="">
+                </div>
+
+                <div class="social-icons">
+                    <a href="mailto:contact@truboardpartners.com" class="social-link">
+                        <img src="./icons/message-icon-2.png" alt="" srcset="">
+                    </a>
+                    <!-- <a href="#" class="social-link">
+                        <img src="./icons/x-icon-2.png" alt="" srcset="">
+                    </a> -->
+                    <a href="https://www.linkedin.com/company/truboard-partners/posts/?feedView=all"
+                        class="social-link">
+                        <img src="./icons/linkedIn-icon-2.png" alt="" srcset="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <div class="footer-menu">
+                    <h4 class="footer-menu-title">Useful links</h4>
+                    <ul class="footer-menu footer-flex">
+                        <li class="footer-menu-item">
+                            <a href="./index.html" class="footer-menu-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./Trugreen.html" class="footer-menu-link">
+                                TruGreen
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./Asset-Lifecycle-Management.html" class="footer-menu-link">
+                                Assets Lifecycle Management
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./TruEleqtric.html" class="footer-menu-link">
+                                TruEleqtric
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-menu-link">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-contact-wrpaper">
+                <div class="footer-content-title footer-menu-title">
+                    Get in Touch
+                </div>
+                <p class="footer-content-address">
+                    Unit 502-506, 5th Floor, UNITECH COMMERCIAL TOWER 2, Arya Samaj Road, Block B, Greenwood City, Sector 45, Gurugram, Haryana 122003
+                </p>
+                <a href="Contact-us.html#letsConnect" class="footer-contact-cta">
+                    Contact Now
+                </a>
+            </div>
+        </div>
+
+            <div class="footer-copyright">
+            <div class="col-left">
+                 <a href="privacy-policy.html" class="footer-cta">
+                    Privacy policy
+                </a>
+            </div>
+            <div class="col-right">
+                <a href="#" class="footer-cta" style="display: none;">
+                    Privacy policy
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="col-left">
+                <p class="footer-primary-text">
+                    &copy; All Rights Reserved by TruBoard Cleantech Private Limited
+                </p>
+                <p class="footer-secondary-text">
+                    Subsidiary of TruBoard Private Limited
+                </p>
+            </div>
+            <div class="col-right">
+                <a href="#" class="footer-cta" style="display: none;">
+                    Privacy policy
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        const keyOfferingsSwiper = new Swiper('.key-offerings-swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                820: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                1024: {
+                    slidesPerView: 2.4,
+                    spaceBetween: 10,
+                },
+                1440: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 10,
+                }
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.key-offerings-swiper-next',
+                prevEl: '.key-offerings-swiper-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+
+        AOS.init();
+    </script>
+
+    <script>
+        const profileSwiper = new Swiper('.profileSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            grabCursor: true,
+            pagination: {
+                el: '.profileSwiper-swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.profileSwiper-swiper-button-next',
+                prevEl: '.profileSwiper-swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                }
+            }
+        });
+    </script>
+    <script>
+        const mobileTabSwiper = new Swiper('.mobile-tab-swiper', {
+            // Optional parameters
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            autoHeight: true,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.mobile-tab-swiper-button-next',
+                prevEl: '.mobile-tab-swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+    <script src="js/common-script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,2488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ajax.googleapis.com https://code.jquery.com https://unpkg.com https://cdn.jsdelivr.net;">
+    
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5TTGKQP9');</script>
+<!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js)Start --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVRGSNLJ4G"></script> 
+    <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-CVRGSNLJ4G'); </script>
+    <!-- Google tag (gtag.js)End -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/truGreen.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>TruBoard | TruGreen</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        .product-lineup-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .product-lineup-toggle-tab-btn {
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            transition: transform 0.4s ease, background-color 0.4s ease, order 0.4s ease;
+        }
+
+        .product-lineup-toggle-tab-btn.active,
+        .product-lineup-toggle-tab-btn.product-lineup-toggle-tab-btn-active {
+            background-color: #007bff;
+            color: #fff;
+            transform: scale(1.1);
+            z-index: 1;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".product-lineup-tab").find(".tab-image").first().show()
+
+            // Hide all tab content initially
+            $('.tab').hide();
+            $('.tab').first().show();
+
+            $(".accordion-panel").first().show()
+        });
+
+        $(document).ready(function () {
+            $(".product-lineup-tab").hide()
+            $(".product-lineup-tab").first().show()
+            $('.accordion').on('click', function () {
+                const panel = $(this).next('.accordion-panel');
+                var imageId = $(this).attr("for")
+                $(".tab-image").hide()
+                $(`#${imageId}`).fadeIn(1000)
+
+                // Close all other panels
+                $('.accordion-panel').not(panel).slideUp(200);
+                $('.accordion').not(this).removeClass('accordion-panel-toggle-btn-active');
+
+                // Toggle the clicked panel
+                panel.slideToggle(200);
+                $(this).toggleClass('accordion-panel-toggle-btn-active');
+            });
+
+            $(".product-lineup-toggle-tab-btn").click(function () {
+                var tabId = $(this).attr("toggle-tab-id")
+                console.log(tabId)
+                $(".product-lineup-tab").hide()
+                $(`#${tabId}`).fadeIn()
+                $(`#${tabId}`).find(".tab-image").first().show()
+                $(".product-lineup-toggle-tab-btn").removeClass("product-lineup-toggle-tab-btn-active")
+                $(this).addClass("product-lineup-toggle-tab-btn-active")
+
+
+            })
+
+            $("#TruGreenCoreApp").find("img").first().show()
+            $("#Nexus").find("img").first().show()
+            $("#Flow").find("img").first().show()
+            $("#Assure").find("img").first().show()
+            $("#Horizon").find("img").first().show()
+            $("#Pulse").find("img").first().show()
+            $("#SolarVisionAI").find("img").first().show()
+
+        });
+
+    </script>
+
+    <script>
+        $(window).on('load scroll', function () {
+            const $logo = $('.brand-logo-1');
+            const $navbar = $('.navbar');
+
+            let newSrc = $navbar.hasClass('sticky') && $navbar.hasClass('visible')
+                ? './img/brand-logo/trugreen-logo-3.png'
+                : './img/brand-logo/truGreenLogo.png';
+
+            if ($logo.attr('src') !== newSrc) {
+                $logo.fadeOut(200, function () {
+                    $logo.attr('src', newSrc).fadeIn(200);
+                });
+            }
+        });
+
+
+    </script>
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TTGKQP9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="navbar">
+        <div class="container">
+            <a class="brand" href="./index.html">
+                <img src="./img/brand-logo/truGreenLogo.png" alt="" srcset="" class="brand-logo-1">
+                <!-- <img src="./img/brand-logo/trugreen-logo-3.png" alt="" srcset="" class="brand-logo-2"> -->
+            </a>
+            <nav>
+                <ul class="primary-nav">
+                    <li class="nav-item">
+                        <a href="Trugreen.html" class="nav-link active">TruGreen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Asset-Lifecycle-Management.html" class="nav-link"> Asset Lifecycle Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="TruEleqtric.html" class="nav-link">TruEleqtric</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Resource</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#" class="nav-link">RESOURCE</a>
+                    </li> -->
+                </ul>
+            </nav>
+
+            <span class="mobile-menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+                <div class="option-dropdown-wrapper">
+                    <div class="option-dropdown">
+                        <ul class="option-dropdown-list">
+                            <li class="option-dropdown-item"><a href="./About-us.html"
+                                    class="option-dropdown-link">About Us</a></li>
+                            <li class="option-dropdown-item"><a href="./Career.html"
+                                    class="option-dropdown-link">Career</a></li>
+                            <li class="option-dropdown-item"><a href="./Contact-us.html"
+                                    class="option-dropdown-link">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </span>
+
+        </div>
+    </div>
+
+    <section class="hero-section">
+        <!-- <video autoplay muted loop id="hero-video" class="hero-section-img">
+            <source src="./videos/hero-section-video-blue.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+        <img src="./img/banners/truGreen-hero-section-img-2.jpg" alt="" class="hero-section-img">
+
+        <!-- <img src="./img/banners/trugreen-banner.png" alt="" class="hero-section-img"> -->
+        <div class="container">
+            <div class="content-info-wrapper">
+                <div class="content-info">
+                    <h1 class="content-info-item content-info-item-title hero-heading-other-pages hero-section-title ">
+                        TruGreen: Powering the Future of Renewable Asset Management
+                    </h1>
+                    <p
+                        class="content-info-item content-info-item-caption hero-sub-heading-all-pages hero-section-description">
+                        Digitize, connect, and optimize every stage of your renewable project lifecycle, securely and
+                        seamlessly
+                    </p>
+                    <a href="./Contact-us.html#letsConnect" class="start-conversation-cta" id="Products">
+                        Start A Conversation
+                        <div class="underline-wrapper">
+                            <span class="underline"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="product-line-up-section section-common-margin">
+        <div class="container">
+            <div class="section-header-title">
+                Product Stack
+            </div>
+            <!-- Slider main container -->
+            <div class="tab-swiper-container">
+                <div class="swiper product-lineup-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <button
+                                class="product-lineup-toggle-tab-btn product-lineup-toggle-tab-btn-active trugreen-core-app"
+                                toggle-tab-id="TruGreenCoreApp">
+                                TruGreen Core App
+                            </button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="product-lineup-toggle-tab-btn Nexus" toggle-tab-id="Nexus">
+                                Nexus
+                            </button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="product-lineup-toggle-tab-btn Flow" toggle-tab-id="Flow">
+                                Flow
+                            </button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="product-lineup-toggle-tab-btn Assure" toggle-tab-id="Assure">
+                                Assure
+                            </button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="product-lineup-toggle-tab-btn Horizon" toggle-tab-id="Horizon">
+                                Horizon
+                            </button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="product-lineup-toggle-tab-btn Pulse" toggle-tab-id="Pulse">
+                                Pulse
+                            </button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="product-lineup-toggle-tab-btn SolarVisionAI" toggle-tab-id="SolarVisionAI">
+                                SolarVision.AI
+                            </button>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+
+                    <!-- If we need navigation buttons -->
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+
+                <div class="swiper-button-prev product-lineup-swiper-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                        <path
+                            d="M14.5 29C7.06055 29 1 22.7487 1 15C1 7.25133 7.06055 0.999998 14.5 0.999999C21.9395 0.999999 28 7.25133 28 15C28 22.7487 21.9395 29 14.5 29Z"
+                            fill="white" stroke="#063E63"></path>
+                        <path
+                            d="M8.96967 13.9697C8.67678 14.2626 8.67678 14.7374 8.96967 15.0303L13.7426 19.8033C14.0355 20.0962 14.5104 20.0962 14.8033 19.8033C15.0962 19.5104 15.0962 19.0355 14.8033 18.7426L10.5607 14.5L14.8033 10.2574C15.0962 9.96447 15.0962 9.48959 14.8033 9.1967C14.5104 8.9038 14.0355 8.9038 13.7426 9.1967L8.96967 13.9697ZM19 14.5L19 13.75L9.5 13.75L9.5 14.5L9.5 15.25L19 15.25L19 14.5Z"
+                            fill="#063E63"></path>
+                    </svg>
+                </div>
+                <div class="swiper-button-next product-lineup-swiper-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                        <path
+                            d="M14.5 1C21.9395 1 28 7.25133 28 15C28 22.7487 21.9395 29 14.5 29C7.06055 29 1 22.7487 1 15C1 7.25133 7.06055 1 14.5 1Z"
+                            fill="white" stroke="#063E63"></path>
+                        <path
+                            d="M20.0303 16.0303C20.3232 15.7374 20.3232 15.2626 20.0303 14.9697L15.2574 10.1967C14.9645 9.90381 14.4896 9.90381 14.1967 10.1967C13.9038 10.4896 13.9038 10.9645 14.1967 11.2574L18.4393 15.5L14.1967 19.7426C13.9038 20.0355 13.9038 20.5104 14.1967 20.8033C14.4896 21.0962 14.9645 21.0962 15.2574 20.8033L20.0303 16.0303ZM10 15.5L10 16.25L19.5 16.25L19.5 15.5L19.5 14.75L10 14.75L10 15.5Z"
+                            fill="#063E63"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="tab-container">
+                <!-- TruGreen Core App  -->
+                <div class="product-lineup-tab" id="TruGreenCoreApp">
+                    <span class="tab-description-title">Overview</span>
+                    <p class="tab-description">
+                        Flagship renewable-asset management platform, engineered to capture, connect, and
+                        convert data into actionable insights. By treating data as the new energy, TruGreen empowers
+                        teams and machines to collaborate in real time, driving predictive maintenance, reducing costs,
+                        and maximizing uptime.
+                    </p>
+                    <div class="tab-row tab-row-grid">
+                        <div class="tab-image-container">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="TruGreenCoreAppFeature1">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="TruGreenCoreAppFeature2">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="TruGreenCoreAppFeature3">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="TruGreenCoreAppFeature4">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="TruGreenCoreAppFeature5">
+                        </div>
+                        <div class="tab-info-container">
+                            <div class="tab-info">
+                                <div class="accordion-container" data-aos="fade-left" data-aos-duration="1000">
+                                    <div class="tab-info-header">
+                                        <h1 class="tab-info-title">
+                                            TruGreen Core App
+                                        </h1>
+                                        <a href="./Contact-us.html#letsConnect"
+                                            class="start-conversation-cta-secondary">
+                                            start a conversation
+                                        </a>
+                                    </div>
+                                    <div class="accordion-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                                        <label for="TruGreenCoreAppFeature1"
+                                            class="accordion accordion-panel-toggle-btn accordion-panel-toggle-btn-active">
+                                            <span>Full Lifecycle Digitization</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel" style="display: block;">
+                                            <ul>
+                                                <li>
+                                                    Manage your project's entire journey—from feasibility and
+                                                    construction monitoring to live O&M—within a unified interface.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                                        <label for="TruGreenCoreAppFeature2"
+                                            class="accordion accordion-panel-toggle-btn">
+                                            <span>Plug-and-Play Digital Suite</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Access a modular toolkit of apps and dashboards that deploy
+                                                    instantly—no coding required—so you can focus on running assets, not
+                                                    building software.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                                        <label for="TruGreenCoreAppFeature3"
+                                            class="accordion accordion-panel-toggle-btn">
+                                            <span>Cloud-Native, Secure & Scalable </span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Built on enterprise-grade cloud infrastructure, TruGreen scales
+                                                    with
+                                                    your portfolio while safeguarding data through end-to-end
+                                                    encryption
+                                                    and robust access controls.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                                        <label for="TruGreenCoreAppFeature4"
+                                            class="accordion accordion-panel-toggle-btn">
+                                            <span>Seamless Interoperability</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Connect effortlessly to SCADA systems, IoT devices, ERP
+                                                    solutions,
+                                                    and more, ensuring all your information streams flow into one
+                                                    consolidated source of truth.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                                        <label for="TruGreenCoreAppFeature5"
+                                            class="accordion accordion-panel-toggle-btn">
+                                            <span> Real-Time Connectivity </span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Link machines, teams, and decisions in the moment. Our live data
+                                                    feeds and one-click dashboards deliver up-to-the-second
+                                                    visibility
+                                                    for operators and executives alike.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-header">
+                        <h1 class="section-header-title">
+                            Explore TruGreen Core App Plans Tailored for You
+                        </h1>
+                    </div>
+
+                    <div class="price-and-plan-grid-container" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="price-and-plan-grid card-slider">
+                            <div class="price-and-plan-card-container price-and-plan-card-container-1 card"
+                                data-index="0">
+                                <div class="price-and-plan-card">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Shared Plans
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Cost-effective, multi-tenant environment with basic features for small-to-medium
+                                        renewable projects
+                                    </h1>
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-and-plan-card-container price-and-plan-card-container-2 price-and-plan-card-active card"
+                                data-index="1">
+                                <div class="price-and-plan-card ">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Dedicated Plans
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Exclusive resources with isolated environments for enhanced performance and
+                                        security
+                                    </h1>
+                                    <!--  <ul>
+                                        <li>Raise and track purchase requests</li>
+                                        <li>
+                                            Manage vendor contacts
+                                        </li>
+                                        <li>
+                                            Basic approval workflows
+                                        </li>
+                                        <li>
+                                            Email notifications
+                                        </li>
+                                        <li>
+                                            Export data in CSV
+                                        </li>
+                                    </ul> -->
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-and-plan-card-container price-and-plan-card-container-3 card"
+                                data-index="2">
+                                <div class="price-and-plan-card">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Enterprise Plans
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Highly scalable, fully customizable solutions with premium support
+                                    </h1>
+                                    <!--   <ul>
+                                        <li>Multi-level approval flows</li>
+                                        <li>
+                                            Budget tracking & spend analysis
+                                        </li>
+                                        <li>
+                                            Integrated vendor performance ratings
+                                        </li>
+                                        <li>
+                                            Customizable forms and fields
+                                        </li>
+                                        <li>
+                                            Role-based user access
+                                        </li>
+                                    </ul> -->
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-lineup-tab" id="Nexus">
+                    <span class="tab-description-title">Overview</span>
+                    <p class="tab-description">
+                        Purpose-built cloud solution crafted exclusively for the renewable energy industry.
+                        It streamlines the entire procure-to-pay cycle, from purchase requests to payment
+                        reconciliation, ensuring complete visibility, enhanced control, and cost efficiency for
+                        renewable projects
+                    </p>
+                    <div class="tab-row tab-row-grid">
+                        <div class="tab-image-container">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="NexusFeature1">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="NexusFeature2">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="NexusFeature3">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="NexusFeature4">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="NexusFeature5">
+                        </div>
+                        <div class="tab-info-container">
+                            <div class="tab-info">
+                                <div class="accordion-container">
+                                    <div class="tab-info-header">
+                                        <h1 class="tab-info-title">
+                                            Nexus
+                                        </h1>
+                                        <a href="./Contact-us.html#letsConnect"
+                                            class="start-conversation-cta-secondary">
+                                            start a conversation
+                                        </a>
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="NexusFeature1"
+                                            class="accordion accordion-panel-toggle-btn accordion-panel-toggle-btn-active">
+                                            <span>Purchase Request Management</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel" style="display: block;">
+                                            <ul>
+                                                <li>
+                                                    Intuitive forms with integrated budget mapping and automatic
+                                                    stakeholder notifications.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="NexusFeature2" class="accordion accordion-panel-toggle-btn">
+                                            <span>RFQ & Quotation Comparison</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Multi-site RFQs with one-click attachments and automated quote
+                                                    analysis for renewable projects.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="NexusFeature3" class="accordion accordion-panel-toggle-btn">
+                                            <span>Approval Workflows</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Configurable, role-based routing with real-time notifications and
+                                                    auto-generation of POs/work orders.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="NexusFeature4" class="accordion accordion-panel-toggle-btn">
+                                            <span>Payment & Reconciliation</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Seamless matching of POs, receipts, and invoices with integrated
+                                                    bank tracking.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="NexusFeature5" class="accordion accordion-panel-toggle-btn">
+                                            <span>Analytics & Reporting</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Custom dashboards that deliver actionable insights and spending
+                                                    breakdowns.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-header">
+                        <h1 class="section-header-title">
+                            Explore Nexus Plans Tailored for You
+                        </h1>
+                    </div>
+
+                    <div class="price-and-plan-grid-container">
+                        <div class="price-and-plan-grid card-slider">
+                            <div class="price-and-plan-card-container price-and-plan-card-container-1 card"
+                                data-index="0">
+                                <div class="price-and-plan-card">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Shared Plans
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Cost-effective, multi-tenant environment with basic features for small-to-medium
+                                        renewable projects
+                                    </h1>
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-and-plan-card-container price-and-plan-card-container-2 price-and-plan-card-active card"
+                                data-index="1">
+                                <div class="price-and-plan-card ">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Dedicated Plans
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Exclusive resources with isolated environments for enhanced performance and
+                                        security
+                                    </h1>
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-and-plan-card-container price-and-plan-card-container-3 card"
+                                data-index="2">
+                                <div class="price-and-plan-card">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Enterprise Plans
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Highly scalable, fully customizable solutions with premium support
+                                    </h1>
+                                    <!-- <ul>
+                                        <li>Multi-level approval flows</li>
+                                        <li>
+                                            Budget tracking & spend analysis
+                                        </li>
+                                        <li>
+                                            Integrated vendor performance ratings
+                                        </li>
+                                        <li>
+                                            Customizable forms and fields
+                                        </li>
+                                        <li>
+                                            Role-based user access
+                                        </li>
+                                    </ul> -->
+
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-lineup-tab" id="Flow">
+                    <span class="tab-description-title">Overview</span>
+                    <p class="tab-description">
+                        Specialized cloud-based platform designed exclusively for renewable energy site
+                        operations. It consolidates maintenance workflows, incident management, inventory control, and
+                        security protocols into a single, intuitive dashboard, ensuring operational excellence and
+                        compliance for renewable projects.
+                    </p>
+                    <div class="tab-row tab-row-grid">
+                        <div class="tab-image-container">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image" id="FlowFeature1">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image" id="FlowFeature2">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image" id="FlowFeature3">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image" id="FlowFeature4">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image" id="FlowFeature5">
+                        </div>
+                        <div class="tab-info-container">
+                            <div class="tab-info">
+                                <div class="accordion-container">
+                                    <div class="tab-info-header">
+                                        <h1 class="tab-info-title">
+                                            Flow
+                                        </h1>
+                                        <a href="./Contact-us.html#letsConnect"
+                                            class="start-conversation-cta-secondary">
+                                            start a conversation
+                                        </a>
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="FlowFeature1"
+                                            class="accordion accordion-panel-toggle-btn accordion-panel-toggle-btn-active">
+                                            <span>Complete Asset Operations Visibility</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel" style="display: block;">
+                                            <ul>
+                                                <li>
+                                                    Real-time monitoring of operations at the site, designed for
+                                                    renewable site environments.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="FlowFeature2" class="accordion accordion-panel-toggle-btn">
+                                            <span>Breakdown & Incident Management</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Real-time web or mobile tracking with automated task assignments.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="FlowFeature3" class="accordion accordion-panel-toggle-btn">
+                                            <span>Preventive Maintenance</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Scheduled maintenance with automated reminders to minimize
+                                                    unexpected downtime.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="FlowFeature4" class="accordion accordion-panel-toggle-btn">
+                                            <span>Store & Inventory Control:</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    A unified dashboard for managing material requests, approvals, and
+                                                    inventory tracking.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="FlowFeature5" class="accordion accordion-panel-toggle-btn">
+                                            <span>Security & Vendor Management</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Digital gate pass creation and streamlined vendor onboarding
+                                                    tailored for renewable sites.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-header">
+                        <h1 class="section-header-title">
+                            Explore Flow Plans Tailored for You
+                        </h1>
+                    </div>
+
+                    <div class="price-and-plan-grid-container">
+                        <div class="price-and-plan-grid">
+                            <div class="price-and-plan-card-container price-and-plan-card-container-1 card"
+                                data-index="0">
+                                <div class="price-and-plan-card">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Shared Plans
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Multi-tenant, cost-effective solution ideal for smaller renewable operations
+                                    </h1>
+
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-and-plan-card-container price-and-plan-card-container-2 price-and-plan-card-active card"
+                                data-index="1">
+                                <div class="price-and-plan-card ">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Dedicated Plan
+
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Isolated, secure environment with enhanced performance
+                                    </h1>
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-and-plan-card-container price-and-plan-card-container-3 card"
+                                data-index="2">
+                                <div class="price-and-plan-card">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Enterprise Plan
+
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Fully scalable and customizable with premium support
+                                    </h1>
+                                    <!-- <ul>
+                                        <li>Multi-level approval flows</li>
+                                        <li>
+                                            Budget tracking & spend analysis
+                                        </li>
+                                        <li>
+                                            Integrated vendor performance ratings
+                                        </li>
+                                        <li>
+                                            Customizable forms and fields
+                                        </li>
+                                        <li>
+                                            Role-based user access
+                                        </li>
+                                    </ul> -->
+
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-lineup-tab" id="Assure">
+                    <span class="tab-description-title">Overview</span>
+                    <p class="tab-description">
+                        Dedicated software solution tailored for renewable energy companies. It automates the
+                        covenant compliance process by digitizing contracts, sending timely reminders, and centralizing
+                        documentation. Designed to meet the unique challenges of a decentralized renewables landscape,
+                        ensures that all compliance aspects, from regulatory to lender compliances, are monitored and
+                        managed seamlessly
+                    </p>
+                    <div class="tab-row tab-row-grid">
+                        <div class="tab-image-container">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="AssureFeature1">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="AssureFeature2">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="AssureFeature3">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="AssureFeature4">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="AssureFeature5">
+                        </div>
+                        <div class="tab-info-container">
+                            <div class="tab-info">
+                                <div class="accordion-container">
+                                    <div class="tab-info-header">
+                                        <h1 class="tab-info-title">
+                                            Assure
+                                        </h1>
+                                        <a href="./Contact-us.html#letsConnect"
+                                            class="start-conversation-cta-secondary">
+                                            start a conversation
+                                        </a>
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="AssureFeature1"
+                                            class="accordion accordion-panel-toggle-btn accordion-panel-toggle-btn-active">
+                                            <span>Multi-Level Compliance Monitoring</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel" style="display: block;">
+                                            <ul>
+                                                <li>
+                                                    Delivers robust monitoring across company, SPV (Special Purpose
+                                                    Vehicle), and site levels, ensuring tailored oversight for diverse
+                                                    organizational structures while maintaining consistent compliance
+                                                    standards.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="AssureFeature2" class="accordion accordion-panel-toggle-btn">
+                                            <span>Real-time Monitoring & Alerts</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Provides continuous data monitoring with instant notifications to
+                                                    help organizations respond promptly to deviations or potential
+                                                    compliance breaches.
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="AssureFeature3" class="accordion accordion-panel-toggle-btn">
+                                            <span>Robust Reporting & Analytics Dashboard</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Provides interactive dashboards with in-depth visualizations and
+                                                    comprehensive reports, simplifying the monitoring of compliance
+                                                    metrics and trends.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="AssureFeature4" class="accordion accordion-panel-toggle-btn">
+                                            <span>Regulatory Update Integration</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Automatically updates the latest standards and regulatory
+                                                    requirements, keeping operations aligned with current laws and
+                                                    guidelines.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="AssureFeature5" class="accordion accordion-panel-toggle-btn">
+                                            <span>Secure Data Management & Audit Trail</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Employs advanced security protocols and meticulous logging to ensure
+                                                    that all compliance-related activities are securely recorded and
+                                                    easily retrievable for audits
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-header">
+                        <h1 class="section-header-title">
+                            Explore Assure Plans Tailored for You
+                        </h1>
+                    </div>
+
+                    <div class="price-and-plan-grid-container">
+                        <div class="price-and-plan-grid">
+                            <div class="price-and-plan-card-container price-and-plan-card-container-1 card"
+                                data-index="0">
+                                <div class="price-and-plan-card">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Shared Plans
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Economical, multi-tenant setup with essential features for renewable compliance
+                                    </h1>
+
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-and-plan-card-container price-and-plan-card-container-2 price-and-plan-card-active card"
+                                data-index="1">
+                                <div class="price-and-plan-card ">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Dedicated Plans
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Isolated environment with enhanced security and performance
+                                    </h1>
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-and-plan-card-container price-and-plan-card-container-3 card"
+                                data-index="2">
+                                <div class="price-and-plan-card">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Enterprise Plans
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Fully customizable solutions with advanced integrations and premium support
+                                    </h1>
+                                    <!-- <ul>
+                                        <li>Multi-level approval flows</li>
+                                        <li>
+                                            Budget tracking & spend analysis
+                                        </li>
+                                        <li>
+                                            Integrated vendor performance ratings
+                                        </li>
+                                        <li>
+                                            Customizable forms and fields
+                                        </li>
+                                        <li>
+                                            Role-based user access
+                                        </li>
+                                    </ul> -->
+
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-lineup-tab" id="Horizon">
+                    <span class="tab-description-title">Overview</span>
+                    <p class="tab-description">
+                        AI-driven forecasting and scheduling platform engineered specifically for renewable
+                        energy plants. It delivers over 90% accuracy to optimize both day-ahead and intraday schedules,
+                        reducing penalties and maximizing efficiency
+                    </p>
+                    <div class="tab-row tab-row-grid">
+                        <div class="tab-image-container">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="HorizonFeature1">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="HorizonFeature2">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="HorizonFeature3">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="HorizonFeature4">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="HorizonFeature5">
+                        </div>
+                        <div class="tab-info-container">
+                            <div class="tab-info">
+                                <div class="accordion-container">
+                                    <div class="tab-info-header">
+                                        <h1 class="tab-info-title">
+                                            Horizon
+                                        </h1>
+                                        <a href="./Contact-us.html#letsConnect"
+                                            class="start-conversation-cta-secondary">
+                                            start a conversation
+                                        </a>
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="HorizonFeature1"
+                                            class="accordion accordion-panel-toggle-btn accordion-panel-toggle-btn-active">
+                                            <span>Advanced Forecasting Models</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel" style="display: block;">
+                                            <ul>
+                                                <li>
+                                                    Machine learning algorithms and automated data ingestion for
+                                                    reliable predictions.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="HorizonFeature2" class="accordion accordion-panel-toggle-btn">
+                                            <span>Dynamic Scheduling Tools</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Real-time optimization for day-ahead and intraday scheduling.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="HorizonFeature2" class="accordion accordion-panel-toggle-btn">
+                                            <span>QCA-Ready Connectivity</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Direct integration with leading QCA agencies for seamless
+                                                    compliance.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="HorizonFeature3" class="accordion accordion-panel-toggle-btn">
+                                            <span>Adaptive Alerting & Reporting</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Instant alerts and detailed performance reports for proactive
+                                                    management.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="HorizonFeature4" class="accordion accordion-panel-toggle-btn">
+                                            <span>Regulatory Tracking & Updates</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Automated adjustments based on evolving renewable energy policies.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-header">
+                        <h1 class="section-header-title">
+                            Explore Horizon Plans Tailored for You
+                        </h1>
+                    </div>
+
+                    <div class="price-and-plan-grid-container">
+                        <div class="price-and-plan-grid">
+                            <div class="price-and-plan-card-container price-and-plan-card-container-1 card"
+                                data-index="0">
+                                <div class="price-and-plan-card">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Shared Plans
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Cost-effective, multi-tenant solution tailored for renewable forecasting needs
+                                    </h1>
+
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-and-plan-card-container price-and-plan-card-container-2 price-and-plan-card-active card"
+                                data-index="1">
+                                <div class="price-and-plan-card ">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Dedicated Plans
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Exclusive resources ensuring enhanced performance and security
+                                    </h1>
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-and-plan-card-container price-and-plan-card-container-3 card"
+                                data-index="2">
+                                <div class="price-and-plan-card">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Enterprise Plans
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Fully scalable, customized solutions with premium support
+                                    </h1>
+                                    <!-- <ul>
+                                        <li>Multi-level approval flows</li>
+                                        <li>
+                                            Budget tracking & spend analysis
+                                        </li>
+                                        <li>
+                                            Integrated vendor performance ratings
+                                        </li>
+                                        <li>
+                                            Customizable forms and fields
+                                        </li>
+                                        <li>
+                                            Role-based user access
+                                        </li>
+                                    </ul> -->
+
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-lineup-tab" id="Pulse">
+                    <span class="tab-description-title">Overview</span>
+                    <p class="tab-description">
+                        Industry-specific analytics platform built exclusively for the renewable energy
+                        sector. It consolidates real-time performance monitoring, downtime analysis, and financial
+                        reporting to empower informed decision-making and operational excellence
+                    </p>
+                    <div class="tab-row tab-row-grid">
+                        <div class="tab-image-container">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="PulseFeature1">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="PulseFeature2">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="PulseFeature3">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="PulseFeature4">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="PulseFeature5">
+                        </div>
+                        <div class="tab-info-container">
+                            <div class="tab-info">
+                                <div class="accordion-container">
+                                    <div class="tab-info-header">
+                                        <h1 class="tab-info-title">
+                                            Pulse
+                                        </h1>
+                                        <a href="./Contact-us.html#letsConnect"
+                                            class="start-conversation-cta-secondary">
+                                            start a conversation
+                                        </a>
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="PulseFeature1"
+                                            class="accordion accordion-panel-toggle-btn accordion-panel-toggle-btn-active">
+                                            <span>Advanced KPI Dashboards</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel" style="display: block;">
+                                            <ul>
+                                                <li>
+                                                    Automated performance tracking with generation, inverter
+                                                    benchmarking, and cleaning quality metrics tailored for renewable
+                                                    assets.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="PulseFeature2" class="accordion accordion-panel-toggle-btn">
+                                            <span>Comprehensive Downtime Analysis</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Detailed categorization and trend analysis of operational issues.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="PulseFeature3" class="accordion accordion-panel-toggle-btn">
+                                            <span>Flexible Reporting & Analytics</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Customizable reports (monthly, quarterly, annual) that cater to
+                                                    stakeholder needs.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="PulseFeature4" class="accordion accordion-panel-toggle-btn">
+                                            <span>Cross-Technology Support</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Centralized monitoring for solar, wind, storage, and other renewable
+                                                    energy systems
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="PulseFeature5" class="accordion accordion-panel-toggle-btn">
+                                            <span>Custom Financial Analytics</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Real-time financial reporting enables strategic revenue and cost
+                                                    management.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-header">
+                        <h1 class="section-header-title">
+                            Explore Pulse Plans Tailored for You
+                        </h1>
+                    </div>
+
+                    <div class="price-and-plan-grid-container">
+                        <div class="price-and-plan-grid">
+                            <div class="price-and-plan-card-container price-and-plan-card-container-1 card"
+                                data-index="0">
+                                <div class="price-and-plan-card">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Shared Plans
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Cost-effective, multi-tenant solution with essential features for renewable
+                                        analytics
+                                    </h1>
+
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-and-plan-card-container price-and-plan-card-container-2 price-and-plan-card-active card"
+                                data-index="1">
+                                <div class="price-and-plan-card ">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Dedicated Plans
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Exclusive, high-performance environment with customizable resource allocation
+                                    </h1>
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-and-plan-card-container price-and-plan-card-container-3 card"
+                                data-index="2">
+                                <div class="price-and-plan-card">
+                                    <small class="price-and-plan-item-plan-name">
+                                        Enterprise Plans
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Fully tailored, scalable solutions with advanced features and premium support
+                                    </h1>
+                                    <!-- <ul>
+                                        <li>Multi-level approval flows</li>
+                                        <li>
+                                            Budget tracking & spend analysis
+                                        </li>
+                                        <li>
+                                            Integrated vendor performance ratings
+                                        </li>
+                                        <li>
+                                            Customizable forms and fields
+                                        </li>
+                                        <li>
+                                            Role-based user access
+                                        </li>
+                                    </ul> -->
+
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-lineup-tab" id="SolarVisionAI">
+                    <span class="tab-description-title">Overview</span>
+                    <p class="tab-description">
+                        AI-driven plant monitoring and diagnostics solution designed exclusively for the
+                        solar energy sector. By leveraging advanced drone image analysis, SolarVision rapidly processes
+                        hundreds of images to detect faults and performance issues in solar installations. With an
+                        interactive dashboard delivering comprehensive insights in minutes, SolarVision drastically
+                        reduces image analysis time by over 85%, enabling proactive maintenance and enhanced plant
+                        performance
+                    </p>
+                    <div class="tab-row tab-row-grid">
+                        <div class="tab-image-container">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="SolarVisionAIFeature1">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="SolarVisionAIFeature2">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="SolarVisionAIFeature3">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="SolarVisionAIFeature4">
+                            <img src="./img/trugreen/product-lineup-img.png" alt="" class="tab-image"
+                                id="SolarVisionAIFeature5">
+                        </div>
+                        <div class="tab-info-container">
+                            <div class="tab-info">
+                                <div class="accordion-container">
+                                    <div class="tab-info-header">
+                                        <h1 class="tab-info-title">
+                                            SolarVision.AI
+                                        </h1>
+                                        <a href="./Contact-us.html#letsConnect"
+                                            class="start-conversation-cta-secondary">
+                                            start a conversation
+                                        </a>
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="SolarVisionAIFeature1"
+                                            class="accordion accordion-panel-toggle-btn accordion-panel-toggle-btn-active">
+                                            <span>Drone Image Integration</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel" style="display: block;">
+                                            <ul>
+                                                <li>
+                                                    Seamlessly incorporates thermal and normal drone images, supporting
+                                                    images captured at optimal flying heights and camera angles.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="SolarVisionAIFeature2" class="accordion accordion-panel-toggle-btn">
+                                            <span>AI-Powered Analysis</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Automated pre-processing, model-based fault detection, confidence
+                                                    scoring, and fault labeling—all within minutes.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="SolarVisionAIFeature3" class="accordion accordion-panel-toggle-btn">
+                                            <span>Comprehensive Fault Diagnosis</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Identifies soiling quality, vegetation cover, multi-cell hotspots,
+                                                    diode and string failures, module breakage, string shorting, cracked
+                                                    modules, module short circuits, and single cell hotspots.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="SolarVisionAIFeature4" class="accordion accordion-panel-toggle-btn">
+                                            <span>Interactive Dashboard</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Live, customizable dashboards display in-depth visualizations and
+                                                    analytics, enabling real-time monitoring and rapid decision-making.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="accordion-wrapper">
+                                        <label for="SolarVisionAIFeature5" class="accordion accordion-panel-toggle-btn">
+                                            <span>Efficient Data Handling</span>
+                                            <span class="arrow-icon">
+                                                <div class="arrow-placeholder arrow-placeholder-product  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30"
+                                                        viewBox="0 0 28 30" fill="none">
+                                                        <ellipse cx="14" cy="15" rx="14" ry="14.5" fill="#00AD6F">
+                                                        </ellipse>
+                                                        <path
+                                                            d="M19.5303 16.0303C19.8232 15.7374 19.8232 15.2626 19.5303 14.9697L14.7574 10.1967C14.4645 9.90381 13.9896 9.90381 13.6967 10.1967C13.4038 10.4896 13.4038 10.9645 13.6967 11.2574L17.9393 15.5L13.6967 19.7426C13.4038 20.0355 13.4038 20.5104 13.6967 20.8033C13.9896 21.0962 14.4645 21.0962 14.7574 20.8033L19.5303 16.0303ZM9.5 15.5L9.5 16.25L19 16.25L19 15.5L19 14.75L9.5 14.75L9.5 15.5Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <div class="accordion-panel">
+                                            <ul>
+                                                <li>
+                                                    Processes approximately 3000 data tables from a single drone flight,
+                                                    equivalent to analyzing nearly 40 MW of solar capacity, ensuring
+                                                    scalable diagnostics for large installations.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-header">
+                        <h1 class="section-header-title">
+                            Explore SolarVision.AI Plans Tailored for You
+                        </h1>
+                    </div>
+
+                    <div class="price-and-plan-grid-container">
+                        <div class="price-and-plan-grid">
+                            <div class="price-and-plan-card-container price-and-plan-card-container-1 card"
+                                data-index="0">
+                                <div class="price-and-plan-card">
+                                    <small class="price-and-plan-item-plan-name">
+                                        BASIC (Starter)
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Single account with unlimited image processing
+                                    </h1>
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-and-plan-card-container price-and-plan-card-container-2 price-and-plan-card-active card"
+                                data-index="1">
+                                <div class="price-and-plan-card ">
+                                    <small class="price-and-plan-item-plan-name">
+                                        STANDARD (Business)
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        5 Sign-in accounts with unlimited image processing
+                                    </h1>
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-and-plan-card-container price-and-plan-card-container-3 card"
+                                data-index="2">
+                                <div class="price-and-plan-card">
+                                    <small class="price-and-plan-item-plan-name">
+                                        PREMIUM (Enterprise)
+                                    </small>
+                                    <h1 class="price-and-plan-card-item-title">
+                                        Unlimited sign-in accounts with unlimited image processing & 3 custom dashboards
+                                        and enhanced AI
+                                    </h1>
+
+
+                                    <a href="./Contact-us.html#letsConnect" class="get-in-touch-cta">
+                                        GET IN TOUCH
+                                        <span class="arrow-icom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16"
+                                                viewBox="0 0 26 16" fill="none">
+                                                <path
+                                                    d="M24.7849 8.85848C25.1754 8.46795 25.1754 7.83479 24.7849 7.44426L18.4209 1.0803C18.0304 0.689777 17.3972 0.689776 17.0067 1.0803C16.6162 1.47083 16.6162 2.10399 17.0067 2.49451L22.6635 8.15137L17.0067 13.8082C16.6162 14.1987 16.6162 14.8319 17.0067 15.2224C17.3972 15.613 18.0304 15.613 18.4209 15.2224L24.7849 8.85848ZM0.628906 9.15137L24.0778 9.15137L24.0778 7.15137L0.628906 7.15137L0.628906 9.15137Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="profile-section section-common-margin">
+        <div class="container">
+            <div class="profile-card-wrapper">
+                <div class="profile-card">
+                    <div class="profile-img-wrapper">
+                        <div class="profile-img-placeholder"></div>
+                    </div>
+                    <div class="profile-caption">
+                        <h1>Kadhirvel S, CTO </h1>
+                        <p>
+                            15+ years in cloud management, cybersecurity, agile development, auto-scaling & DevSecOps;
+                            previously with top-tier software firms
+                        </p>
+                    </div>
+                </div>
+                <div class="profile-social-media">
+                    <!-- <a href="#" class="profile-social-media-link">
+                            <div class="profile-social-media-icon">
+                                <img src="./icons/facebook-icon.svg" alt="" srcset="">
+                            </div>
+                        </a>
+                        <a href="#" class="profile-social-media-link">
+                            <div class="profile-social-media-icon">
+                                <img src="./icons/message-icon.svg" alt="" srcset="">
+                            </div>
+                        </a> -->
+                    <a href="#" class="profile-social-media-link">
+                        <div class="profile-social-media-icon">
+                            <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="profile-card-wrapper">
+                <div class="profile-card">
+                    <div class="profile-img-wrapper">
+                        <div class="profile-img-placeholder"></div>
+                    </div>
+                    <div class="profile-caption">
+                        <h1>
+                            Debajyoti Mishra, Product Head
+                        </h1>
+                        <p>
+                            10+ years in plant operations & performance analytics; previously with leading energy and
+                            analytics providers
+                        </p>
+                    </div>
+                </div>
+                <div class="profile-social-media">
+                    <!-- <a href="#" class="profile-social-media-link">
+                        <div class="profile-social-media-icon">
+                            <img src="./icons/facebook-icon.svg" alt="" srcset="">
+                        </div>
+                    </a>
+                    <a href="#" class="profile-social-media-link">
+                        <div class="profile-social-media-icon">
+                            <img src="./icons/message-icon.svg" alt="" srcset="">
+                        </div>
+                    </a> -->
+                    <a href="#" class="profile-social-media-link">
+                        <div class="profile-social-media-icon">
+                            <img src="./icons/linkedIn-icon.svg" alt="" srcset="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- cta section starts here  -->
+    <section class="cta-sec-lst ">
+        <div class="container">
+            <div class="cta-sec-lst-row">
+                <h1 class="heading-tab" id="product-cto-heading">
+
+                </h1>
+                <div class="btn-container">
+                    <a href="./Contact-us.html#letsConnect" class="cta-btn cta-btn-lst primary-cta-btn">
+                        Book a Demo
+                        <span class="primary-cta-btn-active-underline"></span>
+                    </a>
+                    <a href="./Contact-us.html#letsConnect" class="cta-btn-2 primary-cta-btn">
+                        SIGN UP FOR UPDATES
+                        <span class="primary-cta-btn-active-underline"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer>
+        <div class="container">
+            <div class="footer-brand">
+                <div class="footer-logo-wrapper">
+                    <img src="./img/brand-logo/Truboard-Cleantech-logo-white-08.png" alt="" srcset="">
+                </div>
+
+                <div class="social-icons">
+                    <a href="mailto:contact@truboardpartners.com" class="social-link">
+                        <img src="./icons/message-icon-2.png" alt="" srcset="">
+                    </a>
+                    <!-- <a href="#" class="social-link">
+                        <img src="./icons/x-icon-2.png" alt="" srcset="">
+                    </a> -->
+                    <a href="https://www.linkedin.com/company/truboard-partners/posts/?feedView=all" class="social-link">
+                        <img src="./icons/linkedIn-icon-2.png" alt="" srcset="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <div class="footer-menu">
+                    <h4 class="footer-menu-title">Useful links</h4>
+                    <ul class="footer-menu footer-flex">
+                        <li class="footer-menu-item">
+                            <a href="./index.html" class="footer-menu-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./Trugreen.html" class="footer-menu-link">
+                                TruGreen
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./Asset-Lifecycle-Management.html" class="footer-menu-link">
+                                Assets Lifecycle Management
+                            </a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="./TruEleqtric.html" class="footer-menu-link">
+                                TruEleqtric
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-menu-link">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-contact-wrpaper">
+                <div class="footer-content-title footer-menu-title">
+                    Get in Touch
+                </div>
+                <p class="footer-content-address">
+                    Unit 502-506, 5th Floor, UNITECH COMMERCIAL TOWER 2, Arya Samaj Road, Block B, Greenwood City, Sector 45, Gurugram, Haryana 122003
+                </p>
+                <a href="Contact-us.html#letsConnect" class="footer-contact-cta">
+                    Contact Now
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="col-left">
+                <p class="footer-primary-text">
+                    &copy; All Rights Reserved by TruBoard Cleantech Private Limited
+                </p>
+                <p class="footer-secondary-text">
+                    Subsidiary of TruBoard Private Limited
+                </p>
+            </div>
+            <div class="col-right">
+                <a href="#" class="footer-cta" style="display: none;">
+                    Privacy policy
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 4,
+                    spaceBetween: 10
+                }
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.product-lineup-swiper-next',
+                prevEl: '.product-lineup-swiper-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+
+    </script>
+
+    <script>
+
+        // for the cto headings 
+        const productHeadings = {
+            trugreenCoreApp: "Ready to revolutionize renewable asset management & monitoring?",
+            nexus: "Ready to revolutionize renewable procurement?",
+            flow: "Ready to transform your renewable site operations?",
+            assure: "Ensure compliance and mitigate risk in your renewable projects.",
+            horizon: "Optimize your renewable energy forecasts and reduce penalties today.",
+            pulse: "Unlock comprehensive insights for your renewable energy portfolio.",
+            solarvisionai: "Transform your solar plant diagnostics today."
+        };
+
+        // Single function to handle product headings
+        function handleProductHeading(productId) {
+            const headingContainer = document.getElementById("product-cto-heading");
+            if (!headingContainer) return;
+
+            // Convert productId to lowercase and remove any special characters
+            const normalizedId = productId.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+            // Map the normalized ID to the correct key in productHeadings
+            const keyMap = {
+                'trugreencoreapp': 'trugreenCoreApp',
+                'nexus': 'nexus',
+                'flow': 'flow',
+                'assure': 'assure',
+                'horizon': 'horizon',
+                'pulse': 'pulse',
+                'solarvisionai': 'solarvisionai'
+            };
+
+            // Update heading text using the mapped key
+            headingContainer.textContent = productHeadings[keyMap[normalizedId]] || "";
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener("DOMContentLoaded", () => {
+            // Set initial heading
+            handleProductHeading("trugreenCoreApp");
+
+            // Add click handlers for product buttons
+            document
+                .querySelectorAll(".product-lineup-toggle-tab-btn")
+                .forEach((button) => {
+                    button.addEventListener("click", () => {
+                        // Get the product ID from the toggle-tab-id attribute
+                        const productId = button.getAttribute("toggle-tab-id");
+                        if (productId) {
+                            handleProductHeading(productId);
+                        }
+                    });
+                });
+        });
+        AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            function setCardsCenter($clicked) {
+                const $cards = $('.card-slider .card');
+                const index = $cards.index($clicked);
+
+                let order = [];
+                if (index === 0) {
+                    order = [$cards.eq(1), $cards.eq(0), $cards.eq(2)];
+                } else if (index === 1) {
+                    order = [$cards.eq(0), $cards.eq(1), $cards.eq(2)];
+                } else if (index === 2) {
+                    order = [$cards.eq(1), $cards.eq(2), $cards.eq(0)];
+                }
+
+                $('.card-slider').fadeOut(150, function () {
+                    $(this).html(order).fadeIn(150);
+                    setTimeout(() => {
+                        $('.card-slider .card').removeClass('active price-and-plan-card-active');
+                        $('.card-slider .card').eq(1).addClass('active price-and-plan-card-active');
+                    }, 150);
+                });
+            }
+
+            // Set initial active
+            $('.card-slider .card').eq(1).addClass('active price-and-plan-card-active');
+
+            // Click handler
+            $(document).on('click', '.card-slider .card', function () {
+                setCardsCenter($(this));
+            });
+        });
+    </script>
+
+
+
+
+    <script src="js/common-script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>

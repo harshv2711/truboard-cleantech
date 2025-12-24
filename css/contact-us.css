@@ -1,0 +1,304 @@
+.hero-section h1 {
+    font-size: 32px !important;
+}
+
+.hero-section p {
+    line-height: 1.5 !important;
+    font-size: 16px !important;
+    margin: 1em 0;
+}
+
+.hero-section {
+    position: relative;
+}
+
+.let-connect-wrapper-container {
+    position: absolute;
+    bottom: -200px;
+    left: 0%;
+    right: 0%;
+}
+
+.career-form {
+    box-sizing: border-box;
+}
+
+.let-connect-form-wrapper {
+    background: #063e63;
+    max-width: 1172px;
+    margin: auto;
+    padding: 2em 1em;
+    border-radius: 22px;
+}
+
+.hero-section {
+    margin-bottom: 240px;
+}
+
+.let-connect-form-wrapper h1 {
+    color: white !important;
+    font-size: 32px;
+}
+
+.location-toggles {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    gap: 1em;
+}
+
+.location-map {
+    max-width: 1172px;
+}
+
+.form-now {
+    display: flex;
+    justify-content: center;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+    background: rgba(255, 255, 255, 0.5) !important;
+    color: #ffffff !important;
+    -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 1) inset !important;
+    box-shadow: 0 0 0 2px #53e899 !important;
+    -webkit-text-fill-color: #ffffff !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+@media only screen and (max-width: 1366px) {
+
+    .hero-section .content-info-item-title {
+        font-size: 24px !important;
+        line-height: normal;
+    }
+
+    .hero-section .content-info-item-caption {
+        color: #ffffff;
+        max-width: 350px;
+    }
+
+    .let-connect-form-wrapper h1 {
+        font-size: 24px !important;
+    }
+
+    .let-connect-form-wrapper {
+        background: #063e63;
+        max-width: 80%;
+        box-sizing: border-box;
+    }
+
+    .location-section {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .career-form .apply {
+        width: fit-content;
+        /* margin-top: 10px; */
+        font-size: 14px;
+    }
+
+    .location-toggle-btn {
+        font-size: 14px !important;
+    }
+
+    .location-details h2 {
+        color: #183B56;
+        font-size: 24px !important;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .location-details .address {
+        color: #183B56;
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .location-details .contact {
+        color: #5A7184;
+        font-size: 14px;
+    }
+}
+
+
+/* new css for 90% */
+@media only screen and (min-width: 1440px) {
+    .hero-section .content-info-item-title {
+        font-size: 28px !important;
+    }
+
+    .hero-section .content-info-item-caption {
+        font-size: 14px !important;
+        max-width: 400px;
+    }
+
+    .let-connect-form-wrapper h1 {
+        font-size: 28px !important;
+    }
+
+    .career-form input[type="text"],
+    .career-form input[type="email"] {
+        font-size: 14px;
+    }
+
+    .common-cta-green {
+        font-size: 14px;
+    }
+
+    .location-toggle-btn {
+        font-size: 14px;
+    }
+
+    .location-details h2 {
+        font-size: 16px;
+    }
+
+    .location-details .address {
+        font-size: 14px;
+    }
+
+    .location-details .contact {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 24px !important;
+    }
+
+    .hero-section p {
+        font-size: 14px !important;
+    }
+
+    .let-connect-form-wrapper {
+        max-width: unset;
+        padding: 18px;
+    }
+
+    .let-connect-form-wrapper h1 {
+        font-size: 20px !important;
+    }
+
+    .location-toggles {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 0;
+        gap: 0.5em;
+    }
+
+    .location-toggle-btn {
+        width: 45%;
+        max-width: 300px;
+    }
+
+    .location-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .location-details h2 {
+        font-size: 20px !important;
+    }
+
+    .location-details .address,
+    .location-details .contact {
+        font-size: 13px;
+    }
+
+    .career-form .apply {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .career-form form {
+        padding: 0;
+    }
+
+    .let-connect-wrapper-container {
+        position: relative;
+        bottom: 0;
+        margin-top: 2em;
+        bottom: 76px;
+    }
+
+    .location-section {
+        margin: 230px auto 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .hero-section {
+        margin-bottom: 2em;
+    }
+
+    .form-now {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .career-form input[type="text"],
+    .career-form input[type="email"],
+    .career-form textarea {
+        font-size: 14px;
+        /* padding: 12px; */
+        padding: 8px 16px;
+    }
+
+    .location-map {
+        width: 100%;
+        height: 250px;
+        border-radius: 8px;
+    }
+
+    .location-details {
+        padding: 1em;
+    }
+
+    .hero-section {
+        height: 66vh;
+    }
+
+    .career-form input[type="text"],
+    .career-form input[type="email"] {
+        margin-bottom: 10px;
+    }
+
+    .let-connect-form-wrapper {
+        border-radius: 8px;
+        max-width: 96%;
+    }
+
+    .hero-section .content-info {
+        margin-bottom: 0;
+        /* margin-top: 100px; */
+        margin-top: -200px;
+    }
+
+    .location-section {
+        margin: 270px auto 1em auto;
+    }
+
+    .hero-section-img {
+        height: 66vh;
+    }
+
+
+    .let-connect-wrapper-container {
+        position: absolute!important;
+        bottom: 0;
+        margin-top: 2em;
+        bottom: -180px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .location-section {
+        margin: 220px auto 0 auto;
+        margin-bottom: 40px;
+    }
+}

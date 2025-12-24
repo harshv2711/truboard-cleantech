@@ -1,0 +1,1009 @@
+.hero-section .content-info-item-title {
+    color: #063e63;
+}
+
+.hero-section .content-info-item-caption {
+    color: #063e63;
+}
+
+.arrow-con {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    transition: all 1s ease;
+}
+
+.arrow-con svg {
+    display: block;
+    overflow: visible;
+}
+
+.arrow-con svg ellipse {
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.arrow-con svg path {
+    transition: fill 0.3s ease;
+}
+
+.arrow-con:hover svg ellipse {
+    fill: white;
+    stroke: #00AD6F;
+    stroke-width: 1px;
+}
+
+.arrow-con:hover ellipse {
+    fill: white;
+}
+
+.arrow-con:hover path {
+    fill: #00ad6f;
+}
+
+.lg-logo-item {
+    flex: 0 0 auto;
+    width: auto !important;
+    height: 42px !important;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+
+.tab-content-img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.brand img {
+    height: 42px;
+}
+
+.hero-section h1,
+p {
+    color: #063e63 !important;
+}
+
+.hero-section .content-info-item {
+    color: #063e63 !important;
+}
+
+/* new css  */
+.section-header-title-white {
+    color: white;
+}
+
+.record-grid-item {
+    display: block;
+    box-sizing: border-box;
+}
+
+.text-wrapper p {
+    color: white !important;
+    margin: 0%;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.record-grid-item .number {
+    height: auto;
+    box-sizing: border-box;
+    display: block;
+    line-height: normal;
+    font-weight: bolder;
+    margin: 0%;
+    color: #00ad6f !important;
+}
+
+.record-grid-item .text-wrapper {
+    margin-top: 1em;
+}
+
+
+
+.our-track-record-section .section-header-title {
+    font-size: 32px;
+    margin: 0%;
+    color: white !important;
+}
+
+.our-track-record-section .section-header-description {
+    color: white !important;
+    margin: 1em 0 2em 0;
+    box-sizing: border-box;
+}
+
+.our-track-record-section {
+    bottom: -280px;
+    height: fit-content;
+    top: auto;
+    padding: 2em 2em;
+    max-width: 1024px;
+}
+
+.trusted-by-section .section-header-title {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+
+.feature-card-caption-item-title {
+    color: #063e63;
+    margin: 1.2em 0 1em 0;
+    /* font-size: 18px; */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.feature-card li {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.feature-card-img-wrapper svg {
+    height: 70px;
+    cursor: pointer !important;
+    pointer-events: all !important;
+
+}
+
+.feature-card-img-wrapper svg path {
+    fill: #00ad6f !important;
+}
+
+.feature-card-img-wrapper {
+    height: fit-content;
+}
+
+.feature-card ul {
+    padding-left: 1em;
+    display: grid;
+    gap: 6px;
+}
+
+.feature-card-grid {
+    padding: 2em;
+    max-width: 1344px;
+}
+
+.feature-card {
+    padding: 0%;
+}
+
+.feature-card-grid {
+    padding: 2em;
+    max-width: 1108px;
+    gap: 2em;
+    margin: 2em auto 1em auto;
+}
+
+.priamry-product-slider-card p {
+    color: white !important;
+    font-size: 16px;
+}
+
+.slider-card-caption-wrapper {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0;
+    padding: 2em;
+    color: white;
+    max-width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 0 !important;
+    width: 50%;
+}
+
+.slider-card-caption {
+    width: 100%;
+}
+
+.product-slider-wrapper {
+    max-width: 1172px;
+    margin: auto;
+}
+
+.priamry-product-slider-card .priamry-cta {
+    display: block;
+    width: 120px !important;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 12px;
+    background: #00ad6f !important;
+}
+
+.primary-cta {
+    transition: all 0.7s ease;
+    padding: 12px;
+    background: #00ad6f;
+    border-radius: 100vw;
+    width: 152px;
+    text-align: center;
+}
+
+.product-slider-wrapper {
+    position: relative;
+}
+
+.product-slider-wrapper {
+    padding: 0 55px;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: "";
+    display: block;
+    background-image: url("../icons/slider-next-icon.png");
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: "";
+    display: block;
+    background-image: url("../icons/slider-prev-icon.png");
+}
+
+.priamry-product-slider-card .slider-card-caption {
+    padding: 2em;
+}
+
+.service-section .container {
+    max-width: 1172px;
+    margin: auto;
+}
+
+.toggle-tab-btn {
+    cursor: pointer;
+}
+
+.toggle-tab-btn:hover {
+    color: #063e63 !important;
+    background: white !important;
+}
+
+.toggle-tab-btn:hover h1 {
+    color: #063e63 !important;
+}
+
+.toggle-tab-btn-active:hover {
+    color: white !important;
+    background: #063e63 !important;
+}
+
+.toggle-tab-btn-active:hover h1 {
+    color: white !important;
+}
+
+.toggle-tab-btn-active h1 {
+    font-weight: 500;
+}
+
+.service-section .section-header-title {
+    font-size: 32px;
+    margin: 0;
+}
+
+.service-section .section-header-description {
+    margin: 1em 0;
+}
+
+.service-section {
+    padding: 3em 0;
+    box-sizing: border-box;
+}
+
+.service-section .section-header-secondary {
+    margin-top: 30px;
+}
+
+.service-section .section-header-secondary a {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 26px;
+}
+
+.service-section .section-header-secondary p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 2em 0;
+}
+
+
+
+/* .ready-for-transformation-section 
+.section-header-title {
+    font-size: 18px;
+} */
+
+/* .ready-for-transformation-section 
+.section-header-description {
+    font-size: 16px;
+    max-width: 500px;
+    text-align: center;
+} */
+
+.ready-for-transformation-section a {
+    font-size: 20px;
+}
+
+.ready-for-transformation-section .btn-container {
+    width: fit-content;
+    gap: 1em;
+}
+
+.read-more-cta {
+    font-size: 14px;
+    transition: 0.3s;
+    margin-top: 6px;
+}
+
+.read-more-cta:hover {
+    background: #063e63;
+    color: white;
+}
+
+.case-study {
+    gap: 3em;
+}
+
+.case-study .col-left {
+    font-size: 12px;
+}
+
+.case-study-title {
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+    margin: 0% !important;
+}
+
+.case-study-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.case-study-title-container svg {
+    transition: all 0.7s ease;
+    cursor: pointer;
+
+}
+
+.case-study-title-container:hover svg path:first-child {
+    fill: #063e63;
+    stroke: white;
+}
+
+.case-study-title-container:hover svg path:last-child {
+    fill: white;
+}
+
+/* .product-slider-wrapper svg {
+    transition: all 0.7s ease;
+    cursor: pointer;
+
+}
+
+.product-slider-wrapper:hover svg path:first-child {
+    fill: #063e63;
+    stroke: white;
+}
+
+.product-slider-wrapper:hover svg path:last-child {
+    fill: white;
+} */
+
+p.section-header-description.primary-text-color {
+    text-align: center;
+}
+
+/* css for 90% view  */
+@media only screen and (min-width: 1440px) {
+    .nav-link {
+        font-size: 12px;
+        color: white;
+    }
+
+    .brand img {
+        height: 38px !important;
+    }
+
+    .hero-section-title {
+        font-size: 28px !important;
+        max-width: 430px;
+    }
+
+    .our-track-record-section .section-header-title {
+        font-size: 28px;
+    }
+
+    .our-track-record-section .section-header-description {
+        font-size: 14px;
+    }
+
+    .hero-section-description {
+        font-size: 14px;
+    }
+
+    .record-grid-item {
+        padding: 1em 0;
+    }
+
+    .trusted-by-section .section-header-title {
+        font-size: 16px;
+    }
+
+    .feature-section .section-header-title {
+        font-size: 28px;
+    }
+
+    .feature-section .section-header-description {
+        font-size: 14px;
+    }
+
+    .feature-card-caption-item-title {
+        font-size: 14px;
+    }
+
+    .priamry-product-slider-card .primary-cta {
+        font-size: 14px;
+    }
+
+
+    .priamry-product-slider-card p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .service-section .section-header-title {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .service-section .section-header-description {
+        font-size: 14px;
+    }
+
+    .toggle-tab-btn-wrapper-title {
+        font-size: 28px;
+    }
+
+    .toggle-tab-btn-name {
+        font-size: 14px;
+    }
+
+    .service-section .section-header-secondary p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 2em 0;
+    }
+
+    .service-section .section-header-secondary a {
+        font-size: 14px;
+    }
+
+    .case-study-section-title {
+        font-size: 28px !important;
+    }
+
+    .case-study-title {
+        font-size: 14px !important;
+    }
+
+    .read-more-cta {
+        font-size: 12px;
+    }
+
+    .ready-for-transformation-section .section-header-title {
+        font-size: 28px;
+    }
+
+    .ready-for-transformation-section .section-header-description {
+        font-size: 14px;
+    }
+
+    .ready-for-transformation-section a {
+        font-size: 16px;
+    }
+
+    .cta-sec-lst .btn-container {
+        gap: 2em;
+    }
+
+    .footer-logo-wrapper img {
+        font-size: 30px !important;
+    }
+
+    footer .social-link img {
+        height: 32px;
+    }
+
+    footer .social-icons {
+        gap: 9px;
+    }
+
+    .footer-brand img {
+        height: 40px;
+        width: auto;
+    }
+
+    .footer-contact-cta {
+        font-size: 14px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .swiper-pagination {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .who-we-work-with-section .section-header-title {
+        font-size: 24px !important;
+    }
+
+    .who-we-work-with-swiper-wrapper {
+        margin-top: 0% !important;
+        padding-top: 0% !important;
+    }
+}
+
+
+
+.who-we-work-with-swiper-card-item-title {
+    font-size: 16px;
+    color: #063e63;
+    margin: 0% 0 12px 0;
+    font-weight: bold;
+}
+
+.who-we-work-with-swiper-card-item-descrption {
+    font-size: 14px;
+    margin: 0%;
+}
+
+.who-we-work-with-swiper-card {
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid gray; */
+    padding: 2em 2em 1em 2em;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    box-shadow: 0px 4px 13.7px 0px rgba(49, 82, 227, 0.26);
+    border-radius: 12px;
+    /* border: 1px solid #dee2e6; */
+    /* height: 100px; */
+    margin: 1em;
+    margin-right: 12px;
+    height: 220px;
+}
+
+.h300 {
+    height: auto !important;
+    margin: 2em 1em !important;
+}
+
+.who-we-work-with-swiper-card svg {
+    height: 70px;
+    fill: #00AD6F !important;
+}
+
+.who-we-work-with-swiper-card svg:hover {
+    fill: #00ad6f !important;
+}
+
+.who-we-work-with-swiper-card .icon-wrapper {
+    margin-bottom: 1em;
+}
+
+.who-we-work-with-swiper-wrapper {
+    padding: 1em 0;
+    margin: 1em 0;
+}
+
+.swiper-pagination {
+    position: static;
+    margin: 1em;
+}
+
+.who-we-work-with-swiper-button-next,
+.who-we-work-with-swiper-button-prev {
+    /* position: static!important; */
+    top: var(--swiper-navigation-top-offset, 45%) !important;
+
+}
+
+.who-we-work-with-swiper-button-next:after,
+.who-we-work-with-swiper-button-prev:after {
+    font-family: swiper-icons !important;
+    font-size: 14px !important;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    padding: 12px;
+    background: #019eca;
+    color: #0b3041 !important;
+    border-radius: 2px;
+    outline: none;
+    display: none;
+}
+
+.who-we-work-with-swiper-button-wrapper {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    gap: 1em;
+}
+
+.who-we-work-with-swiper-wrapper {
+    padding: 0 3em !important;
+    margin: 2em auto;
+}
+
+.who-we-work-with-swiper-wrapper {
+    position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+    .trusted-by-section .section-header-title {
+        max-width: 928px;
+        font-size: 24px !important;
+    }
+}
+
+@media screen and (min-width: 1224px) {
+
+    .who-we-work-with-swiper-button-prev,
+    .who-we-work-with-swiper-button-next {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1172px) {
+    .who-we-work-with-swiper {
+        max-width: auto !important;
+        margin: auto;
+    }
+
+}
+
+.our-track-record-section-mobile {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+
+    .our-track-record-section-mobile {
+        display: block !important;
+    }
+
+    .product-slider-wrapper {
+        padding: 0;
+    }
+
+    .slider-card-caption-wrapper {
+        padding: 0px;
+        top: auto;
+        width: 100%;
+        height: 130px;
+    }
+
+    .slider-card-caption {
+        gap: 0;
+    }
+
+    .slider-card-caption p {
+        margin-bottom: 0;
+    }
+
+
+
+    /* Add styles for slider navigation buttons */
+    .product-slider-wrapper .swiper-button-next,
+    .product-slider-wrapper .swiper-button-prev {
+        top: auto;
+        bottom: -52px;
+        transform: translateY(0);
+        display: none;
+    }
+
+    .product-slider-wrapper .swiper-button-next {
+        right: calc(50% - 40px);
+    }
+
+    .product-slider-wrapper .swiper-button-prev {
+        left: calc(50% - 40px);
+    }
+
+    .hero-section h1,
+    p {
+        /* color: #ffffff !important; */
+    }
+
+    .case-study {
+        gap: 20px;
+        width: 100%;
+        box-shadow: 0px 1.75px 6.5px 0px rgba(49, 82, 227, 0.12);
+    }
+
+    .slider-card-caption {
+        border-radius: 0px 0px 20px 20px !important;
+    }
+
+    /* .product-slider-wrapper .swiper-button-next:after,
+    .product-slider-wrapper .swiper-button-prev:after {
+        width: 28px;
+        height: 29px;
+    } */
+
+    .our-track-record-section {
+        width: 93%;
+    }
+
+    .trusted-by-section {
+        padding: 10px;
+    }
+
+    .feature-section {
+        padding: 10px;
+    }
+
+    .product-slider-wrapper {
+        padding: 0 10px;
+    }
+
+    .service-section {
+        padding: 2em 10px;
+    }
+
+    .section-header-secondary {
+        padding: 10px;
+    }
+
+    .case-study-section {
+        padding: 10px;
+    }
+
+    .priamry-product-slider-card .slider-card-caption {
+        padding: 20px;
+        height: 100%;
+    }
+
+    .slider-card-caption {
+        justify-content: unset;
+    }
+
+    .ready-for-transformation-section {
+        padding: 10px;
+    }
+
+    .who-we-work-with-swiper-wrapper {
+        padding: 1em 1em !important;
+        width: auto !important;
+        margin: 2em auto;
+    }
+
+
+    .who-we-work-with-swiper-button-prev,
+    .who-we-work-with-swiper-button-next {
+        display: none !important;
+    }
+
+    .trusted-by-section .section-header-title {
+        font-size: 16px;
+        text-transform: capitalize;
+        text-align: center;
+        margin: 1em 0;
+    }
+
+    .service-section {
+        margin-top: 0% !important;
+    }
+
+    .slider-section {
+        margin-bottom: 0% !important;
+    }
+
+    .our-track-record-section-desktop {
+        display: none !important;
+    }
+
+    .our-track-record-section {
+        width: 100%;
+        border-radius: 20px;
+        background: #063e63;
+        box-shadow: 0px 4px 13.7px 0px rgba(49, 82, 227, 0.26);
+        color: #ffff;
+        padding: 30px 50px;
+        padding-top: 2em;
+        position: static !important;
+        top: auto;
+        left: auto !important;
+        transform: none !important;
+        right: auto !important;
+        max-width: 90% !important;
+        margin: auto !important;
+        height: fit-content !important;
+    }
+
+    .trusted-by-section {
+        margin-top: 1em !important;
+    }
+}
+
+
+.our-impact-title strong {
+    font-family: "avanir-bold" !important;
+    font-size: 14px;
+}
+
+.record-grid-item .text-wrapper {
+    margin-top: 0;
+    margin-bottom: 6px;
+
+}
+
+.record-grid-item .number {
+    margin-bottom: 12px;
+
+}
+
+.tab-content-wrapper.aos-init.aos-animate {
+    height: auto !important;
+    width: 100% !important;
+}
+
+.service-section .section-header {
+    max-width: 100%;
+}
+
+
+.feature-card-img-wrapper:hover .cls-1 {
+    opacity: 100 !important;
+}
+
+.who-we-work-with-swiper-card:hover .cls-1 {
+    transition: 0.5s !important;
+    opacity: 100 !important;
+}
+
+.who-we-work-with-swiper-card svg {
+    transition: .3s !important;
+}
+
+.who-we-work-with-swiper-card:hover {
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+.feature-card:hover .cls-1 {
+    transition: .3s;
+    opacity: 100 !important;
+}
+
+.trusted-by-section .section-header-title {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: center;
+    /* margin: 1em 0; */
+}
+
+.section-header-title {
+    font-size: 24px !important;
+    color: #063e63;
+    margin: auto;
+    text-align: center;
+}
+
+.hero-section-mobile {
+    display: none !important;
+}
+
+@media screen and (max-width: 600px) {
+    .hero-section .content-info-wrapper {
+        position: static !important;
+    }
+
+    .hero-section .content-info {
+        margin-bottom: 0px !important;
+    }
+
+    .hero-section-desktop {
+        display: none !important;
+    }
+
+    .hero-section-mobile {
+        padding: 8px !important;
+    }
+
+    .hero-section-mobile .container {
+        padding: 1em;
+    }
+
+    .hero-section-mobile h1 {
+        color: #063e63 !important;
+    }
+
+    /* .hero-section-video-wrapper {
+        height: 53vh!important;
+    } */
+
+    .hero-section-video-wrapper {
+        overflow: hidden;
+    }
+
+    .hero-email-capture-wrapper button {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+
+    .hero-section-mobile {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero-section .content-info-wrapper {
+        padding: 1em;
+        top: 5em;
+    }
+
+    .our-track-record-section {
+        bottom: -313px !important;
+    }
+
+    .trusted-by-section .section-header-title {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+    }
+
+    .feature-cards-swiper .feature-card-caption-item-description {
+        padding: 0 2em !important;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .our-track-record-section {
+        bottom: -313px !important;
+    }
+
+    .trusted-by-section .section-header-title {
+        font-size: 14px !important;
+    }
+
+    .product-slider-wrapper .section-header-description {
+        font-size: 14px;
+        padding: 0 1em;
+        margin-bottom: 2em;
+    }
+
+    .who-we-work-with-swiper-card {
+        height: 250px;
+    }
+
+    .awards-reco-swiper-button-next,
+    .awards-reco-swiper-button-prev {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .our-track-record-section {
+        bottom: -355px !important;
+    }
+
+    .trusted-by-section {
+        margin-top: 420px;
+    }
+}

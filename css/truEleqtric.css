@@ -1,0 +1,268 @@
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    content: none;
+}
+
+.accordion-panel p {
+    margin: 0%;
+}
+
+.accordion-panel {
+    padding: 1em;
+}
+
+.tab-row-grid {
+    grid-template-columns: 2fr 1.6fr;
+}
+
+.accordion-panel {
+    color: #063e63;
+}
+
+.tab-image {
+    display: none;
+    border-radius: 12px;
+}
+
+.swiper-button-prev,
+.swiper-button-next svg {
+    transform: scale(1.2);
+}
+
+/* Add hover effects for navigation buttons */
+.swiper-button-prev svg path,
+.swiper-button-next svg path {
+    transition: all 0.3s ease;
+}
+
+.swiper-button-prev:hover svg path:first-child,
+.swiper-button-next:hover svg path:first-child {
+    fill: #063e63;
+    stroke: white;
+}
+
+.swiper-button-prev:hover svg path:last-child,
+.swiper-button-next:hover svg path:last-child {
+    fill: white;
+}
+
+.arrow-placeholder arrow-placeholder-product {
+    position: initial;
+}
+
+.secondary-grid {
+    display: grid;
+    gap: 1em;
+}
+
+.product-line-up-section .container {
+    max-width: 1172px;
+    margin: auto;
+}
+
+.tab-image-container {
+    height: 397px;
+}
+
+.hero-section h1 {
+    font-size: 32px !important;
+}
+
+.hero-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 1em 0;
+    max-width: 400px;
+}
+
+.hero-section .content-info {
+    max-width: 532px;
+}
+
+.snake-btn {
+    margin-left: 1em;
+}
+
+.secondary-gein-touch-btn {
+    font-size: 16px;
+    padding: 0 1em;
+}
+
+@media only screen and (max-width: 1366px) {
+    .hero-section .content-info-item {
+        font-size: 14px !important;
+    }
+
+    .hero-section .content-info-item-title {
+        font-size: 24px !important;
+        line-height: 1.5 !important;
+        max-width: 374px;
+    }
+
+    .section-header-title {
+        color: #063e63;
+        font-size: 24px;
+        text-align: center;
+        margin: 1em 0;
+        font-weight: 800;
+    }
+
+    .cta-sec-lst .heading-tab {
+        font-size: 24px;
+    }
+
+    .primary-cta-btn {
+        border-bottom: 0px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .product-line-up-section {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .accordion-panel-toggle-btn {
+        font-size: 14px;
+    }
+
+    .accordion-panel p {
+        font-size: 14px;
+    }
+}
+
+/* new css for 90% */
+@media only screen and (min-width: 1440px) {
+    .hero-section .content-info-item-title {
+        font-size: 28px !important;
+    }
+
+    .hero-section .content-info-item-caption {
+        font-size: 14px !important;
+    }
+
+    .secondary-gein-touch-btn {
+        font-size: 14px;
+        padding: 0 1em;
+    }
+
+    .hero-email-capture-wrapper {
+        font-size: 14px;
+    }
+
+    .section-header-title {
+        font-size: 28px;
+    }
+
+    .accordion-panel-toggle-btn {
+        font-size: 14px;
+    }
+
+    .accordion-panel p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section-img {
+        width: 100%;
+        border-radius: 30px;
+        /* height: 90vh; */
+        /* object-fit: cover; */
+    }
+
+    .hero-section {
+        height: 66vh;
+    }
+
+    .product-line-up-section {
+        padding: 0;
+        overflow: hidden;
+        margin-top: 0px !important;
+    }
+
+    .tab-row-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .accordion-panel {
+        padding: 15px;
+    }
+
+    .accordion-container {
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    .tab-image-container {
+        height: 236px;
+    }
+
+    .primary-cta-btn {
+        font-size: 16px;
+    }
+
+    .tab-image {
+        border-radius: 8px;
+    }
+}
+
+.hero-section-mobile {
+    display: none!important;
+}
+@media only screen and (max-width: 600px) {
+    
+  
+    .hero-section-mobile {
+        display: block!important;
+    }
+
+    .product-line-up-section {
+        padding: 1em;
+        overflow: hidden;
+    }
+
+    .tab-row-grid {
+        margin-bottom: 0;
+    }
+
+    .product-line-up-section {
+        padding: 1em 10px;
+    }
+
+    .cta-sec-lst {
+        padding: 1em 10px;
+    }
+
+    .hero-section {
+        height: auto!important;
+    }
+     
+    
+}
+
+@media only screen and (max-width: 479px) {
+    .accordion-container {
+        height: 293px;
+    }
+
+    .hero-section .content-info {
+        margin-bottom: 0;
+        margin-top: -100px;
+    }
+
+    .section-header-title {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .product-line-up-section {
+        margin-top: 0em!important;
+        padding-top: 0!important;
+    }
+
+    .product-line-up-section .tab-row-grid {
+        margin-top: 0!important;
+    }
+}

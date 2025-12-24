@@ -1,0 +1,442 @@
+.hero-section h1 {
+    font-size: 32px !important;
+    line-height: 1.5;
+}
+
+.hero-section p {
+    font-size: 16px;
+    margin: 1em 0;
+    line-height: 1.5;
+}
+
+.content-info-item {
+    max-width: 400px;
+}
+
+.contact-us-form-section h1 {
+    color: white !important;
+}
+
+.contact-us-form-section p {
+    font-size: 16px !important;
+    color: white !important;
+}
+
+.contact-us-form-section .container {
+    max-width: 1172px;
+    margin: auto;
+}
+
+.contact-us-form-section button {
+    font-size: 14px !important;
+}
+
+
+.career-slider-wrapper {
+    position: relative;
+    padding: 0 3em;
+}
+
+.contact-us-form-section .container {
+    max-width: 971px !important;
+    margin: auto;
+}
+
+.hero-section {
+    position: relative;
+}
+
+.contact-form-wrapper {
+    position: absolute;
+    bottom: -300px;
+    left: 0%;
+    right: 0%;
+}
+
+.contact-form-container {
+    background: #063e63;
+    max-width: 1172px;
+    margin: auto;
+    border-radius: 22px;
+    padding: 2em 2em;
+}
+
+.hero-section {
+    position: relative;
+    margin-bottom: 340px;
+
+}
+
+
+.contact-form-container .section-header-title {
+    color: white !important;
+}
+
+.contact-form-container .section-header-description {
+    color: white !important;
+    text-align: center;
+}
+
+.slider-section .section-header-title {
+    margin: 1em 0;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: '';
+    display: block;
+    background-image: url("../icons/slider-next-icon.png");
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: '';
+    display: block;
+    background-image: url("../icons/slider-prev-icon.png");
+}
+
+.opening-listing-section .container {
+    max-width: 1172px !important;
+}
+
+.job-cards-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.job-card {
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.career-slider-wrapper {
+    position: relative;
+    padding: 0px 0em;
+}
+
+.career-slider-wrapper {
+    position: relative;
+    padding: 0px 0em;
+    max-width: 1282px;
+    padding: 0 6em;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: 52px;
+    right: auto;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    left: auto;
+    right: 52px;
+}
+
+.job-cards-section {
+    margin-bottom: 4em;
+}
+
+.hero-section .content-info {
+    /* max-width: 400px; */
+    max-width: 512px !important;
+}
+
+
+@media only screen and (max-width: 1366px) {
+    .hero-section .content-info-item-title {
+        font-size: 24px !important;
+        line-height: normal;
+        max-width: 385px;
+    }
+
+    .hero-section .content-info-item-caption {
+        font-size: 14px !important;
+    }
+
+    .contact-form-container .section-header-title {
+        font-size: 24px !important;
+    }
+
+    .contact-form-container .section-header-description {
+        font-size: 14px !important;
+    }
+
+    .contact-form-container {
+        max-width: 80%;
+    }
+
+    .career-form .apply {
+        width: fit-content;
+        font-size: 14px !important;
+        /* margin-top: 10px; */
+    }
+
+    .slider-section .section-header-title {
+        margin: 1em 0;
+        font-size: 24px;
+    }
+
+    .hero-section {
+        position: relative;
+        /* margin-bottom: 292px; */
+        margin-bottom: 330px;
+    }
+
+    .job-card h3 {
+        color: #183B56;
+        font-size: 18px !important;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #063E63;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px;
+        margin-top: -10px;
+    }
+
+    .opening-listing-section {
+        padding-left: 10px;
+        padding-right: 1em;
+    }
+
+    .career-slider-wrapper {
+        padding: 0 10px;
+    }
+
+    .slider-card-caption-item-description {
+        font-size: 14px;
+    }
+}
+
+/* new css for 90% */
+@media only screen and (min-width: 1440px) {
+    .hero-section .content-info-item-title {
+        font-size: 28px !important;
+    }
+
+    .hero-section .content-info-item-caption {
+        font-size: 14px !important;
+    }
+
+    .contact-form-container .section-header-title {
+        font-size: 28px !important;
+    }
+
+    .contact-form-container .section-header-description {
+        font-size: 14px !important;
+    }
+
+    .career-form input {
+        font-size: 14px !important;
+    }
+
+    .career-form input[type="text"],
+    .career-form input[type="email"] {
+        font-size: 14px !important;
+    }
+
+    .common-cta-green {
+        font-size: 14px;
+    }
+
+    .section-header-title {
+        font-size: 28px !important;
+    }
+
+    .slider-card-caption-item-description {
+        font-size: 14px;
+    }
+
+    .job-card h3 {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    .job-cards-section {
+        grid-template-columns: 1fr;
+        margin: 10px 0px;
+        margin-bottom: 15px;
+    }
+
+    .slider-card-caption-wrapper {
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        right: 0em;
+        padding: 2em;
+        color: white;
+        width: 100%;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        margin-top: 0 !important;
+    }
+
+    .contact-form-container {
+        padding: 1em;
+    }
+
+    .contact-form-container {
+        max-width: 100%;
+        margin: 0 1em;
+    }
+
+    .career-form form {
+        padding: 0 12px;
+    }
+
+    .opening-listing-section {
+        overflow: hidden;
+    }
+
+    .slider-card-caption-wrapper {
+        top: auto;
+        padding: 0;
+        bottom: 0px;
+    }
+
+    .job-card {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .hero-section .content-info {
+        margin: 0px;
+        margin-top: -246px;
+    }
+
+    .hero-section {
+        height: 66vh;
+    }
+
+    .hero-section h1 {
+        font-size: 32px !important;
+        line-height: 1;
+    }
+
+    .career-form input[type="text"],
+    .career-form input[type="email"] {
+        width: 100%;
+        padding: 8px 16px;
+    }
+
+    .form-group :nth-child(4) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 14px;
+    }
+
+    .slider-card-caption {
+        width: 100%;
+        border-radius: 0px 0px 8px 8px;
+    }
+
+    .job-opening-list {
+        display: grid;
+        grid-template-columns: 1fr!important;
+        gap: 1em;
+    }
+
+   
+}
+
+.job-opening-card-secondary {
+    padding: 1em;
+}
+
+.job-opening-card-secondary-item-role {
+    color: #183B56;
+    font-size: 16px !important;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #063E63;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top:0;
+}
+
+.job-opening-card-secondary-item-description {
+    color: #183b56;
+    font-weight: 500;
+    margin-bottom: 14px;
+    font-size: 16px;
+    margin: 6px 0;
+    padding: 0%;
+}
+
+.job-opening-card-secondary-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.job-opening-card-secondary {
+    border-radius: 16px;
+    box-shadow: 0 2px 16px 0 rgba(24, 59, 86, 0.06);
+    padding: 1.5em;
+    transition: box-shadow 0.2s;
+    border-radius: 20px;
+    border: 1px solid var(--Neutral-Color, #f2f5fa);
+    background: #fff;
+    box-shadow: 0px 4px 13.7px 0px rgba(49, 82, 227, 0.1);
+}
+
+.job-opening-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 1em;
+}
+
+
+
+.arrow-placeholder {
+  position: absolute;
+  top: 29px;
+  right: 24px;
+  background: #00ad6f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.6);
+}
+
+.arrow-placeholder-product {
+  position: unset;
+}
+
+.arrow-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: #fff;
+  transform: scale(1.2);
+}
+
+.arrow-icon svg ellipse {
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.arrow-icon svg path {
+  transition: fill 0.3s ease;
+}
+
+.arrow-icon:hover svg ellipse {
+  fill: white;
+  stroke: #00ad6f;
+}
+
+.arrow-icon:hover svg path {
+  fill: #00ad6f;
+}
