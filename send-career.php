@@ -53,7 +53,7 @@ try {
     // Sender & recipient
     $mail->setFrom('website-enquiry@truboardpartners.com', 'Website Enquiry');
     $mail->addAddress('talenthr.infra@truboardpartners.com', 'Human Resources');
-    // $mail->addAddress('harshvishwakarma2711@gmail.com', 'Human Resources');
+    $mail->addAddress('harshvishwakarma2711@gmail.com', 'Human Resources');
 
     // Email content
     $mail->isHTML(true);
